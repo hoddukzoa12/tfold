@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=1920, height=1080" />
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			html,
+			body {
+				width: 1920px;
+				height: 1080px;
+				overflow: hidden;
+				background: #2a2a2e;
+			}
+			#root {
+				position: relative;
+				width: 100%;
+				height: 100%;
+			}
+			#ground {
+				position: absolute;
+				inset: 0;
+				background: #2a2a2e;
+			}
+			#en {
+				z-index: 1;
+			}
+			#ko {
+				z-index: 2;
+			}
+			#dark {
+				z-index: 3;
+			}
+			#band {
+				z-index: 4;
+			}
+			#end {
+				z-index: 5;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="root" data-composition-id="main" data-start="0" data-duration="14" data-width="1920" data-height="1080">
+			<div id="ground"></div>
+			<div id="en" data-composition-id="en" data-composition-src="compositions/en.html" data-start="0" data-duration="5.7" data-track-index="1" data-track-kind="graphics" data-beat="The paragraph folds" data-width="1920" data-height="1080"></div>
+			<div id="ko" data-composition-id="ko" data-composition-src="compositions/ko.html" data-start="5.7" data-duration="3.6" data-track-index="2" data-track-kind="graphics" data-beat="A Korean paragraph folds" data-width="1920" data-height="1080"></div>
+			<div id="dark" data-composition-id="dark" data-composition-src="compositions/dark.html" data-start="8.9" data-duration="2.2" data-track-index="3" data-track-kind="graphics" data-beat="The page's own dark theme" data-width="1920" data-height="1080"></div>
+			<div id="band" data-composition-id="band" data-composition-src="compositions/band.html" data-start="0" data-duration="11.1" data-track-index="4" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+			<div id="end" data-composition-id="end" data-composition-src="compositions/end.html" data-start="10.9" data-duration="3.1" data-track-index="5" data-track-kind="graphics" data-beat="End card" data-width="1920" data-height="1080"></div>
+		</div>
+		<script>
+			window.__timelines['main'] = gsap.timeline({ paused: true });
+		</script>
+	</body>
+</html>

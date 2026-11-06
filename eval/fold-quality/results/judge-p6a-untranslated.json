@@ -1,0 +1,874 @@
+{
+	"model": "anthropic/claude-sonnet-5.5",
+	"runs": [
+		"tr-og-en",
+		"tr-or-en"
+	],
+	"cost": 0.13423,
+	"verdicts": [
+		{
+			"item": "tr-apollo",
+			"run": "tr-og-en/r0",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-apollo",
+			"run": "tr-og-en/r1",
+			"label": "F7",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-apollo",
+			"run": "tr-og-en/r2",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-apollo",
+			"run": "tr-og-en/r3",
+			"label": "F8",
+			"unsupported": "fulfilled Kennedy's deadline",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-apollo",
+			"run": "tr-or-en/r0",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-apollo",
+			"run": "tr-or-en/r1",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-apollo",
+			"run": "tr-or-en/r2",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-apollo",
+			"run": "tr-or-en/r3",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-crispr",
+			"run": "tr-og-en/r0",
+			"label": "F8",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-crispr",
+			"run": "tr-og-en/r1",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-crispr",
+			"run": "tr-og-en/r2",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-crispr",
+			"run": "tr-og-en/r3",
+			"label": "F7",
+			"unsupported": "unlike earlier tools",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-crispr",
+			"run": "tr-or-en/r0",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-crispr",
+			"run": "tr-or-en/r1",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-crispr",
+			"run": "tr-or-en/r2",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-crispr",
+			"run": "tr-or-en/r3",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-everest",
+			"run": "tr-og-en/r0",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-everest",
+			"run": "tr-og-en/r1",
+			"label": "F7",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-everest",
+			"run": "tr-og-en/r2",
+			"label": "F8",
+			"unsupported": "Survey teams measured the snow cap's depth",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-everest",
+			"run": "tr-og-en/r3",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-everest",
+			"run": "tr-or-en/r0",
+			"label": "F1",
+			"unsupported": "Survey teams from both countries reached the summit and measured the snow cap's depth.",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-everest",
+			"run": "tr-or-en/r1",
+			"label": "F5",
+			"unsupported": "to take the measurements",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-everest",
+			"run": "tr-or-en/r2",
+			"label": "F6",
+			"unsupported": "the Chinese team measured the snow cap's depth",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-everest",
+			"run": "tr-or-en/r3",
+			"label": "F2",
+			"unsupported": "Survey teams from both countries reached the summit separately and measured the snow cap's depth.",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-gps",
+			"run": "tr-og-en/r0",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-gps",
+			"run": "tr-og-en/r1",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-gps",
+			"run": "tr-og-en/r2",
+			"label": "F7",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-gps",
+			"run": "tr-og-en/r3",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-gps",
+			"run": "tr-or-en/r0",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-gps",
+			"run": "tr-or-en/r1",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-gps",
+			"run": "tr-or-en/r2",
+			"label": "F8",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-gps",
+			"run": "tr-or-en/r3",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-hangul",
+			"run": "tr-og-en/r0",
+			"label": "F8",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-hangul",
+			"run": "tr-og-en/r1",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-hangul",
+			"run": "tr-og-en/r2",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-hangul",
+			"run": "tr-og-en/r3",
+			"label": "F7",
+			"unsupported": "making it one of the most systematic writing systems",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-hangul",
+			"run": "tr-or-en/r0",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-hangul",
+			"run": "tr-or-en/r1",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-hangul",
+			"run": "tr-or-en/r2",
+			"label": "F6",
+			"unsupported": "linguists call highly systematic",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-hangul",
+			"run": "tr-or-en/r3",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-higgs",
+			"run": "tr-og-en/r0",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-higgs",
+			"run": "tr-og-en/r1",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-higgs",
+			"run": "tr-og-en/r2",
+			"label": "F7",
+			"unsupported": "Confirming it required collision energies no earlier machine could reach",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-higgs",
+			"run": "tr-og-en/r3",
+			"label": "F8",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-higgs",
+			"run": "tr-or-en/r0",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-higgs",
+			"run": "tr-or-en/r1",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-higgs",
+			"run": "tr-or-en/r2",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-higgs",
+			"run": "tr-or-en/r3",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-linux",
+			"run": "tr-og-en/r0",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-linux",
+			"run": "tr-og-en/r1",
+			"label": "F1",
+			"unsupported": "now runs the 500 most powerful supercomputers",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-linux",
+			"run": "tr-og-en/r2",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-linux",
+			"run": "tr-og-en/r3",
+			"label": "F8",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-linux",
+			"run": "tr-or-en/r0",
+			"label": "F6",
+			"unsupported": "the dominant free operating system",
+			"faithful": false,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-linux",
+			"run": "tr-or-en/r1",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-linux",
+			"run": "tr-or-en/r2",
+			"label": "F7",
+			"unsupported": "became a dominant operating system",
+			"faithful": false,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-linux",
+			"run": "tr-or-en/r3",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-rosetta",
+			"run": "tr-og-en/r0",
+			"label": "F7",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-rosetta",
+			"run": "tr-og-en/r1",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-rosetta",
+			"run": "tr-og-en/r2",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-rosetta",
+			"run": "tr-og-en/r3",
+			"label": "F8",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-rosetta",
+			"run": "tr-or-en/r0",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-rosetta",
+			"run": "tr-or-en/r1",
+			"label": "F4",
+			"unsupported": "Because scholars could read the Greek, Champollion later showed hieroglyphs recorded sounds as well as ideas.",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-rosetta",
+			"run": "tr-or-en/r2",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-rosetta",
+			"run": "tr-or-en/r3",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-seed-vault",
+			"run": "tr-og-en/r0",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-seed-vault",
+			"run": "tr-og-en/r1",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-seed-vault",
+			"run": "tr-og-en/r2",
+			"label": "F8",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-seed-vault",
+			"run": "tr-og-en/r3",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-seed-vault",
+			"run": "tr-or-en/r0",
+			"label": "F4",
+			"unsupported": "the Crop Trust runs it",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-seed-vault",
+			"run": "tr-or-en/r1",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-seed-vault",
+			"run": "tr-or-en/r2",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-seed-vault",
+			"run": "tr-or-en/r3",
+			"label": "F7",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-transformer",
+			"run": "tr-og-en/r0",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-transformer",
+			"run": "tr-og-en/r1",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-transformer",
+			"run": "tr-og-en/r2",
+			"label": "F7",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-transformer",
+			"run": "tr-og-en/r3",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-transformer",
+			"run": "tr-or-en/r0",
+			"label": "F8",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-transformer",
+			"run": "tr-or-en/r1",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-transformer",
+			"run": "tr-or-en/r2",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-transformer",
+			"run": "tr-or-en/r3",
+			"label": "F6",
+			"unsupported": "Google researchers' 2017 Transformer introduced self-attention",
+			"faithful": false,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-tsmc",
+			"run": "tr-og-en/r0",
+			"label": "F3",
+			"unsupported": "made chipmaking a separate, specialized business",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-tsmc",
+			"run": "tr-og-en/r1",
+			"label": "F7",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-tsmc",
+			"run": "tr-og-en/r2",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-tsmc",
+			"run": "tr-og-en/r3",
+			"label": "F8",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-tsmc",
+			"run": "tr-or-en/r0",
+			"label": "F5",
+			"unsupported": "The model works because a leading-edge plant costs over 20 billion dollars",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-tsmc",
+			"run": "tr-or-en/r1",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-tsmc",
+			"run": "tr-or-en/r2",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-tsmc",
+			"run": "tr-or-en/r3",
+			"label": "F1",
+			"unsupported": "without owning a factory costing over 20 billion dollars",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-webb",
+			"run": "tr-og-en/r0",
+			"label": "F7",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-webb",
+			"run": "tr-og-en/r1",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-webb",
+			"run": "tr-og-en/r2",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-webb",
+			"run": "tr-og-en/r3",
+			"label": "F1",
+			"unsupported": "mirror and tennis-court sunshield keep instruments below 50 kelvin",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-webb",
+			"run": "tr-or-en/r0",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-webb",
+			"run": "tr-or-en/r1",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-webb",
+			"run": "tr-or-en/r2",
+			"label": "F8",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "tr-webb",
+			"run": "tr-or-en/r3",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		}
+	]
+}

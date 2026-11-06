@@ -1,0 +1,339 @@
+{
+	"label": "tr-og-en",
+	"repeat": 3,
+	"promptVersion": 4,
+	"model": "deepseek/deepseek-v4.1-flash-ultrafast",
+	"commit": "c21a707",
+	"provider": "opengateway",
+	"startedAt": "2026-11-03T19:17:20.575Z",
+	"set": "translate",
+	"calls": [
+		{
+			"call": 0,
+			"blocks": 3,
+			"status": 200,
+			"ms": 1573,
+			"upstream": "-",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1467,
+			"completionTokens": 208,
+			"cost": 0
+		},
+		{
+			"call": 1,
+			"blocks": 3,
+			"status": 200,
+			"ms": 835,
+			"upstream": "-",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1428,
+			"completionTokens": 229,
+			"cost": 0
+		},
+		{
+			"call": 2,
+			"blocks": 3,
+			"status": 200,
+			"ms": 782,
+			"upstream": "-",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1446,
+			"completionTokens": 207,
+			"cost": 0
+		},
+		{
+			"call": 3,
+			"blocks": 3,
+			"status": 200,
+			"ms": 702,
+			"upstream": "-",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1433,
+			"completionTokens": 200,
+			"cost": 0
+		}
+	],
+	"items": [
+		{
+			"item": "tr-apollo",
+			"call": 0,
+			"fold": {
+				"sentences": [
+					"On July 20, 1969, Neil Armstrong and Buzz Aldrin landed the lunar module Eagle in the Sea of Tranquility while Michael Collins stayed in orbit aboard the command module Columbia.",
+					"Armstrong stepped onto the surface about six and a half hours after the landing, and the two men spent roughly two and a half hours outside.",
+					"They collected 21.5 kilograms of rock and soil and set up a seismometer and a laser reflector that observatories still use to measure the distance to the Moon.",
+					"NASA flew the mission eight years after John F. Kennedy asked Congress to commit the country to a landing before the decade was out."
+				],
+				"brief": [
+					0,
+					2
+				],
+				"key": "Apollo 11 landed Armstrong and Aldrin on the Moon in July 1969. They collected rock, set up instruments still used to measure Earth-Moon distance, and fulfilled Kennedy's deadline.",
+				"takeaway": "Apollo 11 landed Armstrong and Aldrin on the Moon in July 1969."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-webb",
+			"call": 0,
+			"fold": {
+				"sentences": [
+					"The James Webb Space Telescope left Earth on December 25, 2021, on an Ariane 5 rocket from Kourou in French Guiana.",
+					"It is a joint project of NASA, the European Space Agency and the Canadian Space Agency.",
+					"Its primary mirror is 6.5 meters across and is made of 18 hexagonal segments of gold-coated beryllium, which had to unfold in space because the full mirror did not fit inside the rocket's fairing.",
+					"The telescope orbits the second Lagrange point, about 1.5 million kilometers from Earth, where a five-layer sunshield the size of a tennis court keeps its instruments below 50 kelvin.",
+					"That cold matters because Webb observes in the infrared, and a warm telescope would glow at the very wavelengths it is trying to measure."
+				],
+				"brief": [
+					3,
+					4
+				],
+				"key": "The James Webb Space Telescope observes the infrared from the second Lagrange point. Its unfolded gold-coated mirror and tennis-court sunshield keep instruments below 50 kelvin so it does not glow at those wavelengths.",
+				"takeaway": "The James Webb Space Telescope observes the infrared from the second Lagrange point."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-gps",
+			"call": 0,
+			"fold": {
+				"sentences": [
+					"The Global Positioning System began in 1973 as a project of the United States Department of Defense, and its full constellation of 24 satellites was declared operational in 1995.",
+					"Each satellite carries atomic clocks and broadcasts its position and the exact time, and a receiver works out where it is from the delays of signals from at least four satellites.",
+					"Until May 2000 the military deliberately degraded the civilian signal, a policy called Selective Availability, which limited ordinary receivers to an accuracy of about 100 meters.",
+					"When President Bill Clinton ordered it switched off, the error for civilian users fell to about 20 meters almost overnight, which opened the way for car navigation and, later, smartphone maps."
+				],
+				"brief": [
+					2,
+					3
+				],
+				"key": "The Global Positioning System became operational in 1995 and its accuracy later improved for civilians. Ending Selective Availability in May 2000 cut civilian error from about 100 meters to about 20 meters almost overnight.",
+				"takeaway": "The Global Positioning System became operational in 1995 and its accuracy later improved for civilians."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-tsmc",
+			"call": 1,
+			"fold": {
+				"sentences": [
+					"Taiwan Semiconductor Manufacturing Company, founded by Morris Chang in Hsinchu in 1987, was the first company built only to make chips that other firms design.",
+					"That foundry model let companies such as Apple, Nvidia and AMD sell processors without owning a factory, at a time when a leading-edge plant costs well over 20 billion dollars.",
+					"TSMC began volume production on its 3-nanometer process in late 2022, a name that no longer measures any single feature on the chip but marks a generation of transistor density.",
+					"Its most advanced lines depend on extreme ultraviolet lithography machines that only one company, ASML of the Netherlands, can build."
+				],
+				"brief": [
+					0,
+					3
+				],
+				"key": "TSMC was the first company built only to make chips other firms design. The foundry model let Apple, Nvidia and AMD sell processors without owning a factory, and its most advanced lines depend on ASML's EUV machines.",
+				"takeaway": "TSMC was the first company built only to make chips other firms design."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-linux",
+			"call": 1,
+			"fold": {
+				"sentences": [
+					"In August 1991, Linus Torvalds, then a student at the University of Helsinki, announced on the Usenet group comp.os.minix that he was writing a free operating system kernel as a hobby.",
+					"He released it under the GNU General Public License in 1992, which meant anyone could change the code as long as they shared their changes under the same terms.",
+					"Paired with tools from Richard Stallman's GNU Project, the kernel became a complete free operating system.",
+					"Today Linux runs on every one of the 500 most powerful supercomputers in the world and underlies Android, the most widely used phone operating system."
+				],
+				"brief": [
+					0,
+					3
+				],
+				"key": "Linus Torvalds announced a free operating system kernel as a hobby and released it under the GNU GPL. Paired with GNU tools it became a complete free operating system, and today Linux runs on the 500 most powerful supercomputers.",
+				"takeaway": "Linus Torvalds announced a free operating system kernel as a hobby and released it under the GNU GPL."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-transformer",
+			"call": 1,
+			"fold": {
+				"sentences": [
+					"In 2017, a team of eight researchers at Google published \"Attention Is All You Need\", the paper that introduced the Transformer.",
+					"Instead of reading a sentence one word at a time as recurrent networks did, the model relates every word to every other word at once through a mechanism called self-attention.",
+					"Because these comparisons can run in parallel, the Transformer trained far faster on graphics processors, and it set a new record of 28.4 BLEU on the WMT 2014 English-to-German translation benchmark.",
+					"Nearly every large language model since, from BERT to GPT-4, is built on this architecture."
+				],
+				"brief": [
+					1,
+					2
+				],
+				"key": "Google researchers introduced the Transformer in the 2017 paper \"Attention Is All You Need\". Its self-attention relates every word to every other at once, so it trained far faster on graphics processors and set a new translation record.",
+				"takeaway": "Google researchers introduced the Transformer in the 2017 paper \"Attention Is All You Need\"."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-rosetta",
+			"call": 2,
+			"fold": {
+				"sentences": [
+					"French soldiers found the Rosetta Stone in 1799 near the town of Rashid, which Europeans called Rosetta, in the Nile Delta.",
+					"The slab carries one decree issued at Memphis in 196 BC, written three times: in hieroglyphs, in Demotic script and in ancient Greek.",
+					"Because scholars could read the Greek, the stone offered a key to the two Egyptian scripts, yet decipherment took more than twenty years.",
+					"In 1822 Jean-François Champollion showed that hieroglyphs recorded sounds as well as ideas, and the stone has been on display at the British Museum in London since 1802."
+				],
+				"brief": [
+					1,
+					2
+				],
+				"key": "The Rosetta Stone carries one decree in three scripts and became a key to Egyptian writing. Because the Greek was readable, scholars could use the stone against hieroglyphs and Demotic, though decipherment took over twenty years.",
+				"takeaway": "The Rosetta Stone carries one decree in three scripts and became a key to Egyptian writing."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-crispr",
+			"call": 2,
+			"fold": {
+				"sentences": [
+					"In 2012, Jennifer Doudna and Emmanuelle Charpentier reported in the journal Science that a bacterial defense system called CRISPR-Cas9 could be programmed to cut DNA at a chosen site.",
+					"The Cas9 enzyme is guided by a short strand of RNA that matches the target sequence, so changing that guide is enough to aim the cut somewhere else.",
+					"Earlier gene-editing tools required building a new protein for every target, which took months, while a new guide RNA can be made in days.",
+					"The two scientists shared the 2020 Nobel Prize in Chemistry, and in 2023 regulators in the United Kingdom approved Casgevy, the first therapy based on the method, for sickle cell disease."
+				],
+				"brief": [
+					1,
+					2
+				],
+				"key": "CRISPR-Cas9 can be programmed to cut DNA at a chosen site, unlike earlier tools. A short guide RNA matching the target sequence aims the Cas9 cut, and a new guide can be made in days.",
+				"takeaway": "CRISPR-Cas9 can be programmed to cut DNA at a chosen site, unlike earlier tools."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-higgs",
+			"call": 2,
+			"fold": {
+				"sentences": [
+					"On July 4, 2012, physicists at CERN announced that the ATLAS and CMS experiments at the Large Hadron Collider had each found a new particle with a mass of about 125 gigaelectronvolts.",
+					"Its properties matched the boson that Peter Higgs and others had predicted in 1964 to explain how elementary particles acquire mass.",
+					"Finding it took collisions at energies no earlier machine could reach, inside a ring 27 kilometers around beneath the border of France and Switzerland.",
+					"Higgs and François Englert received the Nobel Prize in Physics the following year, and the experiments have since measured the particle's decays to test whether it behaves exactly as the Standard Model predicts."
+				],
+				"brief": [
+					0,
+					1
+				],
+				"key": "CERN experiments announced a new particle whose properties matched the predicted Higgs boson. Reaching it required collision energies no earlier machine could achieve in a 27 kilometer ring.",
+				"takeaway": "CERN experiments announced a new particle whose properties matched the predicted Higgs boson."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-hangul",
+			"call": 3,
+			"fold": {
+				"sentences": [
+					"In 1443, King Sejong the Great of the Joseon dynasty completed a new alphabet so that ordinary people could read and write Korean, which until then was written mostly with Chinese characters.",
+					"He promulgated it in 1446 in a document called Hunminjeongeum, meaning the correct sounds for instructing the people.",
+					"The shapes of its consonant letters were drawn from the positions of the mouth and tongue that produce them, which is why linguists often call Hangul one of the most systematic writing systems ever designed.",
+					"South Korea celebrates its creation every October 9 as Hangul Day."
+				],
+				"brief": [
+					0,
+					2
+				],
+				"key": "King Sejong completed Hangul in 1443 so ordinary people could read Korean. Its consonant shapes follow the mouth and tongue positions, making it one of the most systematic writing systems.",
+				"takeaway": "King Sejong completed Hangul in 1443 so ordinary people could read Korean."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-seed-vault",
+			"call": 3,
+			"fold": {
+				"sentences": [
+					"The Svalbard Global Seed Vault opened in 2008 inside a mountain on Spitsbergen, an Arctic island about 1,300 kilometers from the North Pole.",
+					"Norway owns the vault, and the Crop Trust helps run it as a backup for gene banks around the world, which keep their own seeds but send duplicates there.",
+					"The chambers are kept at minus 18 degrees Celsius, and the permafrost around them would keep the samples frozen even if the power failed.",
+					"The vault can hold 4.5 million seed samples, and in 2015 it returned seeds for the first time, to researchers who had lost access to their gene bank near Aleppo during the Syrian war."
+				],
+				"brief": [
+					1,
+					2
+				],
+				"key": "The Svalbard Global Seed Vault, opened in 2008, backs up gene banks worldwide. Permafrost and minus 18 degrees Celsius keep samples frozen even if the power fails.",
+				"takeaway": "The Svalbard Global Seed Vault, opened in 2008, backs up gene banks worldwide."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-everest",
+			"call": 3,
+			"fold": {
+				"sentences": [
+					"In December 2020, China and Nepal jointly announced that Mount Everest stands 8,848.86 meters above sea level, 86 centimeters higher than the figure Nepal had used for decades.",
+					"Survey teams from both countries had reached the summit separately, and the Chinese team carried satellite receivers and a ground-penetrating radar to measure the depth of the snow cap.",
+					"The mountain was first identified as the world's highest in 1856 by the Great Trigonometrical Survey of British India, and it was later named after George Everest, a former Surveyor General of India.",
+					"In Nepal it is called Sagarmatha, and in Tibet Chomolungma."
+				],
+				"brief": [
+					0,
+					1
+				],
+				"key": "China and Nepal jointly announced in 2020 that Everest stands 8,848.86 meters high. Survey teams reached the summit separately, and China's team measured the snow cap with radar.",
+				"takeaway": "China and Nepal jointly announced in 2020 that Everest stands 8,848.86 meters high."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		}
+	]
+}

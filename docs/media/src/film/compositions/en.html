@@ -1,0 +1,57 @@
+<template>
+	<style>
+		#root {
+			position: absolute;
+			inset: 0;
+		}
+		#en-card {
+			position: absolute;
+			left: 40px;
+			top: 84px;
+			width: 1840px;
+			height: 956px;
+			border-radius: 20px;
+			overflow: hidden;
+			background: #fbfaf7;
+		}
+		#en-camera {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 1840px;
+			height: 956px;
+		}
+		#en-footage {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 1840px;
+			height: 956px;
+			object-fit: contain;
+		}
+		#en-pointer {
+			position: absolute;
+			left: 1156px;
+			top: 237px;
+			width: 40px;
+			height: 54px;
+		}
+	</style>
+	<div id="root" data-composition-id="en" data-width="1920" data-height="1080">
+		<div id="en-card" data-layout-allow-overflow>
+			<div id="en-camera">
+				<video id="en-footage" class="clip" src="assets/footage/film-en.mp4" muted playsinline data-start="0" data-duration="5.7" data-track-index="1"></video>
+				<svg id="en-pointer" viewBox="0 0 22 30" aria-hidden="true">
+					<path d="M2 2 L2 24 L8 18.5 L12 28 L16.5 26 L12.5 16.8 L20 16.5 Z" fill="#fff" stroke="#2a2a2e" stroke-width="1.6" stroke-linejoin="round" />
+				</svg>
+			</div>
+		</div>
+	</div>
+	<script>
+		const tl = gsap.timeline({ paused: true });
+		tl.fromTo('#en-pointer', { x: 420, y: 660 }, { x: 0, y: 0, duration: 0.8, ease: 'power2.inOut' }, 0.1);
+		tl.fromTo('#en-camera', { scale: 1, transformOrigin: '200px 0px' }, { scale: 1.22, transformOrigin: '200px 0px', duration: 0.55, ease: 'power2.inOut' }, 2.6);
+		tl.to('#en-card', { x: -1920, filter: 'blur(14px)', duration: 0.2, ease: 'power3.in' }, 5.48);
+		window.__timelines['en'] = tl;
+	</script>
+</template>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="268 267 718 718" role="img" aria-label="tfold">
+	<defs>
+		<clipPath id="tfold-mark-fold">
+			<polygon points="268 267 986 267 986 986 371 986 697 660 268 660" />
+		</clipPath>
+	</defs>
+	<rect x="268" y="267" width="718" height="718" rx="150" fill="#C9FB2C" />
+	<g fill="none" stroke="#2A2A2E">
+		<path d="M365 510.5H629" stroke-width="46" />
+		<path d="M488.5 510.5V736" stroke-width="56" />
+		<path d="M488.5 720V735.8A22.7 22.7 0 0 0 527.25 751.85L683.31 595.81A103.5 103.5 0 0 1 697.14 584.22" stroke-width="51" />
+		<path d="M683.31 595.81A103.5 103.5 0 1 1 653.39 678.02" stroke-width="51" clip-path="url(#tfold-mark-fold)" />
+	</g>
+</svg>

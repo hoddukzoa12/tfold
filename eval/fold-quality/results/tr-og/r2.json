@@ -1,0 +1,357 @@
+{
+	"label": "tr-og",
+	"repeat": 2,
+	"promptVersion": 4,
+	"model": "deepseek/deepseek-v4.1-flash-ultrafast",
+	"commit": "c21a707",
+	"provider": "opengateway",
+	"startedAt": "2026-11-03T19:06:45.443Z",
+	"set": "translate",
+	"translateTo": "ko",
+	"calls": [
+		{
+			"call": 0,
+			"blocks": 3,
+			"status": 200,
+			"ms": 1930,
+			"upstream": "-",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1764,
+			"completionTokens": 334,
+			"cost": 0
+		},
+		{
+			"call": 1,
+			"blocks": 3,
+			"status": 200,
+			"ms": 1713,
+			"upstream": "-",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1725,
+			"completionTokens": 313,
+			"cost": 0
+		},
+		{
+			"call": 2,
+			"blocks": 3,
+			"status": 200,
+			"ms": 1321,
+			"upstream": "-",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1743,
+			"completionTokens": 303,
+			"cost": 0
+		},
+		{
+			"call": 3,
+			"blocks": 3,
+			"status": 200,
+			"ms": 1461,
+			"upstream": "-",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1730,
+			"completionTokens": 315,
+			"cost": 0
+		}
+	],
+	"items": [
+		{
+			"item": "tr-apollo",
+			"call": 0,
+			"fold": {
+				"sentences": [
+					"On July 20, 1969, Neil Armstrong and Buzz Aldrin landed the lunar module Eagle in the Sea of Tranquility while Michael Collins stayed in orbit aboard the command module Columbia.",
+					"Armstrong stepped onto the surface about six and a half hours after the landing, and the two men spent roughly two and a half hours outside.",
+					"They collected 21.5 kilograms of rock and soil and set up a seismometer and a laser reflector that observatories still use to measure the distance to the Moon.",
+					"NASA flew the mission eight years after John F. Kennedy asked Congress to commit the country to a landing before the decade was out."
+				],
+				"brief": [
+					0,
+					2
+				],
+				"key": "1969년 7월 20일 Neil Armstrong(닐 암스트롱)과 Buzz Aldrin(버즈 올드린)이 달에 착륙했다. 이들은 암석과 토양을 채취하고 월진계와 레이저 반사경을 설치했으며, 케네디의 요청 후 8년 만의 일이었다.",
+				"takeaway": "1969년 7월 20일 Neil Armstrong(닐 암스트롱)과 Buzz Aldrin(버즈 올드린)이 달에 착륙했다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true,
+				"names": true
+			}
+		},
+		{
+			"item": "tr-webb",
+			"call": 0,
+			"fold": {
+				"sentences": [
+					"The James Webb Space Telescope left Earth on December 25, 2021, on an Ariane 5 rocket from Kourou in French Guiana.",
+					"It is a joint project of NASA, the European Space Agency and the Canadian Space Agency.",
+					"Its primary mirror is 6.5 meters across and is made of 18 hexagonal segments of gold-coated beryllium, which had to unfold in space because the full mirror did not fit inside the rocket's fairing.",
+					"The telescope orbits the second Lagrange point, about 1.5 million kilometers from Earth, where a five-layer sunshield the size of a tennis court keeps its instruments below 50 kelvin.",
+					"That cold matters because Webb observes in the infrared, and a warm telescope would glow at the very wavelengths it is trying to measure."
+				],
+				"brief": [
+					2,
+					3
+				],
+				"key": "James Webb Space Telescope(제임스 웹 우주망원경)는 2021년 12월 25일 발사되어 지구에서 150만 킬로미터 떨어진 곳을 돈다. 적외선 관측에는 차가움이 중요하므로 테니스 코트 크기의 차열판이 기기를 50켈빈 아래로 유지한다.",
+				"takeaway": "James Webb Space Telescope(제임스 웹 우주망원경)는 2021년 12월 25일 발사되어 지구에서 150만 킬로미터 떨어진 곳을 돈다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true,
+				"names": true
+			}
+		},
+		{
+			"item": "tr-gps",
+			"call": 0,
+			"fold": {
+				"sentences": [
+					"The Global Positioning System began in 1973 as a project of the United States Department of Defense, and its full constellation of 24 satellites was declared operational in 1995.",
+					"Each satellite carries atomic clocks and broadcasts its position and the exact time, and a receiver works out where it is from the delays of signals from at least four satellites.",
+					"Until May 2000 the military deliberately degraded the civilian signal, a policy called Selective Availability, which limited ordinary receivers to an accuracy of about 100 meters.",
+					"When President Bill Clinton ordered it switched off, the error for civilian users fell to about 20 meters almost overnight, which opened the way for car navigation and, later, smartphone maps."
+				],
+				"brief": [
+					2,
+					3
+				],
+				"key": "GPS(지구위치결정시스템)는 1973년 미 국방부 계획으로 시작해 1995년 24기 위성 체제를 완성했다. 2000년 Selective Availability(선택적 가용성)가 꺼지면서 민간 오차가 약 100미터에서 약 20미터로 줄었다.",
+				"takeaway": "GPS(지구위치결정시스템)는 1973년 미 국방부 계획으로 시작해 1995년 24기 위성 체제를 완성했다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true,
+				"names": true
+			}
+		},
+		{
+			"item": "tr-tsmc",
+			"call": 1,
+			"fold": {
+				"sentences": [
+					"Taiwan Semiconductor Manufacturing Company, founded by Morris Chang in Hsinchu in 1987, was the first company built only to make chips that other firms design.",
+					"That foundry model let companies such as Apple, Nvidia and AMD sell processors without owning a factory, at a time when a leading-edge plant costs well over 20 billion dollars.",
+					"TSMC began volume production on its 3-nanometer process in late 2022, a name that no longer measures any single feature on the chip but marks a generation of transistor density.",
+					"Its most advanced lines depend on extreme ultraviolet lithography machines that only one company, ASML of the Netherlands, can build."
+				],
+				"brief": [
+					0,
+					1
+				],
+				"key": "TSMC는 다른 회사들이 설계한 칩만 만드는 첫 파운드리 회사로 1987년 설립됐다. 이 모델로 애플, Nvidia, AMD가 공장 없이 칩을 팔 수 있게 했고, TSMC는 2022년 말 3나노 공정 양산에 들어갔다.",
+				"takeaway": "TSMC는 다른 회사들이 설계한 칩만 만드는 첫 파운드리 회사로 1987년 설립됐다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true,
+				"names": false
+			}
+		},
+		{
+			"item": "tr-linux",
+			"call": 1,
+			"fold": {
+				"sentences": [
+					"In August 1991, Linus Torvalds, then a student at the University of Helsinki, announced on the Usenet group comp.os.minix that he was writing a free operating system kernel as a hobby.",
+					"He released it under the GNU General Public License in 1992, which meant anyone could change the code as long as they shared their changes under the same terms.",
+					"Paired with tools from Richard Stallman's GNU Project, the kernel became a complete free operating system.",
+					"Today Linux runs on every one of the 500 most powerful supercomputers in the world and underlies Android, the most widely used phone operating system."
+				],
+				"brief": [
+					0,
+					1
+				],
+				"key": "리누스 토르발스는 취미로 만든 무료 운영체제 커널을 1991년에 공개했다. 1992년 GNU General Public License로 배포해 누구나 코드를 바꿀 수 있게 했으며, GNU 도구와 결합해 완전한 무료 운영체제가 됐다.",
+				"takeaway": "리누스 토르발스는 취미로 만든 무료 운영체제 커널을 1991년에 공개했다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true,
+				"names": false
+			}
+		},
+		{
+			"item": "tr-transformer",
+			"call": 1,
+			"fold": {
+				"sentences": [
+					"In 2017, a team of eight researchers at Google published \"Attention Is All You Need\", the paper that introduced the Transformer.",
+					"Instead of reading a sentence one word at a time as recurrent networks did, the model relates every word to every other word at once through a mechanism called self-attention.",
+					"Because these comparisons can run in parallel, the Transformer trained far faster on graphics processors, and it set a new record of 28.4 BLEU on the WMT 2014 English-to-German translation benchmark.",
+					"Nearly every large language model since, from BERT to GPT-4, is built on this architecture."
+				],
+				"brief": [
+					1,
+					2
+				],
+				"key": "2017년 구글의 여덟 연구자가 Transformer(트랜스포머)를 소개한 논문을 발표했다. self-attention으로 모든 단어를 한꺼번에 비교해 병렬 처리가 가능해졌고, 그래서 GPU에서 훨씬 빠르게 학습됐다.",
+				"takeaway": "2017년 구글의 여덟 연구자가 Transformer(트랜스포머)를 소개한 논문을 발표했다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-rosetta",
+			"call": 2,
+			"fold": {
+				"sentences": [
+					"French soldiers found the Rosetta Stone in 1799 near the town of Rashid, which Europeans called Rosetta, in the Nile Delta.",
+					"The slab carries one decree issued at Memphis in 196 BC, written three times: in hieroglyphs, in Demotic script and in ancient Greek.",
+					"Because scholars could read the Greek, the stone offered a key to the two Egyptian scripts, yet decipherment took more than twenty years.",
+					"In 1822 Jean-François Champollion showed that hieroglyphs recorded sounds as well as ideas, and the stone has been on display at the British Museum in London since 1802."
+				],
+				"brief": [
+					0,
+					2
+				],
+				"key": "프랑스 군인이 발견한 로제타석은 이집트 문자 해독의 열쇠가 되었다. 그리스어를 읽을 수 있었지만 두 이집트 문자의 해독에는 20년 넘게 걸렸고, 1822년 샹폴리옹이 성과를 냈다.",
+				"takeaway": "프랑스 군인이 발견한 로제타석은 이집트 문자 해독의 열쇠가 되었다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-crispr",
+			"call": 2,
+			"fold": {
+				"sentences": [
+					"In 2012, Jennifer Doudna and Emmanuelle Charpentier reported in the journal Science that a bacterial defense system called CRISPR-Cas9 could be programmed to cut DNA at a chosen site.",
+					"The Cas9 enzyme is guided by a short strand of RNA that matches the target sequence, so changing that guide is enough to aim the cut somewhere else.",
+					"Earlier gene-editing tools required building a new protein for every target, which took months, while a new guide RNA can be made in days.",
+					"The two scientists shared the 2020 Nobel Prize in Chemistry, and in 2023 regulators in the United Kingdom approved Casgevy, the first therapy based on the method, for sickle cell disease."
+				],
+				"brief": [
+					0,
+					1
+				],
+				"key": "CRISPR-Cas9은 표적 부위의 DNA를 자르도록 프로그래밍할 수 있는 세균 방어 체계이다. Cas9을 안내하는 RNA만 바꾸면 표적이 달라져, 새 단백질을 만드는 데 걸리던 몇 달이 며칠로 줄었다.",
+				"takeaway": "CRISPR-Cas9은 표적 부위의 DNA를 자르도록 프로그래밍할 수 있는 세균 방어 체계이다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-higgs",
+			"call": 2,
+			"fold": {
+				"sentences": [
+					"On July 4, 2012, physicists at CERN announced that the ATLAS and CMS experiments at the Large Hadron Collider had each found a new particle with a mass of about 125 gigaelectronvolts.",
+					"Its properties matched the boson that Peter Higgs and others had predicted in 1964 to explain how elementary particles acquire mass.",
+					"Finding it took collisions at energies no earlier machine could reach, inside a ring 27 kilometers around beneath the border of France and Switzerland.",
+					"Higgs and François Englert received the Nobel Prize in Physics the following year, and the experiments have since measured the particle's decays to test whether it behaves exactly as the Standard Model predicts."
+				],
+				"brief": [
+					0,
+					1
+				],
+				"key": "CERN의 ATLAS와 CMS 실험은 예측되었던 힉스 입자로 보이는 새 입자를 발견했다. 질량이 약 125 gigaelectronvolts이고 성질이 1964년 예측과 일치했으며, 발견에는 이전 기계보다 높은 충돌 에너지가 필요했다.",
+				"takeaway": "CERN의 ATLAS와 CMS 실험은 예측되었던 힉스 입자로 보이는 새 입자를 발견했다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-hangul",
+			"call": 3,
+			"fold": {
+				"sentences": [
+					"In 1443, King Sejong the Great of the Joseon dynasty completed a new alphabet so that ordinary people could read and write Korean, which until then was written mostly with Chinese characters.",
+					"He promulgated it in 1446 in a document called Hunminjeongeum, meaning the correct sounds for instructing the people.",
+					"The shapes of its consonant letters were drawn from the positions of the mouth and tongue that produce them, which is why linguists often call Hangul one of the most systematic writing systems ever designed.",
+					"South Korea celebrates its creation every October 9 as Hangul Day."
+				],
+				"brief": [
+					0,
+					2
+				],
+				"key": "세종대왕(세종)은 백성이 한글을 읽고 쓸 수 있도록 새 알파벳을 완성했다. 1446년 훈민정음(훈민정음) 반포문은 자음 모양을 발음 기관 위치에서 본떠 체계적인 문자로 평가받는다.",
+				"takeaway": "세종대왕(세종)은 백성이 한글을 읽고 쓸 수 있도록 새 알파벳을 완성했다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-seed-vault",
+			"call": 3,
+			"fold": {
+				"sentences": [
+					"The Svalbard Global Seed Vault opened in 2008 inside a mountain on Spitsbergen, an Arctic island about 1,300 kilometers from the North Pole.",
+					"Norway owns the vault, and the Crop Trust helps run it as a backup for gene banks around the world, which keep their own seeds but send duplicates there.",
+					"The chambers are kept at minus 18 degrees Celsius, and the permafrost around them would keep the samples frozen even if the power failed.",
+					"The vault can hold 4.5 million seed samples, and in 2015 it returned seeds for the first time, to researchers who had lost access to their gene bank near Aleppo during the Syrian war."
+				],
+				"brief": [
+					1,
+					3
+				],
+				"key": "스발바르 국제 종자 저장고(스발바르)는 세계 유전자은행의 백업으로 노르웨이 소유 아래 운영된다. 영구동토와 영하 18도의 저장실이 전력이 끊겨도 시료를 얼린 채 보존하며 2015년 시리아 내전 중 종자를 반환했다.",
+				"takeaway": "스발바르 국제 종자 저장고(스발바르)는 세계 유전자은행의 백업으로 노르웨이 소유 아래 운영된다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-everest",
+			"call": 3,
+			"fold": {
+				"sentences": [
+					"In December 2020, China and Nepal jointly announced that Mount Everest stands 8,848.86 meters above sea level, 86 centimeters higher than the figure Nepal had used for decades.",
+					"Survey teams from both countries had reached the summit separately, and the Chinese team carried satellite receivers and a ground-penetrating radar to measure the depth of the snow cap.",
+					"The mountain was first identified as the world's highest in 1856 by the Great Trigonometrical Survey of British India, and it was later named after George Everest, a former Surveyor General of India.",
+					"In Nepal it is called Sagarmatha, and in Tibet Chomolungma."
+				],
+				"brief": [
+					0,
+					1
+				],
+				"key": "중국과 네팔은 2020년 에베레스트(에베레스트) 높이를 8,848.86미터로 공동 발표했다. 양국 측량팀이 각각 정상에 올라 측정했고, 이 산은 1856년 세계 최고봉으로 처음 확인되었다.",
+				"takeaway": "중국과 네팔은 2020년 에베레스트(에베레스트) 높이를 8,848.86미터로 공동 발표했다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		}
+	]
+}

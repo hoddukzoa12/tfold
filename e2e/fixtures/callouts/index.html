@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Harbor notices</title>
+<style>
+:root { color-scheme: light dark; }
+body { margin: 0; padding: 24px 24px 320px; font: 16px/1.5 Arial, sans-serif; color: #1f2328; background: #fff; }
+.col { max-width: 40em; margin: 0 auto; }
+.col > * { margin: 0 0 20px; }
+.callout { background: #1e1e1e; color: #fff; padding: 8px; }
+#id-callout { background: #1e1e1e; color: #fff; padding: 8px 12px; border-left: 4px solid #fcb900; border-radius: 6px; }
+#nested-run .pill { background: #fde68a; color: #111; border-radius: 4px; padding: 0 3px; }
+#gradient-run .hl { background-image: linear-gradient(#fde047, #fde047); color: #111; }
+#quiet-run .quiet { color: #59636e; }
+#link-run .minutes { color: #0550ae; }
+@media (prefers-color-scheme: dark) {
+	body { background: #0d1117; color: #e6edf3; }
+	#quiet-run .quiet { color: #9198a1; }
+	#link-run .minutes { color: #4493f8; }
+}
+</style>
+</head>
+<body>
+<div class="col">
+<div id="dark-div" style="background-color: #1e1e1e; color: #fff; padding: 8px"><span>The harbor café stays open late on Saturdays through the winter for the crews of the night boats. </span><span>Hot tea is free for anyone in a crew jacket.</span></div>
+<p id="dark-p" style="background-color: #1e1e1e; color: #fff; padding: 8px"><span>The harbor café stays open late on Fridays through the winter for the crews of the night boats. </span><span>Hot soup is free for anyone in a crew jacket.</span></p>
+<div id="yellow-div" style="background-color: #fcb900; color: #000; padding: 8px"><span>The boatyard closes for two weeks in January while the slipway rails are replaced. </span><span>Boats that need work before then should book a slot this week.</span></div>
+<p id="yellow-p" style="background-color: #fcb900; color: #000; padding: 8px"><span>The ticket office moves to the old customs house for the winter while the pier building is repaired. </span><span>The ferry times do not change.</span></p>
+<p id="id-callout"><span>The lighthouse museum reopens in March with a new room about the keepers and their families. </span><span>Tickets are half price for children under twelve.</span></p>
+<p id="class-callout" class="callout"><span>The sailing club lends life jackets to visitors who join a morning lesson on the bay. </span><span>Bring a towel and a change of clothes.</span></p>
+<p id="mark-run"><span>The crew agreed that </span><mark>the night ferry needs a second deckhand before the winter timetable starts in December</mark><span> this year. </span><span>The office will hire one soon.</span></p>
+<div id="nested-run"><span>The pier notice says that </span><span class="pill"><em>the north gate stays locked every night from ten until the first boat leaves at dawn</em></span><span> on weekdays. </span><span>Crews use the side door.</span></div>
+<div id="gradient-run"><span>The pilot said </span><span class="hl">the channel is safe again after the storm and the buoys are back in place along the bar</span><span> today. </span><span>Night crossings start again on Friday.</span></div>
+<p id="fill-p" style="background: #111; -webkit-text-fill-color: #fff; padding: 8px"><span>The night ferry leaves from the east pier while the main pier is closed for repairs. </span><span>Follow the lamps along the sea wall.</span></p>
+<p id="gradient-text" style="background-image: linear-gradient(90deg, #1d4ed8, #7e22ce); -webkit-background-clip: text; background-clip: text; color: transparent"><span>The spring regatta starts at noon on the first Sunday in May off the harbor mouth. </span><span>Entries close a week before the race.</span></p>
+<p id="quiet-run">The harbor master wrote that <span class="quiet">the old fog horn on the breakwater will sound every thirty seconds whenever the fog comes in</span> this winter. The horn is loud.</p>
+<p id="link-run">The council posted <a class="minutes" href="#minutes">the full minutes of the winter meeting about the new harbor wall and the ferry pier</a> on its board. Anyone can read them.</p>
+<p id="narrow-p" style="max-width: 374px">The fish market opens an hour later on Mondays so the boats can unload after the weekend. Ice is sold at the north door.</p>
+<p id="vertical-p" style="writing-mode: vertical-rl; height: 14em">The tide table for March is pinned by the harbor office door. Spring tides fall on the fourth and the nineteenth.</p>
+<p id="tinted-p" style="opacity: 0.9; filter: saturate(0.8); mix-blend-mode: multiply; color-scheme: dark">The lifeboat crew trains in the bay on the first Wednesday of each month at dusk. Their flares are part of the drill.</p>
+<p id="typed-p" style="-webkit-text-stroke: 0.2px #57606a; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); font-stretch: 95%; font-variant-ligatures: none; font-variant-caps: small-caps; font-variant-numeric: tabular-nums; font-variant-east-asian: traditional; font-feature-settings: 'kern' 0; font-variation-settings: 'wght' 450; font-kerning: none; line-height: 1.7; letter-spacing: 0.02em; word-spacing: 0.05em; text-transform: lowercase; direction: rtl">The harbor choir sings on the quay on the last Sunday of August when the weather holds. Bring a chair and a warm coat.</p>
+<p id="shaped-p" style="background-image: linear-gradient(#f6f8fa, #eaeef2); background-position: 1px 2px; background-size: 90% 90%; background-repeat: repeat-x; background-origin: content-box; color: #1f2328; padding: 8px; box-sizing: border-box; width: 10em; min-width: 300px; text-align: center">The ice house on the old quay is open to visitors on Saturday mornings in the summer. Its walls are a yard thick.</p>
+<p id="float-p" style="float: right; width: 17em">The rowing club meets on the slipway at seven every Thursday evening from April to October. New rowers are welcome.</p>
+</div>
+</body>
+</html>

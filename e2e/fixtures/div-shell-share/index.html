@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Crew rooms</title>
+<style>
+body { margin: 0; font: 15px/1.45 Arial, sans-serif; color: #1f2328; background: #fff; }
+.shell { position: fixed; left: 0; width: 100vw; display: flex; overflow: hidden; }
+.shell[data-share="45"] { top: 0; height: 45vh; background: #f6f8fa; }
+.shell[data-share="55"] { top: 45vh; height: 55vh; }
+.rooms { width: 200px; padding: 12px; border-right: 1px solid #d0d7de; }
+.pane { flex: 1; overflow-y: auto; padding: 0 24px; }
+.message { max-width: 40em; margin: 16px 0; }
+</style>
+</head>
+<body>
+<div class="shell" data-share="45">
+<div class="rooms">Pier maintenance</div>
+<div class="pane">
+<div class="message" data-prose="45">The crane on the east quay needs new cables before the timber boat arrives next week. I asked the yard to send two riggers on Monday morning.</div>
+</div>
+</div>
+<div class="shell" data-share="55">
+<div class="rooms">Night boats</div>
+<div class="pane">
+<div class="message" data-prose="55">The late boat waits ten minutes for the last train on Sundays, so the crossing ends later than the board says. Tell the café to stay open until the crew is back.</div>
+</div>
+</div>
+</body>
+</html>

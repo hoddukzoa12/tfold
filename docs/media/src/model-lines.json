@@ -1,0 +1,71 @@
+{
+	"capturedFrom": {
+		"provider": "opengateway",
+		"model": "deepseek/deepseek-v4.1-flash-ultrafast",
+		"page": "https://kitchen-notes.example"
+	},
+	"edited": false,
+	"lines": [
+		{
+			"page": "en",
+			"paragraph": "#target",
+			"level": 1,
+			"from": "model",
+			"text": "The change happens inside the starch. Baking swells the starch granules and loosens their structure, and as the loaf cools, those long molecules slowly pack back into tight crystals."
+		},
+		{
+			"page": "en",
+			"paragraph": "#target",
+			"level": 2,
+			"from": "model",
+			"text": "Bread goes stale because starch molecules pack back into tight crystals as it cools. That packing pushes water into the crust, so the crumb feels dry though little water leaves."
+		},
+		{
+			"page": "en",
+			"paragraph": "#target",
+			"level": 3,
+			"from": "model",
+			"text": "Bread goes stale because starch molecules pack back into tight crystals as it cools."
+		},
+		{
+			"page": "ko",
+			"paragraph": "#target",
+			"level": 1,
+			"from": "model",
+			"text": "배추와 양념에 든 당분을 유산균이 먹으면서 젖산을 만들고, 이 젖산이 쌓일수록 신맛이 강해져요. 처음에는 여러 미생물이 함께 살지만, 김치가 산성으로 변할수록 산에 약한 균은 줄고 유산균이 늘어나요."
+		},
+		{
+			"page": "ko",
+			"paragraph": "#target",
+			"level": 2,
+			"from": "model",
+			"text": "김치가 시어지는 것은 유산균이 젖산을 만들어서다. 당분을 먹은 유산균이 만든 젖산이 쌓일수록 신맛이 강해지고, 산에 약한 균은 줄어든다."
+		},
+		{
+			"page": "ko",
+			"paragraph": "#target",
+			"level": 3,
+			"from": "model",
+			"text": "김치가 시어지는 것은 유산균이 젖산을 만들어서다."
+		}
+	],
+	"calls": [
+		{
+			"provider": "opengateway",
+			"promptTokens": 1277,
+			"completionTokens": 188,
+			"reasoningTokens": 0,
+			"blocks": 3,
+			"ms": 1139
+		},
+		{
+			"provider": "opengateway",
+			"promptTokens": 1458,
+			"completionTokens": 254,
+			"reasoningTokens": 0,
+			"blocks": 3,
+			"ms": 1250
+		}
+	],
+	"listPriceUsd": 0.001351
+}

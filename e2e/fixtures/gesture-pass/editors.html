@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Harbor scripts</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 24px;
+				font: 17px/1.55 Georgia, serif;
+				color: #1f2328;
+			}
+			.box {
+				position: relative;
+				height: 150px;
+				margin: 0 0 24px;
+				overflow: hidden;
+				border: 1px solid #ccc;
+				font: 13px/1.4 monospace;
+			}
+			.CodeMirror-scroll {
+				height: 100%;
+				overflow: scroll;
+			}
+			.CodeMirror-sizer {
+				margin-left: 30px;
+			}
+			.CodeMirror-gutter-wrapper {
+				position: absolute;
+				left: -30px;
+				z-index: 4;
+			}
+			.CodeMirror-linenumber {
+				width: 21px;
+				text-align: right;
+				color: #555;
+			}
+			.CodeMirror-line {
+				margin: 0;
+				white-space: pre;
+			}
+			.CodeMirror-gutters {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 29px;
+				height: 100%;
+				background: #f7f7f7;
+				z-index: 3;
+			}
+			.ace_gutter {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				width: 40px;
+				background: #eee;
+			}
+			.ace_gutter-cell {
+				padding-right: 6px;
+				text-align: right;
+			}
+			.ace_scroller {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 40px;
+				overflow: hidden;
+			}
+			.ace_text-input {
+				position: absolute;
+				width: 1px;
+				height: 1px;
+				opacity: 0;
+			}
+			.margin {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				width: 40px;
+			}
+			.lines-content {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 40px;
+				overflow: hidden;
+			}
+			.inputarea {
+				position: absolute;
+				width: 1px;
+				height: 1px;
+				opacity: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 id="title">Harbor scripts</h1>
+		<p id="before-1">
+			The harbor office keeps its timetable generator on the web now, so that the two people who understand it can fix it from a boat. Both of them say it is simpler than it looks, and neither of them has ever managed to explain it to the other.
+		</p>
+
+		<div class="box CodeMirror cm-s-default" id="cm5">
+			<div style="overflow: hidden; position: relative; width: 3px; height: 0"><textarea id="cm5-input" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0; width: 1000px; height: 1em; outline: none"></textarea></div>
+			<div class="CodeMirror-scroll" tabindex="-1">
+				<div class="CodeMirror-sizer">
+					<div style="position: relative">
+						<div class="CodeMirror-lines" role="presentation">
+							<div role="presentation" style="position: relative; outline: none">
+								<div class="CodeMirror-code" role="presentation">
+									<div style="position: relative">
+										<div class="CodeMirror-gutter-wrapper"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" id="cm5-gutter">1</div></div>
+										<pre class="CodeMirror-line" role="presentation" id="cm5-line"><span role="presentation"><span class="cm-keyword">const</span> <span class="cm-def">ferry</span> = <span class="cm-string">'north'</span>;</span></pre>
+									</div>
+									<div style="position: relative">
+										<div class="CodeMirror-gutter-wrapper"><div class="CodeMirror-linenumber CodeMirror-gutter-elt">2</div></div>
+										<pre class="CodeMirror-line" role="presentation"><span role="presentation"><span class="cm-comment">// the crossing leaves at dawn and comes back before the fish market opens for its one busy hour.</span></span></pre>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="CodeMirror-gutters"><div class="CodeMirror-gutter CodeMirror-linenumbers"></div></div>
+			</div>
+		</div>
+		<p id="between-1">
+			The first version of the generator ran on a laptop in the wheelhouse and printed its answer on a roll of receipt paper. The present one runs in a browser, which the crew agree is an improvement, though they have kept the receipt printer because the deckhands like it.
+		</p>
+
+		<div class="box ace_editor ace-tm" id="ace">
+			<textarea class="ace_text-input" id="ace-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+			<div class="ace_gutter" aria-hidden="true">
+				<div class="ace_layer ace_gutter-layer">
+					<div class="ace_gutter-cell" id="ace-gutter">1</div>
+					<div class="ace_gutter-cell">2</div>
+				</div>
+			</div>
+			<div class="ace_scroller">
+				<div class="ace_content">
+					<div class="ace_layer ace_text-layer">
+						<div class="ace_line" id="ace-line"><span class="ace_keyword">let</span> tide = <span class="ace_constant">4</span>;</div>
+						<div class="ace_line" id="ace-prose"><span class="ace_comment">// When the tide is under four feet the ramp sits too steep for the cars with long overhangs. Hold those cars for the next crossing, and tell the drivers why before they have started to argue about it with the crew.</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p id="between-2">
+			The timetable depends on the tide, the wind and the temper of the ramp, and the code says so in comments that run longer than the code. Nobody wants to tidy them, because the comments are the only place in the harbor where the reasons have been written down at all.
+		</p>
+
+		<div class="box monaco-editor" role="code" id="monaco" data-keybinding-context="1">
+			<div class="overflow-guard">
+				<div class="margin" role="presentation" aria-hidden="true">
+					<div class="margin-view-overlays" role="presentation"><div class="line-numbers" id="monaco-gutter">1</div></div>
+				</div>
+				<div class="monaco-scrollable-element" id="monaco-scroll" role="presentation">
+					<div class="lines-content" role="presentation">
+						<div class="view-lines" role="presentation">
+							<div class="view-line" id="monaco-line"><span><span class="mtk1">const&nbsp;wind&nbsp;=&nbsp;'west';</span></span></div>
+							<div class="view-line" id="monaco-prose"><span><span class="mtk1">// A west wind pushes the ferry off the ramp on the way in, so the captain lands a little late and blames the timetable. The timetable, for its part, has been blaming the captain since the very first version of this file.</span></span></div>
+						</div>
+					</div>
+				</div>
+				<textarea class="inputarea" id="monaco-input" role="textbox" aria-multiline="true" autocorrect="off" spellcheck="false" wrap="off"></textarea>
+			</div>
+		</div>
+		<script>
+			const handledByMonaco = { wheels: 0 };
+			window.handledByMonaco = handledByMonaco;
+			document.getElementById('monaco-scroll').addEventListener(
+				'wheel',
+				(event) => {
+					handledByMonaco.wheels++;
+					event.preventDefault();
+					event.stopPropagation();
+				},
+				{ passive: false },
+			);
+		</script>
+		<p id="between-3">
+			The newer code uses a different editor again, because each person who joined the work brought along the one they already knew. Nobody has proposed picking one of them, since that would mean a meeting, and the last meeting about the code is still spoken of in the office.
+		</p>
+
+		<div class="box cm-editor" id="cm6">
+			<div class="cm-scroller" style="height: 100%; overflow: auto">
+				<div class="cm-gutters" aria-hidden="true" style="position: sticky; left: 0; float: left; width: 30px"><div class="cm-gutterElement" id="cm6-gutter">1</div></div>
+				<div class="cm-content" role="textbox" aria-multiline="true" contenteditable="true" id="cm6-content" style="margin-left: 30px">
+					<div class="cm-line" id="cm6-line">let crossing = 1;</div>
+				</div>
+			</div>
+		</div>
+		<p id="between-4">
+			Each of those editors handles its own keys, its own selection and its own idea of what a line is, which is why the page around them has to stay out of their way. A reader who zooms over code wants the code bigger, and has no use for a shorter version of it.
+		</p>
+
+		<div class="box" role="textbox" tabindex="0" aria-multiline="true" id="role-textbox">A plain box with a textbox role that is not marked as editable by the browser, holding enough words to look like a paragraph, so only its role says that it belongs to whoever is typing in it right now.</div>
+		<div class="box" role="searchbox" tabindex="0" id="role-searchbox">Search the harbor log for a boat, a date or a name, with enough words here to look like a paragraph on its own.</div>
+		<div class="box" role="combobox" tabindex="0" aria-expanded="false" id="role-combobox">Choose a vessel from the list of every boat in the basin, with enough words here to look like a paragraph on its own.</div>
+		<div class="box" role="application" tabindex="0" id="role-application"><span id="role-application-text">The tide board, a small program of its own that takes its own gestures and keys, with enough words in here to look like a paragraph so that only its role sets it apart from the prose around it.</span></div>
+		<div class="box" role="code" tabindex="0" id="role-code"><span id="role-code-text">while (tide.below(4)) { hold(cars.withLongOverhangs); tell(drivers, reasons); }</span></div>
+		<p id="after-1">
+			When the harbor finally stops changing, the two people who understand the generator have promised to write down how it works. The town has noted the promise in its minutes, next to the one about the car park, and has moved on to the next item on the agenda.
+		</p>
+	</body>
+</html>

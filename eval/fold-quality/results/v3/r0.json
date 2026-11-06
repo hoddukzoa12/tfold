@@ -1,0 +1,1036 @@
+{
+	"label": "v3",
+	"repeat": 0,
+	"promptVersion": 3,
+	"model": "deepseek/deepseek-v4.1-flash-1017",
+	"commit": "3f7d8e0",
+	"provider": {
+		"require_parameters": true
+	},
+	"startedAt": "2026-11-02T14:50:26.354Z",
+	"calls": [
+		{
+			"call": 0,
+			"blocks": 6,
+			"status": 200,
+			"ms": 6705,
+			"upstream": "Ionstream",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 2566,
+			"completionTokens": 551,
+			"cost": 0.000696135
+		},
+		{
+			"call": 1,
+			"blocks": 3,
+			"status": 200,
+			"ms": 3228,
+			"upstream": "Venice",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 2373,
+			"completionTokens": 298,
+			"cost": 0.00039558
+		},
+		{
+			"call": 2,
+			"blocks": 3,
+			"status": 200,
+			"ms": 1442,
+			"upstream": "Cohere",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1734,
+			"completionTokens": 259,
+			"cost": 0.000194574
+		},
+		{
+			"call": 3,
+			"blocks": 5,
+			"status": 200,
+			"ms": 2371,
+			"upstream": "Crusoe",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1864,
+			"completionTokens": 510,
+			"cost": 0.00079032
+		},
+		{
+			"call": 4,
+			"blocks": 4,
+			"status": 200,
+			"ms": 1833,
+			"upstream": "Relace",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 2361,
+			"completionTokens": 400,
+			"cost": 0.000221195
+		},
+		{
+			"call": 5,
+			"blocks": 2,
+			"status": 200,
+			"ms": 1755,
+			"upstream": "Relace",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1374,
+			"completionTokens": 201,
+			"cost": 0.00011787
+		},
+		{
+			"call": 6,
+			"blocks": 4,
+			"status": 200,
+			"ms": 1700,
+			"upstream": "Cohere",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 2072,
+			"completionTokens": 379,
+			"cost": 0.000315492
+		},
+		{
+			"call": 7,
+			"blocks": 1,
+			"status": 200,
+			"ms": 5598,
+			"upstream": "Wafer",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1343,
+			"completionTokens": 116,
+			"cost": 0.000087914
+		},
+		{
+			"call": 8,
+			"blocks": 4,
+			"status": 200,
+			"ms": 1941,
+			"upstream": "Cohere",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1847,
+			"completionTokens": 361,
+			"cost": 0.000259737
+		},
+		{
+			"call": 9,
+			"blocks": 3,
+			"status": 200,
+			"ms": 1347,
+			"upstream": "Wafer",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1779,
+			"completionTokens": 301,
+			"cost": 0.000260036
+		},
+		{
+			"call": 10,
+			"blocks": 3,
+			"status": 200,
+			"ms": 11059,
+			"upstream": "Morph",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1745,
+			"completionTokens": 286,
+			"cost": 0.000142162
+		},
+		{
+			"call": 11,
+			"blocks": 5,
+			"status": 200,
+			"ms": 1478,
+			"upstream": "Together",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1721,
+			"completionTokens": 324,
+			"cost": 0.000415884
+		},
+		{
+			"call": 12,
+			"blocks": 5,
+			"status": 200,
+			"ms": 1172,
+			"upstream": "Together",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1796,
+			"completionTokens": 341,
+			"cost": 0.000421152
+		},
+		{
+			"call": 13,
+			"blocks": 3,
+			"status": 200,
+			"ms": 994,
+			"upstream": "Together",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1428,
+			"completionTokens": 211,
+			"cost": 0.000267648
+		},
+		{
+			"call": 14,
+			"blocks": 3,
+			"status": 200,
+			"ms": 1053,
+			"upstream": "Together",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1480,
+			"completionTokens": 197,
+			"cost": 0.000266448
+		},
+		{
+			"call": 15,
+			"blocks": 3,
+			"status": 200,
+			"ms": 1955,
+			"upstream": "Together",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1528,
+			"completionTokens": 197,
+			"cost": 0.000280848
+		},
+		{
+			"call": 16,
+			"blocks": 4,
+			"status": 200,
+			"ms": 1239,
+			"upstream": "Together",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1576,
+			"completionTokens": 232,
+			"cost": 0.000299616
+		},
+		{
+			"call": 17,
+			"blocks": 2,
+			"status": 200,
+			"ms": 723,
+			"upstream": "Together",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1380,
+			"completionTokens": 154,
+			"cost": 0.00022248
+		},
+		{
+			"call": 18,
+			"blocks": 2,
+			"status": 200,
+			"ms": 1181,
+			"upstream": "Relace",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1213,
+			"completionTokens": 102,
+			"cost": 0.000070415
+		},
+		{
+			"call": 19,
+			"blocks": 5,
+			"status": 200,
+			"ms": 2045,
+			"upstream": "DigitalOcean",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1473,
+			"completionTokens": 343,
+			"cost": 0.000267108
+		},
+		{
+			"call": 20,
+			"blocks": 8,
+			"status": 200,
+			"ms": 2874,
+			"upstream": "InferenceNet",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1603,
+			"completionTokens": 419,
+			"cost": 0.00035869
+		},
+		{
+			"call": 21,
+			"blocks": 6,
+			"status": 200,
+			"ms": 2580,
+			"upstream": "InferenceNet",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1472,
+			"completionTokens": 369,
+			"cost": 0.00032071
+		},
+		{
+			"call": 22,
+			"blocks": 1,
+			"status": 200,
+			"ms": 639,
+			"upstream": "Wafer",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1056,
+			"completionTokens": 88,
+			"cost": 0.00021296
+		}
+	],
+	"items": [
+		{
+			"item": "ko-definition",
+			"call": 0,
+			"fold": {
+				"sentences": [
+					"블랙홀(영어: black hole)은 중성자별이 되지 못한 항성이 진화의 최종 단계에서 폭발 후 수축되어 생성된 것으로 추측되는, 강력한 밀도와 중력으로 전자기 복사, 빛을 포함한 그 무엇도 빠져나올 수 없는 시공간 영역이다.",
+					"일반 상대성이론은 충분히 밀집된 질량이 시공을 뒤틀어 블랙홀을 형성할 수 있음을 예측한다.",
+					"블랙홀로부터의 탈출이 불가능해지는 경계를 사건의 지평선(event horizon)이라고 한다.",
+					"어떤 물체가 사건의 지평선을 넘어갈 경우, 그 물체에게는 파멸적 영향이 가해지겠지만, 바깥 관찰자에게는 속도가 점점 느려져 그 경계에 영원히 닿지 않는 것처럼 보인다.",
+					"블랙홀은 빛을 반사하지 않기에 이상적 흑체처럼 행동한다.",
+					"또한 휘어진 시공간의 양자장론에 따르면 사건의 지평선은 블랙홀의 질량에 반비례하는 온도를 가진 흑체 같은 스펙트럼의 열복사를 방출하며, 이를 호킹 복사라고 한다.",
+					"항성질량 블랙홀의 경우 이 온도가 수 십억 분의 1 켈빈 수준이기에 그 열 복사를 관측하는 것은 본질적으로 불가능하다."
+				],
+				"brief": [
+					0,
+					2
+				],
+				"key": "블랙홀은 빛조차 탈출할 수 없는 시공간 영역이다. 일반 상대성이론은 충분히 밀집된 질량이 시공을 뒤틀어 블랙홀을 형성할 수 있음을 예측한다.",
+				"takeaway": "블랙홀은 빛조차 탈출할 수 없는 시공간 영역이다."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "ko-history",
+			"call": 0,
+			"fold": {
+				"sentences": [
+					"중력장이 너무 강해서 빛이 탈출할 수 없는 천체의 개념은 18세기에 존 미첼과 피에르시몽 드 라플라스 후작이 처음 생각해냈으며, 블랙홀로 특징지어지는 일반상대론의 최초의 근대적 해는 1916년 카를 슈바르츠실트가 발견했다.",
+					"다만 아무것도 탈출할 수 없는 공간상의 영역이라는 해석은 1958년 데이비드 핀켈스타인의 논문에서 처음 등장했다.",
+					"블랙홀은 오랫동안 수학적 관심의 대상이 되었다.",
+					"1960년대에는 블랙홀이 일반상대론에서 유도됨을 증명하는 이론적 연구들이 행해졌다.",
+					"중성자별의 발견은 중력붕괴한 밀집성이 천체물리학적 실체로서 존재할 가능성에 대한 관심을 촉발시켰다."
+				],
+				"brief": [
+					0,
+					1
+				],
+				"key": "빛이 탈출할 수 없는 천체의 개념은 18세기에 등장했고 슈바르츠실트가 첫 근대적 해를 찾았다. 그 해석은 1958년 핀켈스타인의 논문에서 처음 등장했고 1960년대에는 이론적 연구들이 행해졌다.",
+				"takeaway": "빛이 탈출할 수 없는 천체의 개념은 18세기에 등장했고 슈바르츠실트가 첫 근대적 해를 찾았다."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "ko-formation",
+			"call": 0,
+			"fold": {
+				"sentences": [
+					"항성질량 블랙홀은 매우 질량이 큰 항성들이 수명이 다했을 때 붕괴하여 만들어지는 것으로 생각된다.",
+					"블랙홀은 형성된 뒤에도 주위의 질량을 흡수하여 성장할 수 있다.",
+					"다른 항성을 흡수하거나 블랙홀들끼리 융합하면서 수백만 M☉에 달하는 초대질량 블랙홀이 형성될 수 있으며, 대부분의 은하의 중심에는 초대질량 블랙홀이 존재한다는 것이 과학계의 일반적인 견해이다."
+				],
+				"brief": [
+					0,
+					2
+				],
+				"key": "블랙홀은 큰 항성의 붕괴로 생기고 주위 질량을 흡수해 성장할 수 있다. 다른 항성을 흡수하거나 블랙홀들끼리 융합해 초대질량 블랙홀이 형성될 수 있다.",
+				"takeaway": "블랙홀은 큰 항성의 붕괴로 생기고 주위 질량을 흡수해 성장할 수 있다."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "ko-interaction",
+			"call": 0,
+			"fold": {
+				"sentences": [
+					"블랙홀의 안을 들여다볼 수는 없지만, 블랙홀이 다른 물질과 상호작용하는 것을 통해 그 성질을 알아낼 수 있다.",
+					"블랙홀 위로 낙하한 물질은 강착원반을 형성하고, 원반은 마찰열로 인해 뜨거워져 열복사로 빛난다.",
+					"우주에서 가장 밝은 천체인 퀘이사는 이러한 과정을 통해 만들어진다.",
+					"블랙홀 주위를 공전하는 다른 항성이 있을 경우, 그 궤도를 통해 블랙홀의 질량과 위치를 비정할 수 있다.",
+					"이러한 관측을 통해 중성자별을 비롯한 다른 유사 천체들을 제외함으로써 천문학자들은 블랙홀 후보들이 포함된 쌍성계를 셀 수 없이 많이 발견해냈고, 우리은하 중심 방향에 존재하는 전파원 궁수자리 A*가 430만 M☉의 초대질량 블랙홀임을 밝혔다."
+				],
+				"brief": [
+					0,
+					4
+				],
+				"key": "블랙홀의 성질은 다른 물질과의 상호작용을 통해 알아낼 수 있다. 강착원반의 열복사와 주위 항성의 궤도 관측으로 질량과 위치를 비정한다.",
+				"takeaway": "블랙홀의 성질은 다른 물질과의 상호작용을 통해 알아낼 수 있다."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "ko-ligo",
+			"call": 0,
+			"fold": {
+				"sentences": [
+					"2016년 2월 11일, LIGO 합동 연구진은 두 개의 블랙홀이 서로 융합하면서 발생한 중력파를 감지함으로써 역사상 최초의 중력파 관측에 성공했다고 발표했다.",
+					"이는 최초의 중력파 관측이며 동시에 최초로 블랙홀 쌍성계 융합이 관측된 사례이기도 하다."
+				],
+				"brief": [
+					0
+				],
+				"key": "2016년 LIGO는 블랙홀 융합에서 나온 중력파를 사상 최초로 관측했다. 이는 최초의 중력파 관측이자 최초의 블랙홀 쌍성계 융합 관측 사례였다.",
+				"takeaway": "2016년 LIGO는 블랙홀 융합에서 나온 중력파를 사상 최초로 관측했다."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "ko-chandrasekhar",
+			"call": 1,
+			"fold": {
+				"sentences": [
+					"1931년, 수브라마니안 찬드라세카르는 특수상대론을 이용하여 전자축퇴물질로 이루어진 회전하지 않는 천체는 특정 임계 질량(찬드라세카르 한계.",
+					"1.4 M☉)을 넘어서면 안정적인 해가 존재할 수 없음을 보였다.",
+					"그러나 에딩턴, 란다우를 비롯한 당대의 학자들은 아직 밝혀지지 않은 과정이 붕괴를 막을 수 있다는 이유로 찬드라세카르의 주장을 반대했다.",
+					"이들 기성 학자들의 주장은 부분적으로는 옳았다.",
+					"찬드라세카르 한계를 넘어서는 백색왜성(전자축퇴압으로 형태를 유지)은 붕괴를 일으켜 중성자별(중성자축퇴압으로 형태를 유지)이 되며, 파울리 배타 원리에 의해 안정해진다.",
+					"그러나 1939년, 로버트 오펜하이머 등은 질량 3 M☉(톨먼–오펜하이머–볼코프 한계)를 넘어서는 중성자별은 찬드라세카르 한계와 같은 이유로 붕괴하게 됨을 보였으며, 어떤 물리 법칙으로도 일부 별이 블랙홀의 지경까지 붕괴하는 것을 막을 수는 없을 것이라 결론 내린다."
+				],
+				"brief": [
+					0,
+					5
+				],
+				"key": "찬드라세카르 한계와 톨먼, 오펜하이머, 볼코프 한계는 별이 블랙홀까지 붕괴할 수 있음을 보였다. 중성자별도 한계를 넘으면 붕괴하며 이를 막을 물리 법칙이 없다고 결론 내렸다.",
+				"takeaway": "찬드라세카르 한계와 톨먼, 오펜하이머, 볼코프 한계는 별이 블랙홀까지 붕괴할 수 있음을 보였다."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "ko-no-hair",
+			"call": 2,
+			"fold": {
+				"sentences": [
+					"털없음 정리에 따르면, 블랙홀은 형성된 이후 안정된 상태에 도달하면 오로지 세 개의 독립적인 물리량, 즉 질량·전하·각운동량 만을 갖게 된다.",
+					"이 물리량 또는 변수들이 동일한 두 개의 블랙홀은 고전역학(i.e. 비양자역학)을 통해 구분하는 것이 불가능하다."
+				],
+				"brief": [
+					0
+				],
+				"key": "털없음 정리에 따르면 블랙홀은 질량·전하·각운동량 세 물리량만 갖는다. 이 세 변수가 같은 두 블랙홀은 고전역학으로 구분할 수 없다.",
+				"takeaway": "털없음 정리에 따르면 블랙홀은 질량·전하·각운동량 세 물리량만 갖는다."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "ko-event-horizon",
+			"call": 3,
+			"fold": {
+				"sentences": [
+					"블랙홀의 가장 결정적인 특징은 사건의 지평선의 존재이다.",
+					"사건의 지평선은 물질과 빛이 블랙홀의 질량을 향해 안으로 들어갈 수만 있고 밖으로 나올 수는 없는 시공간상의 경계이다.",
+					"그 무엇도, 심지어 빛마저, 사건의 지평선 안쪽에서 바깥쪽으로 탈출할 수 없다.",
+					"사건의 지평선이라는 이름은 그 경계에서 ‘사건(event)’이 벌어지며 그 사건에 대한 정보는 외부의 관찰자에게 도달할 수 없어 그 사건이 벌어졌는지 여부조차 알 수 없다는 의미를 갖고 있다."
+				],
+				"brief": [
+					1,
+					3
+				],
+				"key": "블랙홀의 결정적 특징은 사건의 지평선이며, 그 안쪽에서 바깥으로는 무엇도 탈출할 수 없다. 지평선을 넘은 사건의 정보는 외부 관찰자에게 도달하지 않아 사건 발생 여부조차 알 수 없다.",
+				"takeaway": "블랙홀의 결정적 특징은 사건의 지평선이며, 그 안쪽에서 바깥으로는 무엇도 탈출할 수 없다."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "ko-tov-limit",
+			"call": 4,
+			"fold": {
+				"sentences": [
+					"붕괴 이전의 별이 원래 무지막지하게 컸거나 또는 붕괴된 뒤 잔해 위로 추가적인 질량이 강착되어, 잔해의 질량이 3 ~ 4 M☉(즉 톨먼–오펜하이머–볼코프 한계)를 초과하게 되면, 중성자 축퇴압으로도 붕괴를 막을 수 없게 된다.",
+					"톨먼–오펜하이머–볼코프 한계를 넘어선 밀집성이 블랙홀로 붕괴하는 것을 멈출 수 있는 방법은 아직까지 밝혀진 바 없다(다만 쿼크의 축퇴압이 그 가능성이 있다.",
+					"쿼크별 참조)."
+				],
+				"brief": [
+					0
+				],
+				"key": "잔해 질량이 톨먼, 오펜하이머, 볼코프 한계를 넘으면 중성자 축퇴압으로도 붕괴를 막지 못한다. 한계를 넘어선 밀집성이 블랙홀로 붕괴하는 것을 멈출 방법은 아직 밝혀지지 않았다.",
+				"takeaway": "잔해 질량이 톨먼, 오펜하이머, 볼코프 한계를 넘으면 중성자 축퇴압으로도 붕괴를 막지 못한다."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "ko-growth-accretion",
+			"call": 5,
+			"fold": {
+				"sentences": [
+					"블랙홀은 일단 형성된 뒤에도 이후 질량을 추가적으로 흡수하여 성장할 수 있다.",
+					"모든 블랙홀은 주위의 기체, 성간진, 그리고 우주 전체에 편재하는 우주배경복사를 지속적으로 흡수한다.",
+					"초대질량 블랙홀이 성장하는 주된 과정이 이러할 것으로 생각된다.",
+					"구상성단에서 발견되는 중간질량 블랙홀의 형성에 대해서도 유사한 과정이 추측된다."
+				],
+				"brief": [
+					1,
+					2
+				],
+				"key": "블랙홀은 형성된 뒤에도 질량을 흡수하여 성장할 수 있다. 주위의 기체, 성간진, 우주배경복사를 지속적으로 흡수하며, 초대질량 블랙홀 성장의 주된 과정으로 생각된다.",
+				"takeaway": "블랙홀은 형성된 뒤에도 질량을 흡수하여 성장할 수 있다."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "ko-growth-merger",
+			"call": 5,
+			"fold": {
+				"sentences": [
+					"블랙홀 성장의 또다른 가능성으로는, 블랙홀이 항성 또는 다른 블랙홀과 융합할 경우가 있다.",
+					"블랙홀이 성장하기 위해 굳이 다른 천체와 융합할 필요는 없지만, 이 요소는 매우 중요하며, 여러 작은 천체들을 집어삼키면서 성장했을 것으로 생각되는 초대질량 블랙홀의 초기 성장 과정에서 특히 그러하다.",
+					"중간질량 블랙홀 역시 같은 과정에 의한 성장 가능성이 제기되어 있다."
+				],
+				"brief": [
+					0,
+					1
+				],
+				"key": "블랙홀은 다른 항성이나 블랙홀과의 융합으로도 성장할 수 있다. 작은 천체들을 집어삼키며 성장한 초대질량 블랙홀의 초기 과정에서 특히 중요하며, 중간질량 블랙홀에도 같은 가능성이 제기된다.",
+				"takeaway": "블랙홀은 다른 항성이나 블랙홀과의 융합으로도 성장할 수 있다."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "ko-evaporation",
+			"call": 6,
+			"fold": {
+				"sentences": [
+					"질량 1 M☉의 항성질량 블랙홀의 호킹 온도는 약 100 나노켈빈으로, 우주배경복사 2.7 켈빈보다도 훨씬 낮다.",
+					"항성질량 블랙홀 이상 체급의 블랙홀은 호킹 복사로 내보내는 질량보다 많은 질량을 우주배경복사에 의해 받아들이기 때문에 질량이 줄어들지 않고 오히려 늘어날 것이다.",
+					"호킹 온도가 2.7 켈빈 이상이 되려면(그리하여 증발이 일어나려면), 블랙홀의 질량은 우리 달보다 적어야 한다.",
+					"그런 블랙홀의 직경은 0.1 밀리미터 이하일 것이다."
+				],
+				"brief": [
+					1,
+					2
+				],
+				"key": "항성질량 블랙홀은 호킹 온도가 낮아 증발하지 않고 오히려 질량이 는다. 증발이 일어나려면 호킹 온도가 2.7 켈빈 이상이어야 하므로 질량이 달보다 작아야 한다.",
+				"takeaway": "항성질량 블랙홀은 호킹 온도가 낮아 증발하지 않고 오히려 질량이 는다."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "ko-indirect",
+			"call": 7,
+			"fold": {
+				"sentences": [
+					"블랙홀은 그 성질 상 이론 상의 호킹 복사를 제외하면 직접적인 전자기 복사를 방출하지 않으며, 때문에 블랙홀을 찾는 천체물리학자들은 간접적 관측수단에 의존해야 한다.",
+					"예컨대 블랙홀 주위의 중력적 상호작용을 통해 블랙홀의 존재를 알아내는 것이 그러한 간접적 관측수단 중 하나이다.",
+					"그러나 MIT 헤이스택 천문대의 사건의 지평선 망원경(EHT)는 우리은하 중심의 궁수자리 A* 블랙홀에 대한 직접 관측을 시도 중이며, 2016년 초에는 최초로 사건의 지평선을 포착한 사진을 얻을 수 있을 것으로 예상하고 있다.",
+					"궁수자리 A*의 사건의 지평선 바로 바깥에 자기장이 존재할 것이라는 이론적 예상은 2015년 EHT에 의해 사실로 밝혀졌다."
+				],
+				"brief": [
+					0
+				],
+				"key": "블랙홀은 직접 복사를 방출하지 않아 천체물리학자들은 간접적 관측수단에 의존해야 한다. 블랙홀은 호킹 복사를 제외하면 직접 전자기 복사를 방출하지 않으며, 사건의 지평선 망원경이 궁수자리 A* 직접 관측을 시도 중이다.",
+				"takeaway": "블랙홀은 직접 복사를 방출하지 않아 천체물리학자들은 간접적 관측수단에 의존해야 한다."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "ko-disk-image",
+			"call": 8,
+			"fold": {
+				"sentences": [
+					"질량이 큰 천체로 인해 생성된 중력 우물로 낙하하는 기체는 각운동량 보존에 의해, 그 천체 주위로 원반 모양의 구조를 형성하게 된다.",
+					"보통 천체예술가들의 상상도에 그려지는 강착원반을 가진 블랙홀은 왼쪽 상상도처럼 마치 원반이 평면적 존재이고 블랙홀 뒤의 원반은 블랙홀에 의해 가려지는 것처럼 묘사되곤 한다.",
+					"그러나 보다 정확한 수학적 모형은 블랙홀 뒤쪽의 원반에서 나오는 빛의 경로가 왜곡됨으로써 어느 쪽에서 보아도 원반의 전체 모양이 보일 것이고, 또 원반 아래쪽의 2차 상이 부분적으로 보일 것이라고 예측하고 있다."
+				],
+				"brief": [
+					0,
+					2
+				],
+				"key": "중력 우물로 낙하하는 기체는 각운동량 보존에 의해 원반 구조를 형성한다. 상상도와 달리 정확한 모형은 원반 전체 모양과 2차 상이 보인다고 예측한다.",
+				"takeaway": "중력 우물로 낙하하는 기체는 각운동량 보존에 의해 원반 구조를 형성한다."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "ko-xray-binary-mass",
+			"call": 9,
+			"fold": {
+				"sentences": [
+					"만약 엑스선 쌍성계가 밀집성에서 직접 나오는 신호를 방출한다면, 그 밀집성은 블랙홀이 아니다.",
+					"그러나 직접 신호가 없다고 해서 밀집성이 블랙홀이 아닌 중성자별일 가능성을 배제할 수 있는 것은 아니다.",
+					"동반성을 연구함으로써 쌍성계의 공전궤도의 특징을 알아낼 수 있으며, 이를 통해 밀집성의 질량을 알아낸다.",
+					"만일 이 질량이 툴먼–오펜하이머–볼코프 한계, 즉 중성자별이 붕괴하지 않고 유지될 수 있는 최대 질량을 초과한다면 그 밀집성의 정체는 블랙홀로 여겨진다."
+				],
+				"brief": [
+					0,
+					3
+				],
+				"key": "밀집성의 질량이 중성자별 최대 질량을 넘으면 블랙홀로 여겨진다. 동반성 연구로 공전궤도와 밀집성 질량을 구하고, 질량이 툴먼, 오펜하이머, 볼코프 한계를 넘으면 블랙홀로 여긴다.",
+				"takeaway": "밀집성의 질량이 중성자별 최대 질량을 넘으면 블랙홀로 여겨진다."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "ko-agn",
+			"call": 10,
+			"fold": {
+				"sentences": [
+					"대부분의 AGN은 초대질량 블랙홀을 품고 있을 것으로 생각되지만, 그 중 면밀하게 연구되어 중심의 초대질량 블랙홀 후보 천체의 질량을 측정해본 은하는 적은 편이다.",
+					"초대질량 블랙홀 후보를 품고 있는 유명한 은하들로는 안드로메다 은하, 메시에 87, NGC 3115, NGC 3377, NGC 4258, NGC 4889, NGC 1277, OJ 287, APM 08279+5255, 솜브레로 은하 등이 있다."
+				],
+				"brief": [
+					0
+				],
+				"key": "대부분 AGN은 초대질량 블랙홀을 품었을 것으로 생각되나 질량이 측정된 은하는 적다. 안드로메다 은하, 메시에 87, 솜브레로 은하 등이 후보를 품은 유명한 은하로 꼽힌다.",
+				"takeaway": "대부분 AGN은 초대질량 블랙홀을 품었을 것으로 생각되나 질량이 측정된 은하는 적다."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "en-definition",
+			"call": 11,
+			"fold": {
+				"sentences": [
+					"A black hole is an astronomical body so compact that its gravity prevents anything, including light, from escaping.",
+					"Albert Einstein's theory of general relativity, which describes gravitation as the curvature of spacetime, predicts that any sufficiently compact mass will form a black hole.",
+					"The boundary of no escape is called the event horizon.",
+					"In general relativity, crossing a black hole's event horizon traps an object inside but produces no locally detectable change.",
+					"General relativity also predicts that every black hole should have a central singularity, where the curvature of spacetime is infinite."
+				],
+				"brief": [
+					0,
+					2
+				],
+				"key": "A black hole is a body whose gravity prevents even light from escaping. General relativity predicts compact mass forms one, bounded by an event horizon and holding a central singularity.",
+				"takeaway": "A black hole is a body whose gravity prevents even light from escaping."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "en-formation",
+			"call": 11,
+			"fold": {
+				"sentences": [
+					"Black holes typically form as part of a supernova event when massive stars collapse at the end of their life cycle.",
+					"After a black hole has formed, it can grow by absorbing mass from its surroundings.",
+					"Supermassive black holes of millions of solar masses may form by absorbing stars and merging with other black holes, or via direct collapse of gas clouds.",
+					"There is consensus that supermassive black holes exist in the centres of most galaxies."
+				],
+				"brief": [
+					0,
+					2
+				],
+				"key": "Black holes form in supernovas and can grow by absorbing mass. Supermassive black holes may grow by absorbing stars and merging, or by direct gas cloud collapse.",
+				"takeaway": "Black holes form in supernovas and can grow by absorbing mass."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "en-interaction",
+			"call": 11,
+			"fold": {
+				"sentences": [
+					"The presence of a black hole can be inferred through its interaction with matter and electromagnetic radiation such as visible light.",
+					"Matter falling toward a black hole can form an accretion disk of infalling plasma, heated by friction and emitting light.",
+					"In extreme cases, this creates a quasar, some of the brightest objects in the universe.",
+					"Merging black holes can be detected by the gravitational waves they emit.",
+					"If stars are orbiting a black hole, their motions can be used to determine the black hole's mass and location.",
+					"In this way, astronomers have identified numerous stellar black hole candidates in binary systems and established that the radio source known as Sagittarius A*, at the core of the Milky Way galaxy, contains a supermassive black hole of about 4.3 million solar masses."
+				],
+				"brief": [
+					1,
+					3
+				],
+				"key": "Black holes are inferred through their interaction with matter and radiation. Accretion disks, quasars, gravitational waves and orbiting stars reveal them, including Sagittarius A*.",
+				"takeaway": "Black holes are inferred through their interaction with matter and radiation."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "en-supermassive-acceptance",
+			"call": 12,
+			"fold": {
+				"sentences": [
+					"While Cygnus X-1, a stellar-mass black hole, was generally accepted by the scientific community as a black hole by the end of 1973, it would be decades before a supermassive black hole would gain the same broad recognition.",
+					"The idea that such objects might exist began with models suggesting that powerful quasars or active galactic nuclei in the centre of galaxies were powered by accreting supermassive black holes.",
+					"When the Hubble Space Telescope launched in the 1990s, optical studies of the centre of galaxy Messier 87 showed it must have a large concentration of mass.",
+					"The two candidates for this mass were a black hole and a dense cluster of stars.",
+					"In 1995, interferometric microwave spectra from the Very Long Baseline Array observed H 2O masers as they orbited the centre of NGC 4258, a galaxy with a similar central mass.",
+					"The orbital parameters ruled out dense stellar clusters as an explanation for galactic nuclei, making supermassive black holes the only plausible explanation."
+				],
+				"brief": [
+					0,
+					4
+				],
+				"key": "Supermasse black holes took decades to gain the broad recognition stellar-mass black holes had. Models of quasars and active galactic nuclei suggested accreting supermassive black holes, and orbital data later ruled out stellar clusters.",
+				"takeaway": "Supermasse black holes took decades to gain the broad recognition stellar-mass black holes had."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "en-jets",
+			"call": 13,
+			"fold": {
+				"sentences": [
+					"Black holes of any mass can have jets.",
+					"However, they are typically observed around spinning black holes with strongly-magnetized accretion disks.",
+					"Relativistic jets were more common in the early universe, when galaxies and their corresponding supermassive black holes were rapidly gaining mass.",
+					"All black holes with jets also have an accretion disk, but the jets are usually brighter than the disk.",
+					"Quasars, typically found in other galaxies, are believed to be supermassive black holes with jets; microquasars are believed to be stellar-mass objects with jets, typically observed in the Milky Way."
+				],
+				"brief": [
+					1,
+					4
+				],
+				"key": "Jets occur across black hole masses but are typical of spinning, magnetized-accretion-disk systems. They were more common in the early universe, outshine disks, and define quasars and microquasars.",
+				"takeaway": "Jets occur across black hole masses but are typical of spinning, magnetized-accretion-disk systems."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "en-event-horizon",
+			"call": 14,
+			"fold": {
+				"sentences": [
+					"The defining feature of a black hole is the existence of an event horizon, a boundary in spacetime through which matter and light can pass only inward towards the centre of the black hole.",
+					"Nothing, not even light, can escape from inside the event horizon.",
+					"The event horizon is referred to as such because if an event occurs within the boundary, information from that event cannot reach or affect an outside observer, making it impossible to determine whether such an event occurred.: 179 For non-rotating black holes, the geometry of the event horizon is precisely spherical, while for rotating black holes, the event horizon is oblate."
+				],
+				"brief": [
+					0,
+					2
+				],
+				"key": "A black hole's defining feature is an event horizon that lets matter and light pass only inward. Events inside the boundary cannot reach outside observers, and the horizon is spherical for non-rotating holes and oblate for rotating ones.",
+				"takeaway": "A black hole's defining feature is an event horizon that lets matter and light pass only inward."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "en-supernova-minimum",
+			"call": 15,
+			"fold": {
+				"sentences": [
+					"The mass of a black hole formed via a supernova has a lower bound: if the progenitor star is too small, the collapse may be stopped by the degeneracy pressure of the star's constituents, allowing the condensation of matter into an exotic denser state.",
+					"Degeneracy pressure occurs from the Pauli exclusion principle: particles will resist being in the same place as each other.",
+					"Progenitor stars with masses less than about 8 M☉ will become white dwarfs, where the degeneracy pressure of electrons balances gravity.",
+					"For more massive progenitor stars, the force of gravity overcomes electron degeneracy pressure and the star compresses until neutron degeneracy pressure resists gravity, forming a neutron star.",
+					"If the star is even more massive, neutron degeneracy pressure will not be able to resist the force of gravity and the star will collapse into a black hole.: 5.8"
+				],
+				"brief": [
+					3,
+					4
+				],
+				"key": "Degeneracy pressure sets a lower mass bound for black holes formed by supernova. Electron and neutron degeneracy pressure halt collapse for lower-mass progenitors, forming white dwarfs or neutron stars.",
+				"takeaway": "Degeneracy pressure sets a lower mass bound for black holes formed by supernova."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "en-accretion-energy",
+			"call": 16,
+			"fold": {
+				"sentences": [
+					"Many of the universe's most energetic phenomena have been attributed to the accretion of matter on black holes.",
+					"Active galactic nuclei and quasars are powered by accretion onto supermassive black holes.",
+					"X-ray binaries are generally accepted to be binary systems in which one of the two objects is a compact object accreting matter from its companion.",
+					"Ultraluminous X-ray sources may be the accretion disks of intermediate-mass black holes."
+				],
+				"brief": [
+					0,
+					1
+				],
+				"key": "Accretion onto black holes is attributed to many of the universe's most energetic phenomena. Active galactic nuclei, quasars, X-ray binaries and ultraluminous X-ray sources are tied to accreting black holes.",
+				"takeaway": "Accretion onto black holes is attributed to many of the universe's most energetic phenomena."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "en-sgr-a",
+			"call": 17,
+			"fold": {
+				"sentences": [
+					"The proper motions of stars near the centre of the Milky Way provide strong observational evidence that these stars are orbiting a supermassive black hole.",
+					"Astronomers have tracked the motions of over 100 stars orbiting an invisible object coincident with the radio source Sagittarius A*.",
+					"One of the stars—called S2—completed a full orbit.",
+					"By fitting the motions of stars to Keplerian orbits, the astronomers were able to infer that the invisible object assumed to be Sagittarius A* must have a mass of 4.3×106 M☉, with a radius of less than 0.002 light-years.",
+					"This upper limit radius is larger than the Schwarzschild radius for the estimated mass, so the combination does not prove Sagittarius A* is a black hole.",
+					"Nevertheless, these observations strongly suggest that the central object is a supermassive black hole as there are no other plausible scenarios for confining so much invisible mass into such a small volume.",
+					"Additionally, luminosity data from this object implies it must possess an event horizon, a defining feature of black holes.",
+					"By tracking the motion of the centre it has been shown that the central object is motionless at the centre of the galaxy."
+				],
+				"brief": [
+					3,
+					5
+				],
+				"key": "Stars orbiting near the Milky Way's centre provide strong evidence of a supermassive black hole. Tracking over 100 stars and fitting Keplerian orbits shows a compact invisible mass, and luminosity data imply an event horizon.",
+				"takeaway": "Stars orbiting near the Milky Way's centre provide strong evidence of a supermassive black hole."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "ax-abstract",
+			"call": 18,
+			"fold": {
+				"sentences": [
+					"We introduce Mixtral 8x7B, a Sparse Mixture of Experts (SMoE) language model.",
+					"Mixtral has the same architecture as Mistral 7B, with the difference that each layer is composed of 8 feedforward blocks (i.e. experts).",
+					"For every token, at each layer, a router network selects two experts to process the current state and combine their outputs.",
+					"Even though each token only sees two experts, the selected experts can be different at each timestep.",
+					"As a result, each token has access to 47B parameters, but only uses 13B active parameters during inference.",
+					"Mixtral was trained with a context size of 32k tokens and it outperforms or matches Llama 2 70B and GPT-3.5 across all evaluated benchmarks.",
+					"In particular, Mixtral vastly outperforms Llama 2 70B on mathematics, code generation, and multilingual benchmarks.",
+					"We also provide a model fine-tuned to follow instructions, Mixtral 8x7B – Instruct, that surpasses GPT-3.5 Turbo, Claude-2.1, Gemini Pro, and Llama 2 70B – chat model on human benchmarks.",
+					"Both the base and instruct models are released under the Apache 2.0 license."
+				],
+				"brief": [
+					1,
+					4
+				],
+				"key": "Mixtral 8x7B is a sparse mixture-of-experts language model with 8 experts per layer. A router sends each token to two experts, giving 47B total but 13B active parameters at inference.",
+				"takeaway": "Mixtral 8x7B is a sparse mixture-of-experts language model with 8 experts per layer."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "ax-architecture",
+			"call": 19,
+			"fold": {
+				"sentences": [
+					"Mixtral is a sparse mixture-of-experts network.",
+					"It is a decoder-only model where the feedforward block picks from a set of 8 distinct groups of parameters.",
+					"At every layer, for every token, a router network chooses two of these groups (the “experts”) to process the token and combine their output additively.",
+					"This technique increases the number of parameters of a model while controlling cost and latency, as the model only uses a fraction of the total set of parameters per token."
+				],
+				"brief": [
+					2,
+					3
+				],
+				"key": "Mixtral is a decoder-only sparse mixture-of-experts network with a router choosing experts. A router picks two of 8 expert groups per token per layer, so cost stays controlled.",
+				"takeaway": "Mixtral is a decoder-only sparse mixture-of-experts network with a router choosing experts."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "ax-pretraining",
+			"call": 19,
+			"fold": {
+				"sentences": [
+					"Mixtral is pretrained with multilingual data using a context size of 32k tokens.",
+					"It either matches or exceeds the performance of Llama 2 70B and GPT-3.5, over several benchmarks.",
+					"In particular, Mixtral demonstrates superior capabilities in mathematics, code generation, and tasks that require multilingual understanding, significantly outperforming Llama 2 70B in these domains.",
+					"Experiments show that Mixtral is able to successfully retrieve information from its context window of 32k tokens, regardless of the sequence length and the location of the information in the sequence."
+				],
+				"brief": [
+					1,
+					2
+				],
+				"key": "Pretrained with multilingual data at 32k context, Mixtral matches or beats Llama 2 70B and GPT-3.5. It shows superior mathematics, code generation and multilingual understanding, and retrieves from 32k tokens.",
+				"takeaway": "Pretrained with multilingual data at 32k context, Mixtral matches or beats Llama 2 70B and GPT-3.5."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "ax-efficiency",
+			"call": 20,
+			"fold": {
+				"sentences": [
+					"Size and Efficiency.",
+					"We compare our performance to the Llama 2 family, aiming to understand Mixtral models’ efficiency in the cost-performance spectrum (see Figure 3).",
+					"As a sparse Mixture-of-Experts model, Mixtral only uses 13B active parameters for each token.",
+					"With 5x lower active parameters, Mixtral is able to outperform Llama 2 70B across most categories."
+				],
+				"brief": [
+					2,
+					3
+				],
+				"key": "Mixtral uses 13B active parameters per token yet outperforms Llama 2 70B across most categories. As a sparse Mixture-of-Experts model, its active parameter count is 5x lower.",
+				"takeaway": "Mixtral uses 13B active parameters per token yet outperforms Llama 2 70B across most categories."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "ax-llama-gpt",
+			"call": 20,
+			"fold": {
+				"sentences": [
+					"Comparison with Llama 2 70B and GPT-3.5.",
+					"In Table 3, we report the performance of Mixtral 8x7B compared to Llama 2 70B and GPT-3.5.",
+					"We observe that Mixtral performs similarly or above the two other models.",
+					"On MMLU, Mixtral obtains a better performance, despite its significantly smaller capacity (47B tokens compared to 70B).",
+					"For MT Bench, we report the performance of the latest GPT-3.5-Turbo model available, gpt-3.5-turbo-1106."
+				],
+				"brief": [
+					2,
+					3
+				],
+				"key": "Mixtral 8x7B performs similarly or above Llama 2 70B and GPT-3.5. On MMLU it performs better despite its significantly smaller capacity, 47B compared to 70B.",
+				"takeaway": "Mixtral 8x7B performs similarly or above Llama 2 70B and GPT-3.5."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "ax-routing-topics",
+			"call": 21,
+			"fold": {
+				"sentences": [
+					"To investigate this, we measure the distribution of selected experts on different subsets of The Pile validation dataset [14].",
+					"Results are presented in Figure 7, for layers 0, 15, and 31 (layers 0 and 31 respectively being the first and the last layers of the model).",
+					"Surprisingly, we do not observe obvious patterns in the assignment of experts based on the topic.",
+					"For instance, at all layers, the distribution of expert assignment is very similar for ArXiv papers (written in Latex), for biology (PubMed Abstracts), and for Philosophy (PhilPapers) documents."
+				],
+				"brief": [
+					2,
+					3
+				],
+				"key": "Expert assignment shows no obvious topic-based pattern across Pile subsets and layers. The distribution of experts is very similar for ArXiv, biology and Philosophy documents at all layers.",
+				"takeaway": "Expert assignment shows no obvious topic-based pattern across Pile subsets and layers."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "ax-conclusion",
+			"call": 22,
+			"fold": {
+				"sentences": [
+					"In this paper, we introduced Mixtral 8x7B, the first mixture-of-experts network to reach a state-of-the-art performance among open-source models.",
+					"Mixtral 8x7B Instruct outperforms Claude-2.1, Gemini Pro, and GPT-3.5 Turbo on human evaluation benchmarks.",
+					"Because it only uses two experts at each time step, Mixtral only uses 13B active parameters per token while outperforming the previous best model using 70B parameters per token (Llama 2 70B).",
+					"We are making our trained and fine-tuned models publicly available under the Apache 2.0 license.",
+					"By sharing our models, we aim to facilitate the development of new techniques and applications that can benefit a wide range of industries and domains."
+				],
+				"brief": [
+					0,
+					2
+				],
+				"key": "Mixtral 8x7B is the first mixture-of-experts network to reach state-of-the-art performance among open-source models. It uses two experts per token, giving 13B active parameters, and the models are released under the Apache 2.0 license.",
+				"takeaway": "Mixtral 8x7B is the first mixture-of-experts network to reach state-of-the-art performance among open-source models."
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		}
+	]
+}

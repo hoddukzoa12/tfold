@@ -1,0 +1,388 @@
+[
+	{
+		"id": "ko-definition",
+		"page": "/wikipedia-ko-black-hole/",
+		"startsWith": "블랙홀(영어: black hole)은",
+		"mainPoint": "A black hole is a region of spacetime whose density and gravity are so strong that nothing, not even light or other electromagnetic radiation, can escape it.",
+		"facts": [
+			"It is thought (추측되는) to form when a star that could not become a neutron star explodes and contracts at the end of its evolution.",
+			"General relativity predicts that sufficiently dense mass can warp spacetime and form a black hole.",
+			"The boundary beyond which escape is impossible is the event horizon.",
+			"An object crossing it suffers destructive effects, but to an outside observer it seems to slow and never reach the boundary.",
+			"A black hole reflects no light and behaves like an ideal black body.",
+			"By quantum field theory in curved spacetime the horizon emits thermal (Hawking) radiation at a temperature inversely proportional to the mass.",
+			"For stellar-mass black holes that temperature is billionths of a kelvin, so observing it is essentially impossible."
+		]
+	},
+	{
+		"id": "ko-history",
+		"page": "/wikipedia-ko-black-hole/",
+		"startsWith": "중력장이 너무 강해서 빛이",
+		"mainPoint": "The idea of black holes dates from the 18th century, but they were long only a mathematical curiosity, until 1960s theory and the discovery of neutron stars made them seem physically real.",
+		"facts": [
+			"John Michell and Pierre-Simon Laplace first conceived of bodies light cannot escape, in the 18th century.",
+			"Karl Schwarzschild found the first modern general-relativity solution describing a black hole in 1916.",
+			"The reading of it as a region nothing can escape first appeared in David Finkelstein's 1958 paper.",
+			"In the 1960s theoretical work proved that black holes follow from general relativity.",
+			"The discovery of neutron stars sparked interest in collapsed compact objects existing as astrophysical reality."
+		]
+	},
+	{
+		"id": "ko-formation",
+		"page": "/wikipedia-ko-black-hole/",
+		"startsWith": "항성질량 블랙홀은 매우 질량이",
+		"mainPoint": "Stellar-mass black holes are thought to form when very massive stars collapse at the end of their lives, and black holes can then grow, up to the supermassive black holes at the centres of most galaxies.",
+		"facts": [
+			"Collapse forms a stellar-mass black hole; this is what is thought (생각된다).",
+			"After forming, a black hole can grow by absorbing mass around it.",
+			"Absorbing other stars and merging with other black holes can form supermassive black holes of millions of M☉.",
+			"The general view of science is that most galaxies have a supermassive black hole at their centre."
+		],
+		"seen": "A P3 Key said black holes grow through collapse, absorption and merger (붕괴와 흡수, 융합으로 성장해). In the source, collapse forms a black hole, and absorption and merger grow it."
+	},
+	{
+		"id": "ko-interaction",
+		"page": "/wikipedia-ko-black-hole/",
+		"startsWith": "블랙홀의 안을 들여다볼 수는",
+		"mainPoint": "Although no one can see inside a black hole, its properties can be learned from how it interacts with the matter around it.",
+		"facts": [
+			"Matter falling onto a black hole forms an accretion disk that friction heats until it glows with thermal radiation.",
+			"Quasars, the brightest objects in the universe, form through this process.",
+			"The orbit of a star around a black hole gives the black hole's mass and position.",
+			"By ruling out neutron stars and similar objects, astronomers found (발견해냈다) countless binary systems that contain black hole candidates (후보). The source does not say the candidates were confirmed.",
+			"Such observations showed that the radio source Sagittarius A* toward the Milky Way's centre is a supermassive black hole of 4.3 million M☉."
+		],
+		"seen": "A P3 Takeaway was the paragraph's last fact, \"궁수자리 A*는 430만 M☉의 초대질량 블랙홀이다\", with no final period. Its Key said \"블랙홀 후보를 확인했다\" (confirmed candidates) where the source says candidates were found."
+	},
+	{
+		"id": "ko-ligo",
+		"page": "/wikipedia-ko-black-hole/",
+		"startsWith": "2016년 2월 11일, LIGO",
+		"mainPoint": "On 11 February 2016 the LIGO collaboration announced the first detection of gravitational waves, from two merging black holes, which was also the first observed black hole binary merger.",
+		"facts": [
+			"The announcement was on 11 February 2016, by the LIGO collaboration.",
+			"The waves came from two black holes merging.",
+			"It was the first gravitational-wave observation in history.",
+			"It was also the first observed merger of a binary black hole."
+		]
+	},
+	{
+		"id": "ko-chandrasekhar",
+		"page": "/wikipedia-ko-black-hole/",
+		"startsWith": "1931년, 수브라마니안 찬드라세카르는",
+		"mainPoint": "Work from Chandrasekhar in 1931 to Oppenheimer in 1939 showed that degenerate stars above certain mass limits cannot hold themselves up, so no law of physics stops some stars from collapsing into black holes.",
+		"facts": [
+			"In 1931 Chandrasekhar used special relativity to show that a non-rotating body of electron-degenerate matter has no stable solution above a critical mass (the Chandrasekhar limit, 1.4 M☉).",
+			"Eddington, Landau and others objected that an unknown process could stop the collapse.",
+			"They were partly right: a white dwarf above the limit collapses into a neutron star, made stable by the Pauli exclusion principle.",
+			"In 1939 Oppenheimer and others showed that neutron stars above 3 M☉ (the Tolman–Oppenheimer–Volkoff limit) collapse for the same reason.",
+			"They concluded that no law of physics could stop some stars collapsing as far as a black hole."
+		]
+	},
+	{
+		"id": "ko-no-hair",
+		"page": "/wikipedia-ko-black-hole/",
+		"startsWith": "털없음 정리에 따르면",
+		"mainPoint": "By the no-hair theorem, a black hole that has settled after forming has only three independent properties: mass, charge and angular momentum.",
+		"facts": [
+			"This holds once the black hole reaches a stable state after it forms.",
+			"Two black holes with the same three values cannot be told apart by classical, non-quantum mechanics."
+		]
+	},
+	{
+		"id": "ko-event-horizon",
+		"page": "/wikipedia-ko-black-hole/",
+		"startsWith": "블랙홀의 가장 결정적인 특징은",
+		"mainPoint": "A black hole's defining feature is its event horizon, a boundary in spacetime that matter and light can cross only inward.",
+		"facts": [
+			"Nothing, not even light, can escape from inside the event horizon.",
+			"The name means that information about an event at the boundary cannot reach an outside observer, who cannot even tell whether the event happened."
+		]
+	},
+	{
+		"id": "ko-tov-limit",
+		"page": "/wikipedia-ko-black-hole/",
+		"startsWith": "붕괴 이전의 별이 원래",
+		"mainPoint": "Once a collapsed remnant exceeds 3 to 4 M☉ (the Tolman–Oppenheimer–Volkoff limit), neutron degeneracy pressure cannot stop its collapse, and no known mechanism stops it becoming a black hole.",
+		"facts": [
+			"The remnant exceeds the limit either because the star was very large or because more mass accreted onto the remnant after the collapse.",
+			"Above the limit, neutron degeneracy pressure cannot prevent collapse.",
+			"No way has yet been found to stop a compact object beyond the limit from collapsing into a black hole.",
+			"Quark degeneracy pressure might be a possibility (quark stars)."
+		]
+	},
+	{
+		"id": "ko-growth-accretion",
+		"page": "/wikipedia-ko-black-hole/",
+		"startsWith": "블랙홀은 일단 형성된 뒤에도",
+		"mainPoint": "After it forms, a black hole keeps growing by absorbing mass from its surroundings.",
+		"facts": [
+			"Every black hole continuously absorbs surrounding gas, interstellar dust and the cosmic background radiation.",
+			"This is thought to be the main way supermassive black holes grow.",
+			"A similar process is guessed for the formation of the intermediate-mass black holes found in globular clusters."
+		]
+	},
+	{
+		"id": "ko-growth-merger",
+		"page": "/wikipedia-ko-black-hole/",
+		"startsWith": "블랙홀 성장의 또다른 가능성으로는",
+		"mainPoint": "Merging with stars or other black holes is another way black holes grow, and it matters most in the early growth of supermassive black holes.",
+		"facts": [
+			"A black hole does not need to merge with other objects to grow, but merging is a very important factor.",
+			"It matters especially in the early growth of supermassive black holes, which are thought to have grown by swallowing many small objects.",
+			"Intermediate-mass black holes may also grow this way; the possibility has been raised."
+		]
+	},
+	{
+		"id": "ko-evaporation",
+		"page": "/wikipedia-ko-black-hole/",
+		"startsWith": "질량 1 M☉의 항성질량 블랙홀의",
+		"mainPoint": "Black holes of stellar mass and above are colder than the cosmic background radiation, so they gain more mass than they lose and do not evaporate; only a black hole lighter than the Moon would.",
+		"facts": [
+			"The Hawking temperature of a 1 M☉ black hole is about 100 nanokelvin, far below the 2.7 K of the cosmic background radiation.",
+			"Black holes of stellar mass and above take in more mass from the background radiation than they emit as Hawking radiation, so their mass grows rather than shrinks.",
+			"To be hotter than 2.7 K, and so evaporate, a black hole must be less massive than the Moon.",
+			"Such a black hole would be 0.1 millimetre or less across."
+		]
+	},
+	{
+		"id": "ko-indirect",
+		"page": "/wikipedia-ko-black-hole/",
+		"startsWith": "블랙홀은 그 성질 상 이론 상의",
+		"mainPoint": "Black holes emit no direct electromagnetic radiation apart from theoretical Hawking radiation, so astrophysicists must find them indirectly, though the Event Horizon Telescope is attempting to observe Sagittarius A* directly.",
+		"facts": [
+			"One indirect method is detecting a black hole through gravitational interactions around it.",
+			"The Event Horizon Telescope of MIT's Haystack Observatory is attempting direct observation of Sagittarius A* and expected the first image of an event horizon in early 2016. The source states this as an expectation.",
+			"In 2015 the Event Horizon Telescope confirmed the predicted magnetic field just outside Sagittarius A*'s event horizon."
+		]
+	},
+	{
+		"id": "ko-disk-image",
+		"page": "/wikipedia-ko-black-hole/",
+		"startsWith": "질량이 큰 천체로 인해 생성된",
+		"mainPoint": "Gas falling toward a massive object forms a disk, and accurate models predict that bent light makes the whole accretion disk visible from any side, unlike the flat disk of artists' pictures.",
+		"facts": [
+			"Conservation of angular momentum turns the infalling gas into a disk around the object.",
+			"Artists usually draw a flat disk whose far side the black hole hides.",
+			"More accurate mathematical models predict that light from the far side is bent, so the whole disk shows from any direction.",
+			"A secondary image of the disk's underside would also be partly visible."
+		]
+	},
+	{
+		"id": "ko-xray-binary-mass",
+		"page": "/wikipedia-ko-black-hole/",
+		"startsWith": "만약 엑스선 쌍성계가 밀집성에서",
+		"mainPoint": "The compact object in an X-ray binary is taken to be a black hole when its mass, found from the companion star's orbit, exceeds the maximum mass of a neutron star.",
+		"facts": [
+			"If the compact object itself emits a direct signal, it is not a black hole.",
+			"No direct signal does not rule out a neutron star.",
+			"Studying the companion star gives the orbit, and the orbit gives the compact object's mass.",
+			"If that mass exceeds the Tolman–Oppenheimer–Volkoff limit, the largest mass a neutron star can keep without collapsing, the object is regarded as a black hole."
+		]
+	},
+	{
+		"id": "ko-agn",
+		"page": "/wikipedia-ko-black-hole/",
+		"startsWith": "대부분의 AGN은 초대질량 블랙홀을",
+		"mainPoint": "Most active galactic nuclei are thought to hold supermassive black holes, but only a few galaxies have been studied closely enough to measure their central candidate's mass.",
+		"facts": [
+			"Most AGN are thought (생각되지만) to host a supermassive black hole.",
+			"Few galaxies have had the mass of their central supermassive black hole candidate measured.",
+			"Well-known galaxies with such candidates include Andromeda, Messier 87, NGC 3115, NGC 3377, NGC 4258, NGC 4889, NGC 1277, OJ 287, APM 08279+5255 and the Sombrero Galaxy."
+		]
+	},
+	{
+		"id": "en-definition",
+		"page": "/wikipedia-black-hole/",
+		"startsWith": "A black hole is an astronomical body so compact",
+		"mainPoint": "A black hole is a body so compact that its gravity lets nothing, not even light, escape, as general relativity predicts for any sufficiently compact mass.",
+		"facts": [
+			"General relativity describes gravitation as the curvature of spacetime and predicts that any sufficiently compact mass forms a black hole.",
+			"The boundary of no escape is the event horizon.",
+			"Crossing the event horizon traps an object but produces no locally detectable change.",
+			"General relativity also predicts a central singularity, where spacetime curvature is infinite."
+		]
+	},
+	{
+		"id": "en-formation",
+		"page": "/wikipedia-black-hole/",
+		"startsWith": "Black holes typically form as part of a supernova",
+		"mainPoint": "Black holes typically form when massive stars collapse in a supernova, then grow by absorbing mass, up to the supermassive black holes at the centres of most galaxies.",
+		"facts": [
+			"The collapse happens at the end of a massive star's life cycle.",
+			"After forming, a black hole can grow by absorbing mass from its surroundings.",
+			"Supermassive black holes of millions of solar masses may form by absorbing stars and merging with other black holes, or by direct collapse of gas clouds.",
+			"There is consensus that supermassive black holes exist in the centres of most galaxies."
+		]
+	},
+	{
+		"id": "en-interaction",
+		"page": "/wikipedia-black-hole/",
+		"startsWith": "The presence of a black hole can be inferred",
+		"mainPoint": "A black hole's presence can be inferred from its interaction with matter and with electromagnetic radiation.",
+		"facts": [
+			"Infalling matter can form an accretion disk of plasma, heated by friction, that emits light.",
+			"In extreme cases this creates a quasar, among the brightest objects in the universe.",
+			"Merging black holes can be detected by their gravitational waves.",
+			"The motions of orbiting stars give a black hole's mass and location.",
+			"Astronomers have identified numerous stellar black hole candidates in binary systems.",
+			"Sagittarius A*, at the core of the Milky Way, contains a supermassive black hole of about 4.3 million solar masses."
+		]
+	},
+	{
+		"id": "en-supermassive-acceptance",
+		"page": "/wikipedia-black-hole/",
+		"startsWith": "While Cygnus X-1, a stellar-mass black hole",
+		"mainPoint": "Supermassive black holes won broad acceptance decades after Cygnus X-1, once orbital measurements of galactic nuclei ruled out dense star clusters.",
+		"facts": [
+			"Cygnus X-1 was generally accepted as a black hole by the end of 1973.",
+			"The idea of supermassive black holes began with models of quasars and active galactic nuclei powered by accretion.",
+			"Hubble Space Telescope studies in the 1990s showed a large concentration of mass at the centre of Messier 87.",
+			"The two candidates for that mass were a black hole and a dense star cluster.",
+			"In 1995 the Very Long Baseline Array observed water masers orbiting the centre of NGC 4258.",
+			"The orbital parameters ruled out dense clusters, leaving supermassive black holes as the only plausible explanation."
+		]
+	},
+	{
+		"id": "en-jets",
+		"page": "/wikipedia-black-hole/",
+		"startsWith": "Black holes of any mass can have jets",
+		"mainPoint": "Black holes of any mass can have jets, but jets are typically seen around spinning black holes with strongly magnetized accretion disks.",
+		"facts": [
+			"Relativistic jets were more common in the early universe, when galaxies and their supermassive black holes gained mass quickly.",
+			"Every black hole with jets also has an accretion disk, and the jets are usually brighter than the disk.",
+			"Quasars are believed to be supermassive black holes with jets.",
+			"Microquasars are believed to be stellar-mass objects with jets, typically observed in the Milky Way."
+		]
+	},
+	{
+		"id": "en-event-horizon",
+		"page": "/wikipedia-black-hole/",
+		"startsWith": "The defining feature of a black hole is the existence",
+		"mainPoint": "A black hole's defining feature is its event horizon, a boundary in spacetime that matter and light can cross only inward.",
+		"facts": [
+			"Nothing, not even light, can escape from inside the event horizon.",
+			"It is so called because information from an event inside cannot reach or affect an outside observer.",
+			"The event horizon is precisely spherical for non-rotating black holes and oblate for rotating ones."
+		]
+	},
+	{
+		"id": "en-supernova-minimum",
+		"page": "/wikipedia-black-hole/",
+		"startsWith": "The mass of a black hole formed via a supernova",
+		"mainPoint": "A black hole formed in a supernova has a minimum mass, because in lighter stars degeneracy pressure stops the collapse first.",
+		"facts": [
+			"Degeneracy pressure comes from the Pauli exclusion principle.",
+			"Progenitor stars below about 8 M☉ become white dwarfs, held up by electron degeneracy pressure.",
+			"More massive progenitors compress until neutron degeneracy pressure resists gravity, forming a neutron star.",
+			"Still more massive stars overcome neutron degeneracy pressure and collapse into a black hole."
+		]
+	},
+	{
+		"id": "en-accretion-energy",
+		"page": "/wikipedia-black-hole/",
+		"startsWith": "Many of the universe's most energetic phenomena",
+		"mainPoint": "Many of the universe's most energetic phenomena have been attributed to matter accreting onto black holes.",
+		"facts": [
+			"Active galactic nuclei and quasars are powered by accretion onto supermassive black holes.",
+			"X-ray binaries are generally accepted to be a compact object accreting matter from its companion.",
+			"Ultraluminous X-ray sources may be the accretion disks of intermediate-mass black holes; the source says may."
+		]
+	},
+	{
+		"id": "en-sgr-a",
+		"page": "/wikipedia-black-hole/",
+		"startsWith": "The proper motions of stars near the centre",
+		"mainPoint": "The motions of stars near the Milky Way's centre strongly suggest, but do not prove, that Sagittarius A* is a supermassive black hole.",
+		"facts": [
+			"Astronomers tracked over 100 stars orbiting an invisible object at the radio source Sagittarius A*, and the star S2 completed a full orbit.",
+			"Keplerian fits give a mass of 4.3×10^6 M☉ within a radius of less than 0.002 light-years.",
+			"That radius is larger than the Schwarzschild radius for that mass, so the fit alone does not prove a black hole.",
+			"No other plausible scenario confines so much invisible mass in so small a volume.",
+			"Luminosity data imply an event horizon.",
+			"The central object is motionless at the centre of the galaxy."
+		]
+	},
+	{
+		"id": "ax-abstract",
+		"page": "/arxiv-2401.04088/",
+		"startsWith": "We introduce Mixtral 8x7B",
+		"mainPoint": "Mixtral 8x7B is a sparse mixture-of-experts model that uses 13B of its 47B parameters per token and matches or beats Llama 2 70B and GPT-3.5 on every evaluated benchmark.",
+		"facts": [
+			"It has Mistral 7B's architecture, except that each layer has 8 feedforward blocks (experts).",
+			"For every token at each layer a router selects two experts and combines their outputs, and the selected experts can differ at each timestep.",
+			"It was trained with a 32k-token context.",
+			"It vastly outperforms Llama 2 70B on mathematics, code generation and multilingual benchmarks.",
+			"Mixtral 8x7B – Instruct surpasses GPT-3.5 Turbo, Claude-2.1, Gemini Pro and Llama 2 70B – chat on human benchmarks.",
+			"Both models are released under the Apache 2.0 license."
+		]
+	},
+	{
+		"id": "ax-architecture",
+		"page": "/arxiv-2401.04088/",
+		"startsWith": "Mixtral is a sparse mixture-of-experts network",
+		"mainPoint": "Mixtral's router sends each token at each layer to 2 of 8 groups of feedforward parameters, which adds parameters while keeping cost and latency in check.",
+		"facts": [
+			"It is a decoder-only model.",
+			"The feedforward block picks from 8 distinct groups of parameters (experts).",
+			"At every layer, for every token, a router chooses two experts and adds their outputs.",
+			"Only a fraction of the parameters is used per token, which controls cost and latency."
+		]
+	},
+	{
+		"id": "ax-pretraining",
+		"page": "/arxiv-2401.04088/",
+		"startsWith": "Mixtral is pretrained with multilingual data",
+		"mainPoint": "Mixtral, pretrained on multilingual data with a 32k context, matches or exceeds Llama 2 70B and GPT-3.5, and is strongest in mathematics, code and multilingual tasks.",
+		"facts": [
+			"It matches or exceeds Llama 2 70B and GPT-3.5 over several benchmarks.",
+			"It significantly outperforms Llama 2 70B in mathematics, code generation and multilingual understanding.",
+			"It retrieves information from its 32k-token context regardless of sequence length and where the information sits."
+		]
+	},
+	{
+		"id": "ax-efficiency",
+		"page": "/arxiv-2401.04088/",
+		"startsWith": "Size and Efficiency.",
+		"mainPoint": "With 5x fewer active parameters, Mixtral outperforms Llama 2 70B across most categories.",
+		"facts": [
+			"The comparison is with the Llama 2 family, on the cost-performance spectrum.",
+			"As a sparse mixture-of-experts model, Mixtral uses 13B active parameters per token."
+		]
+	},
+	{
+		"id": "ax-llama-gpt",
+		"page": "/arxiv-2401.04088/",
+		"startsWith": "Comparison with Llama 2 70B and GPT-3.5.",
+		"mainPoint": "Mixtral performs similarly to or better than Llama 2 70B and GPT-3.5, and beats them on MMLU despite its smaller capacity.",
+		"facts": [
+			"Table 3 reports the comparison.",
+			"On MMLU Mixtral does better despite a much smaller capacity (47B against 70B).",
+			"For MT Bench the authors report the latest GPT-3.5-Turbo model, gpt-3.5-turbo-1106."
+		]
+	},
+	{
+		"id": "ax-routing-topics",
+		"page": "/arxiv-2401.04088/",
+		"startsWith": "To investigate this, we measure",
+		"mainPoint": "The router shows no obvious pattern of expert assignment by topic: the distribution is very similar across domains such as ArXiv papers, biology and philosophy.",
+		"facts": [
+			"The distribution was measured on subsets of The Pile validation dataset.",
+			"Results are for layers 0, 15 and 31, the first and last layers being 0 and 31.",
+			"The authors found the lack of a topic pattern surprising.",
+			"At all layers the distribution is very similar for ArXiv (LaTeX), PubMed Abstracts and PhilPapers."
+		]
+	},
+	{
+		"id": "ax-conclusion",
+		"page": "/arxiv-2401.04088/",
+		"startsWith": "In this paper, we introduced Mixtral 8x7B",
+		"mainPoint": "Mixtral 8x7B is the first mixture-of-experts network to reach state-of-the-art performance among open-source models, and its models are released openly.",
+		"facts": [
+			"Mixtral 8x7B Instruct outperforms Claude-2.1, Gemini Pro and GPT-3.5 Turbo on human evaluation benchmarks.",
+			"Using two experts per time step, it uses 13B active parameters per token while outperforming Llama 2 70B, which uses 70B per token.",
+			"The trained and fine-tuned models are released under the Apache 2.0 license.",
+			"The authors aim to help new techniques and applications across many industries and domains."
+		]
+	}
+]

@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=960, height=540" />
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+		<style>
+			@font-face {
+				font-family: Pretendard;
+				font-weight: 500;
+				src: url('assets/fonts/Pretendard-Medium.woff2') format('woff2');
+			}
+			@font-face {
+				font-family: Pretendard;
+				font-weight: 600;
+				src: url('assets/fonts/Pretendard-SemiBold.woff2') format('woff2');
+			}
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			html,
+			body {
+				width: 960px;
+				height: 540px;
+				overflow: hidden;
+				background: #2a2a2e;
+			}
+			#root {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				font-family: Pretendard, sans-serif;
+				color: #fff;
+			}
+			#ground {
+				position: absolute;
+				inset: 0;
+				background: #2a2a2e;
+			}
+			#wordmark {
+				position: absolute;
+				left: 22px;
+				top: 16px;
+				height: 25px;
+				width: 71px;
+			}
+			#input {
+				position: absolute;
+				top: 13px;
+				left: 448px;
+				width: 150px;
+				height: 30px;
+				font-size: 17px;
+				font-weight: 500;
+				line-height: 30px;
+				color: #d9d9de;
+				text-align: right;
+			}
+			#input-down,
+			#input-up {
+				position: absolute;
+				inset: 0;
+			}
+			#input-up {
+				opacity: 0;
+			}
+			#steps {
+				position: absolute;
+				right: 22px;
+				top: 13px;
+				display: flex;
+				gap: 4px;
+			}
+			.step {
+				position: relative;
+				height: 30px;
+				padding: 0 12px;
+				font-size: 17px;
+				font-weight: 600;
+				line-height: 30px;
+				color: #c4c4cb;
+			}
+			.step span {
+				position: relative;
+			}
+			.pill {
+				position: absolute;
+				inset: 0;
+				border-radius: 8px;
+				background: #c9fb2c;
+				opacity: 0;
+			}
+			#pill-0 {
+				opacity: 1;
+			}
+			#label-0 {
+				color: #2a2a2e;
+			}
+			#card {
+				position: absolute;
+				left: 20px;
+				top: 56px;
+				width: 920px;
+				height: 464px;
+				border-radius: 12px;
+				overflow: hidden;
+				background: #fbfaf7;
+			}
+			#footage {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 920px;
+				height: 464px;
+				object-fit: contain;
+			}
+			#pointer {
+				position: absolute;
+				left: 634px;
+				top: 167px;
+				width: 22px;
+				height: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="root" data-composition-id="hero" data-start="0" data-duration="10" data-width="960" data-height="540">
+			<div id="ground"></div>
+			<svg id="wordmark" viewBox="0 0 325 114" role="img" aria-label="tfold">
+				<g fill="none" stroke="#FFFFFF" stroke-width="15">
+					<path d="M0 13.5H73.5M36.75 13.5V96A10.5 10.5 0 0 0 47.25 106.5H61.5" />
+					<path d="M132.89 10.72A29.5 29.5 0 0 0 90 37V106.04L145.02 51.02A32.5 32.5 0 1 1 137.46 85.12M90 37H121.5" />
+					<path d="M224 0V114M317.5 0V74" />
+					<circle cx="285" cy="74" r="32.5" />
+				</g>
+			</svg>
+			<div id="input" data-layout-allow-overlap>
+				<div id="input-down" data-layout-allow-overlap>Ctrl + scroll ↓</div>
+				<div id="input-up" data-layout-allow-overlap>Ctrl + scroll ↑</div>
+			</div>
+			<div id="steps">
+				<div class="step"><div class="pill" id="pill-0"></div><span id="label-0">Full</span></div>
+				<div class="step"><div class="pill" id="pill-1"></div><span id="label-1">Brief</span></div>
+				<div class="step"><div class="pill" id="pill-2"></div><span id="label-2">Key</span></div>
+				<div class="step"><div class="pill" id="pill-3"></div><span id="label-3">Takeaway</span></div>
+			</div>
+			<div id="card" data-layout-allow-overflow>
+				<video id="footage" class="clip" src="assets/footage/hero-en.mp4" muted playsinline data-start="0" data-duration="10" data-track-index="1"></video>
+				<svg id="pointer" viewBox="0 0 22 30" aria-hidden="true">
+					<path d="M2 2 L2 24 L8 18.5 L12 28 L16.5 26 L12.5 16.8 L20 16.5 Z" fill="#fff" stroke="#2a2a2e" stroke-width="2" stroke-linejoin="round" />
+				</svg>
+			</div>
+		</div>
+		<script>
+			const tl = gsap.timeline({ paused: true });
+			const levelAt = [
+				[0, 0],
+				[1.0, 1],
+				[2.65, 2],
+				[4.9, 3],
+				[7.35, 2],
+				[8.05, 1],
+				[8.75, 0],
+			];
+			for (const [i, [at, level]] of levelAt.entries()) {
+				if (i === 0) continue;
+				const was = levelAt[i - 1][1];
+				tl.to(`#pill-${was}`, { opacity: 0, duration: 0.14, ease: 'power2.out' }, at);
+				tl.to(`#label-${was}`, { color: '#c4c4cb', duration: 0.14, ease: 'power2.out' }, at);
+				tl.to(`#pill-${level}`, { opacity: 1, duration: 0.14, ease: 'power2.out' }, at);
+				tl.to(`#label-${level}`, { color: '#2a2a2e', duration: 0.14, ease: 'power2.out' }, at);
+			}
+			tl.to('#input-down', { opacity: 0, duration: 0.12 }, 7.2);
+			tl.to('#input-up', { opacity: 1, duration: 0.12 }, 7.2);
+			tl.to('#input-up', { opacity: 0, duration: 0.12 }, 9.3);
+			tl.to('#input-down', { opacity: 1, duration: 0.12 }, 9.3);
+			tl.set({}, {}, 10);
+			window.__timelines['hero'] = tl;
+		</script>
+	</body>
+</html>

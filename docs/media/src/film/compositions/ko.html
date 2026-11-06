@@ -1,0 +1,56 @@
+<template>
+	<style>
+		#root {
+			position: absolute;
+			inset: 0;
+		}
+		#ko-card {
+			position: absolute;
+			left: 40px;
+			top: 84px;
+			width: 1840px;
+			height: 956px;
+			border-radius: 20px;
+			overflow: hidden;
+			background: #fbfaf7;
+		}
+		#ko-camera {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 1840px;
+			height: 956px;
+		}
+		#ko-footage {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 1840px;
+			height: 956px;
+			object-fit: contain;
+		}
+		#ko-pointer {
+			position: absolute;
+			left: 1163px;
+			top: 237px;
+			width: 40px;
+			height: 54px;
+		}
+	</style>
+	<div id="root" data-composition-id="ko" data-width="1920" data-height="1080">
+		<div id="ko-card" data-layout-allow-overflow>
+			<div id="ko-camera">
+				<video id="ko-footage" class="clip" src="assets/footage/film-ko.mp4" muted playsinline data-start="0" data-duration="3.6" data-track-index="1"></video>
+				<svg id="ko-pointer" viewBox="0 0 22 30" aria-hidden="true">
+					<path d="M2 2 L2 24 L8 18.5 L12 28 L16.5 26 L12.5 16.8 L20 16.5 Z" fill="#fff" stroke="#2a2a2e" stroke-width="1.6" stroke-linejoin="round" />
+				</svg>
+			</div>
+		</div>
+	</div>
+	<script>
+		const tl = gsap.timeline({ paused: true });
+		tl.fromTo('#ko-card', { x: 1920, filter: 'blur(14px)' }, { x: 0, filter: 'blur(0px)', duration: 0.36, ease: 'expo.out' }, 0);
+		tl.fromTo('#ko-camera', { scale: 1, transformOrigin: '200px 0px' }, { scale: 1.22, transformOrigin: '200px 0px', duration: 0.45, ease: 'power2.inOut' }, 1.25);
+		window.__timelines['ko'] = tl;
+	</script>
+</template>

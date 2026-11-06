@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<style>
+			@font-face {
+				font-family: Pretendard;
+				font-weight: 500;
+				src: url('../assets/fonts/Pretendard-Medium.woff2') format('woff2');
+			}
+			@font-face {
+				font-family: Pretendard;
+				font-weight: 600;
+				src: url('../assets/fonts/Pretendard-SemiBold.woff2') format('woff2');
+			}
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				position: relative;
+				width: 1280px;
+				height: 640px;
+				overflow: hidden;
+				background: #2a2a2e;
+				color: #fff;
+				font-family: Pretendard, sans-serif;
+			}
+			#wordmark {
+				position: absolute;
+				left: 64px;
+				top: 72px;
+				width: 200px;
+				height: 70px;
+			}
+			h1 {
+				position: absolute;
+				left: 64px;
+				top: 200px;
+				width: 540px;
+				font-size: 52px;
+				font-weight: 600;
+				line-height: 1.16;
+				letter-spacing: -0.015em;
+			}
+			#note {
+				position: absolute;
+				left: 64px;
+				bottom: 72px;
+				font-size: 24px;
+				font-weight: 500;
+				color: #c4c4cb;
+			}
+			#fold {
+				position: absolute;
+				left: 656px;
+				top: 56px;
+				width: 560px;
+			}
+			.label {
+				display: inline-block;
+				height: 32px;
+				margin-bottom: 8px;
+				padding: 0 12px;
+				border-radius: 8px;
+				background: #c9fb2c;
+				color: #2a2a2e;
+				font-size: 18px;
+				font-weight: 600;
+				line-height: 32px;
+			}
+			img {
+				display: block;
+				width: 560px;
+				border-radius: 12px;
+			}
+			#after {
+				margin-top: 18px;
+			}
+		</style>
+	</head>
+	<body>
+		<svg id="wordmark" viewBox="0 0 325 114" role="img" aria-label="tfold">
+			<g fill="none" stroke="#FFFFFF" stroke-width="15">
+				<path d="M0 13.5H73.5M36.75 13.5V96A10.5 10.5 0 0 0 47.25 106.5H61.5" />
+				<path d="M132.89 10.72A29.5 29.5 0 0 0 90 37V106.04L145.02 51.02A32.5 32.5 0 1 1 137.46 85.12M90 37H121.5" />
+				<path d="M224 0V114M317.5 0V74" />
+				<circle cx="285" cy="74" r="32.5" />
+			</g>
+		</svg>
+		<h1>Shorten the paragraph you are reading, right where it is.</h1>
+		<div id="note">Open source under AGPL-3.0.</div>
+		<div id="fold">
+			<div class="label">Full</div>
+			<img src="../assets/stills/social-full.png" alt="" />
+			<div id="after">
+				<div class="label">Takeaway</div>
+				<img src="../assets/stills/social-takeaway.png" alt="" />
+			</div>
+		</div>
+	</body>
+</html>

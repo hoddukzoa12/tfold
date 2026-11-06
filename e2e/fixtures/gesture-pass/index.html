@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Harbor log, the long read</title>
+		<style>
+			body {
+				margin: 0;
+				font: 17px/1.55 Georgia, serif;
+				color: #1f2328;
+				background: #fff;
+			}
+			.col {
+				max-width: 44em;
+				margin: 0 auto;
+				padding: 24px;
+			}
+			.col > p {
+				margin: 0 0 24px;
+			}
+			.hero {
+				position: relative;
+				height: 220px;
+				margin: 0 0 24px;
+				overflow: hidden;
+			}
+			.hero h2 {
+				position: relative;
+				margin: 0;
+				padding: 80px 24px;
+				color: #fff;
+			}
+			.hero img {
+				position: absolute;
+				inset: 0;
+				width: 100%;
+				height: 100%;
+			}
+			#hero-bg {
+				background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10'%3E%3Crect width='10' height='10' fill='%23345'/%3E%3C/svg%3E");
+			}
+			#hero-pseudo::before {
+				content: '';
+				position: absolute;
+				inset: 0;
+				background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10'%3E%3Crect width='10' height='10' fill='%23543'/%3E%3C/svg%3E");
+			}
+			#hero-beside {
+				position: relative;
+				height: 220px;
+				margin: 0 0 24px;
+			}
+			#hero-beside img {
+				position: absolute;
+				inset: 0;
+				width: 100%;
+				height: 100%;
+			}
+			#hero-beside-title {
+				position: relative;
+				margin: 0;
+				padding: 80px 24px;
+				color: #fff;
+			}
+			.player {
+				position: relative;
+				height: 220px;
+				margin: 0 0 24px;
+				background: #111;
+			}
+			.player video,
+			.player canvas {
+				display: block;
+				width: 100%;
+				height: 100%;
+				background: #222;
+			}
+			.player .subtitle {
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 16px;
+				margin: 0;
+				color: #fff;
+				text-align: center;
+			}
+			.chart {
+				position: relative;
+				height: 220px;
+				margin: 0 0 24px;
+			}
+			.chart svg {
+				display: block;
+				width: 100%;
+				height: 180px;
+			}
+			.chart .axis {
+				margin: 0;
+				font-size: 14px;
+			}
+			.chart .value {
+				position: absolute;
+				top: 40px;
+				left: 120px;
+				font-size: 14px;
+			}
+			.map {
+				position: relative;
+				height: 220px;
+				margin: 0 0 24px;
+				overflow: hidden;
+			}
+			.map .tile {
+				position: absolute;
+				top: 0;
+				width: 50%;
+				height: 100%;
+				background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10'%3E%3Crect width='10' height='10' fill='%23ace'/%3E%3C/svg%3E");
+			}
+			.map .place {
+				position: absolute;
+				margin: 0;
+				font-size: 14px;
+			}
+			.gallery {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 12px;
+				margin: 0 0 24px;
+			}
+			.gallery img,
+			#lone-photo {
+				display: block;
+				width: 100%;
+				height: 140px;
+			}
+			.gallery p {
+				margin: 4px 0 0;
+				font-size: 14px;
+			}
+			#lone-caption {
+				font-size: 14px;
+			}
+			.cells {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 12px;
+				margin: 0 0 24px;
+			}
+			#stage {
+				position: relative;
+				height: 120px;
+				margin: 0 0 24px;
+			}
+			#floating-label {
+				position: absolute;
+				top: 8px;
+				left: 16px;
+				margin: 0;
+			}
+			#pinned-heading {
+				position: sticky;
+				top: 0;
+				margin: 0 0 0 300px;
+				padding-top: 72px;
+			}
+			#foot-spacer {
+				height: 900px;
+			}
+		</style>
+	</head>
+	<body>
+		<main class="col">
+			<article id="story">
+				<h1 id="title">The north pier, one year on</h1>
+				<p id="a1">
+					The north pier opened in the spring after two years of work on its pilings. Fishing boats moved over first, and the ferry followed them once the new ramp had passed its load tests. By the end of the summer the old pier stood empty, and the town began to argue about what to do with it.
+				</p>
+				<p id="a2">
+					Most of the argument was about money, as these arguments usually are. Tearing the old pier down would cost more than the town had set aside for it. Leaving it up would cost less this year and far more once the timbers began to rot, which the surveyors said would take about a decade.
+				</p>
+				<p id="note">Short note.</p>
+				<h2 id="sub">What the survey found</h2>
+				<p id="a3">
+					The survey found that the southern third of the pier had kept its strength, while the northern end had lost a quarter of its load rating. That was enough to close the northern end to vehicles at once. It was not enough to settle the argument, because each side read the same figures as proof.
+				</p>
+
+				<section class="hero" id="hero-img">
+					<img alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Crect width='400' height='200' fill='%23234'/%3E%3C/svg%3E" />
+					<h2 id="hero-img-title">Dawn on the water</h2>
+				</section>
+				<p id="a4">
+					The ferry crew start before the light does, and by the time the first cars roll down the ramp the deck has been hosed twice. The captain has worked this crossing for nineteen years and says the new ramp is the first thing the town has built that does not leak.
+				</p>
+				<section class="hero" id="hero-bg">
+					<h2 id="hero-bg-title">The basin at noon</h2>
+				</section>
+				<p id="a5">
+					At noon the basin fills with the boats that went out before dawn, and the fish market opens its doors for the one busy hour of its day. The buyers know each boat by the sound of its engine, and most of the prices are settled before anyone has seen a single fish.
+				</p>
+				<div class="hero" id="hero-pseudo">
+					<h2 id="hero-pseudo-title">Evening on the walk</h2>
+				</div>
+				<p id="a6">
+					In the evening the walk along the water fills with people who have no reason to be there except the light. The benches came from the old pier, and the planks still carry the marks of the boats that tied up against them for most of a hundred years.
+				</p>
+				<div id="hero-beside">
+					<img alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Crect width='400' height='200' fill='%23432'/%3E%3C/svg%3E" />
+					<h2 id="hero-beside-title">Night at the ramp</h2>
+				</div>
+				<p id="a7">
+					The last ferry leaves a little before midnight in the summer and a good deal earlier in the winter. Nobody has ever managed to print a timetable that holds for a whole season, so the harbor office writes the next day's crossings on a board at the top of the ramp.
+				</p>
+
+				<div class="player">
+					<video muted></video>
+					<p class="subtitle" id="video-subtitle">We tied up at the north end.</p>
+				</div>
+				<p id="a8">
+					The film the school made of the opening runs to eleven minutes, most of them spent on the faces of people watching a boat arrive. The harbor office plays it on a loop in the waiting room, and the people who are in it have stopped pretending not to look.
+				</p>
+				<div class="player">
+					<canvas width="400" height="200"></canvas>
+					<div class="subtitle" id="canvas-subtitle">And the ramp came down.</div>
+				</div>
+				<p id="a9">
+					A second film, shot by the crew themselves from the wheelhouse, shows the same crossing in every weather the sea can manage in a year. It has no sound and no titles, and it has been watched rather more often than the one the school made with so much care.
+				</p>
+
+				<div class="chart">
+					<svg viewBox="0 0 400 180"><rect x="20" y="40" width="40" height="140" fill="#789"></rect><rect x="80" y="70" width="40" height="110" fill="#789"></rect></svg>
+					<p class="axis" id="chart-axis">Boats per week</p>
+					<span class="value" id="chart-value">412 boats</span>
+				</div>
+				<p id="a10">
+					The count of boats in the basin has climbed each year since the pier opened, though not as fast as the people who paid for it had hoped. A good season brings in about four hundred a week, and a bad one barely half of that, for reasons nobody has fully explained.
+				</p>
+
+				<div class="map" id="map">
+					<div class="tile" style="left: 0"></div>
+					<div class="tile" style="left: 50%"></div>
+					<p class="place" id="map-place" style="top: 60px; left: 80px">North basin</p>
+					<span class="place" id="map-span" style="top: 120px; left: 300px">Ferry ramp</span>
+				</div>
+				<p id="a11">
+					The chart of the harbor has been redrawn three times since the work began, once for the new channel, once for the ramp and once because the first two were wrong. The harbor master keeps all three on the wall of the office, with the wrong ones hung a little higher.
+				</p>
+
+				<div class="gallery">
+					<div class="shot">
+						<img alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='140'%3E%3Crect width='300' height='140' fill='%239ab'/%3E%3C/svg%3E" />
+						<p id="gallery-caption">The old timbers, stacked.</p>
+					</div>
+					<div class="shot">
+						<img alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='140'%3E%3Crect width='300' height='140' fill='%23ba9'/%3E%3C/svg%3E" />
+						<p>The new deck, unpainted.</p>
+					</div>
+				</div>
+				<p id="a12">
+					Most of the old timbers went into the benches along the new walk, and the rest were sold to a boatbuilder two towns down the coast. He says they are the best oak he has ever worked, and he has offered to take the benches as well if the town ever tires of them.
+				</p>
+				<img id="lone-photo" alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='140'%3E%3Crect width='600' height='140' fill='%23abc'/%3E%3C/svg%3E" />
+				<p id="lone-caption">The boatbuilder and his yard.</p>
+				<p id="a13">
+					The yard has built eleven boats from the timbers so far, and each of them carries a small brass plate with the number of the piling it came from. The owners have taken to comparing numbers when they meet at sea, which the boatbuilder says was never his intention.
+				</p>
+
+				<div class="cells" id="cells">
+					<div class="cell" id="grid-cell">Pilings replaced</div>
+					<div class="cell" id="grid-value">214</div>
+					<div class="cell"><p id="grid-p">Short cell.</p></div>
+					<div class="cell">
+						<p id="grid-long">
+							A cell beside a short one that holds enough of a sentence to count as a paragraph on its own, and a second sentence so that nobody can say it is merely a long label for the number in the row.
+						</p>
+					</div>
+				</div>
+				<p id="a14">
+					A year later the town voted to keep the southern third as a walkway and take down the rest. The work took one winter, and the people who had argued about it for years now sit on the benches along the new walk and argue about something else entirely.
+				</p>
+				<div id="stage">
+					<p id="floating-label">Tide table</p>
+					<h3 id="pinned-heading">Next crossing</h3>
+				</div>
+				<ul id="short-list">
+					<li id="short-item">Pilings</li>
+					<li>Decking</li>
+				</ul>
+				<p id="a15">
+					The next argument is about the car park, and it has already lasted longer than the one about the pier. The surveyors have not been asked, on the grounds that they would only find something, and the harbor office has quietly stopped taking a side in the matter at all.
+				</p>
+			</article>
+			<div id="foot-spacer"></div>
+		</main>
+	</body>
+</html>

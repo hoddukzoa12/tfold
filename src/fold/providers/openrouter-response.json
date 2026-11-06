@@ -1,0 +1,83 @@
+{
+	"request": {
+		"url": "https://en.wikipedia.org/wiki/Black_hole",
+		"title": "Black hole - Wikipedia",
+		"lang": "en",
+		"outline": [
+			{
+				"depth": 1,
+				"text": "Black hole"
+			},
+			{
+				"depth": 2,
+				"text": "History"
+			}
+		],
+		"section": 0,
+		"blocks": [
+			{
+				"id": "a",
+				"tag": "p",
+				"sentences": [
+					"A black hole is a massive, compact astronomical object so dense that its gravity prevents anything from escaping, even light.",
+					"Albert Einstein's theory of general relativity predicts that a sufficiently compact mass will form a black hole.",
+					"The boundary of no escape is called the event horizon."
+				]
+			},
+			{
+				"id": "b",
+				"tag": "p",
+				"sentences": [
+					"Objects whose gravitational fields are too strong for light to escape were first considered in the 18th century by John Michell and Pierre-Simon Laplace.",
+					"In 1916, Karl Schwarzschild found the first modern solution of general relativity that would characterise a black hole."
+				]
+			}
+		]
+	},
+	"response": {
+		"id": "gen-1793596504-rAsKecklUdwJb4fVjIHA",
+		"object": "chat.completion",
+		"created": 1793596504,
+		"model": "deepseek/deepseek-v4.1-flash-1017",
+		"provider": "InferenceNet",
+		"system_fingerprint": "inference.net",
+		"service_tier": null,
+		"choices": [
+			{
+				"index": 0,
+				"logprobs": null,
+				"finish_reason": "stop",
+				"native_finish_reason": "stop",
+				"message": {
+					"role": "assistant",
+					"content": "{\"units\": [{\"id\": \"U0\", \"takeaway\": \"A black hole is so dense its gravity traps even light.\", \"reason\": \"General relativity predicts a sufficiently compact mass forms one, bounded by the event horizon.\", \"evidence\": [0, 1, 2]}, {\"id\": \"U1\", \"takeaway\": \"Black holes were first considered in the 18th century, then formalized in 1916.\", \"reason\": \"Michell and Laplace speculated on light-trapping objects; Schwarzschild found the first modern general relativity solution.\", \"evidence\": [0, 1]}]}",
+					"refusal": null,
+					"reasoning": null
+				}
+			}
+		],
+		"usage": {
+			"prompt_tokens": 681,
+			"completion_tokens": 131,
+			"total_tokens": 812,
+			"cost": 0.00012653,
+			"is_byok": false,
+			"prompt_tokens_details": {
+				"cached_tokens": 0,
+				"cache_write_tokens": 0,
+				"audio_tokens": 0,
+				"video_tokens": 0
+			},
+			"cost_details": {
+				"upstream_inference_cost": 0.00012653,
+				"upstream_inference_prompt_cost": 0.00005448,
+				"upstream_inference_completions_cost": 0.00007205
+			},
+			"completion_tokens_details": {
+				"reasoning_tokens": 0,
+				"image_tokens": 0,
+				"audio_tokens": 0
+			}
+		}
+	}
+}

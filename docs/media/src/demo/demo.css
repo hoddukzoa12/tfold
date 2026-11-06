@@ -1,0 +1,71 @@
+@font-face {
+	font-family: Pretendard;
+	font-weight: 400;
+	src: url('/fonts/Pretendard-Regular.woff2') format('woff2');
+}
+@font-face {
+	font-family: Pretendard;
+	font-weight: 700;
+	src: url('/fonts/Pretendard-Bold.woff2') format('woff2');
+}
+
+:root {
+	color-scheme: light dark;
+	--page: #fbfaf7;
+	--ink: #24242a;
+	--quiet: #6d6d76;
+	--rule: #e4e1da;
+	--size: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--page: #17181c;
+		--ink: #e9e8e4;
+		--quiet: #9c9ca6;
+		--rule: #33343b;
+	}
+}
+
+html {
+	background: var(--page);
+}
+
+body {
+	margin: 0;
+	background: var(--page);
+	color: var(--ink);
+	font: 400 var(--size) / 1.6 Pretendard, sans-serif;
+	text-rendering: geometricPrecision;
+	-webkit-font-smoothing: antialiased;
+}
+
+.site {
+	padding: 18px 40px;
+	border-bottom: 1px solid var(--rule);
+	color: var(--quiet);
+	font-size: 16px;
+}
+
+article {
+	box-sizing: border-box;
+	max-width: 920px;
+	margin: 0 auto;
+	padding: 28px 40px 80px;
+}
+
+h1 {
+	margin: 0 0 18px;
+	font-size: 1.6em;
+	font-weight: 700;
+	line-height: 1.25;
+	letter-spacing: -0.01em;
+}
+
+p {
+	margin: 0 0 1.05em;
+}
+
+article[lang='ko'] p {
+	word-break: keep-all;
+}

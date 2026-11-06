@@ -1,0 +1,1711 @@
+{
+	"model": "anthropic/claude-sonnet-5.5",
+	"runs": [
+		"v3",
+		"v4"
+	],
+	"cost": 0.255976,
+	"verdicts": [
+		{
+			"item": "ax-abstract",
+			"run": "v3/r0",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-abstract",
+			"run": "v3/r1",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-abstract",
+			"run": "v3/r2",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-abstract",
+			"run": "v4/r0",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-abstract",
+			"run": "v4/r1",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-abstract",
+			"run": "v4/r2",
+			"label": "F2",
+			"unsupported": "beats or matches larger models",
+			"faithful": false,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-architecture",
+			"run": "v3/r0",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-architecture",
+			"run": "v3/r1",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-architecture",
+			"run": "v3/r2",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-architecture",
+			"run": "v4/r0",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-architecture",
+			"run": "v4/r1",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-architecture",
+			"run": "v4/r2",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-conclusion",
+			"run": "v3/r0",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-conclusion",
+			"run": "v3/r1",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-conclusion",
+			"run": "v3/r2",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-conclusion",
+			"run": "v4/r0",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-conclusion",
+			"run": "v4/r1",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-conclusion",
+			"run": "v4/r2",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-efficiency",
+			"run": "v3/r0",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-efficiency",
+			"run": "v3/r1",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-efficiency",
+			"run": "v3/r2",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-efficiency",
+			"run": "v4/r0",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-efficiency",
+			"run": "v4/r1",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-efficiency",
+			"run": "v4/r2",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-llama-gpt",
+			"run": "v3/r0",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-llama-gpt",
+			"run": "v3/r1",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-llama-gpt",
+			"run": "v3/r2",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-llama-gpt",
+			"run": "v4/r0",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-llama-gpt",
+			"run": "v4/r1",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-llama-gpt",
+			"run": "v4/r2",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-pretraining",
+			"run": "v3/r0",
+			"label": "F4",
+			"unsupported": "It shows superior mathematics, code generation and multilingual understanding",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-pretraining",
+			"run": "v3/r1",
+			"label": "F1",
+			"unsupported": "It shows superior mathematics, code generation and multilingual understanding",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-pretraining",
+			"run": "v3/r2",
+			"label": "F2",
+			"unsupported": "Mixtral shows superior mathematics, code generation and multilingual understanding",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-pretraining",
+			"run": "v4/r0",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-pretraining",
+			"run": "v4/r1",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-pretraining",
+			"run": "v4/r2",
+			"label": "F3",
+			"unsupported": "shows superior mathematics, code generation and multilingual understanding",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-routing-topics",
+			"run": "v3/r0",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-routing-topics",
+			"run": "v3/r1",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-routing-topics",
+			"run": "v3/r2",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-routing-topics",
+			"run": "v4/r0",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-routing-topics",
+			"run": "v4/r1",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-routing-topics",
+			"run": "v4/r2",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-accretion-energy",
+			"run": "v3/r0",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-accretion-energy",
+			"run": "v3/r1",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-accretion-energy",
+			"run": "v3/r2",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-accretion-energy",
+			"run": "v4/r0",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-accretion-energy",
+			"run": "v4/r1",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-accretion-energy",
+			"run": "v4/r2",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-definition",
+			"run": "v3/r0",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-definition",
+			"run": "v3/r2",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-definition",
+			"run": "v4/r0",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-definition",
+			"run": "v4/r1",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-definition",
+			"run": "v4/r2",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-event-horizon",
+			"run": "v3/r0",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-event-horizon",
+			"run": "v3/r1",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-event-horizon",
+			"run": "v3/r2",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-event-horizon",
+			"run": "v4/r0",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-event-horizon",
+			"run": "v4/r1",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-event-horizon",
+			"run": "v4/r2",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-formation",
+			"run": "v3/r0",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-formation",
+			"run": "v3/r2",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-formation",
+			"run": "v4/r0",
+			"label": "F3",
+			"unsupported": "grow by absorbing mass",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-formation",
+			"run": "v4/r1",
+			"label": "F1",
+			"unsupported": "Supermassive black holes are thought to exist at most galaxies' centres.",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-formation",
+			"run": "v4/r2",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-interaction",
+			"run": "v3/r0",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-interaction",
+			"run": "v3/r2",
+			"label": "F2",
+			"unsupported": "is thus held to contain",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-interaction",
+			"run": "v4/r0",
+			"label": "F4",
+			"unsupported": "Accretion disks, quasars, gravitational waves and stellar orbits reveal black holes and their masses.",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-interaction",
+			"run": "v4/r1",
+			"label": "F5",
+			"unsupported": "Accretion disks, gravitational waves and stellar orbits reveal their mass and location.",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-interaction",
+			"run": "v4/r2",
+			"label": "F3",
+			"unsupported": "Accretion disks, quasars, gravitational waves, and orbiting stars reveal black holes and their masses.",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-jets",
+			"run": "v3/r0",
+			"label": "F3",
+			"unsupported": "define quasars and microquasars",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-jets",
+			"run": "v3/r1",
+			"label": "F6",
+			"unsupported": "always accompany accretion disks",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-jets",
+			"run": "v3/r2",
+			"label": "F5",
+			"unsupported": "Quasars are supermassive black holes with jets, while microquasars are stellar-mass ones with jets.",
+			"faithful": false,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "en-jets",
+			"run": "v4/r0",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-jets",
+			"run": "v4/r1",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-jets",
+			"run": "v4/r2",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-sgr-a",
+			"run": "v3/r0",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-sgr-a",
+			"run": "v3/r1",
+			"label": "F2",
+			"unsupported": "6.5 billion solar masses",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-sgr-a",
+			"run": "v3/r2",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-sgr-a",
+			"run": "v4/r0",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-sgr-a",
+			"run": "v4/r1",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-sgr-a",
+			"run": "v4/r2",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-supermassive-acceptance",
+			"run": "v3/r0",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-supermassive-acceptance",
+			"run": "v3/r1",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-supermassive-acceptance",
+			"run": "v3/r2",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-supermassive-acceptance",
+			"run": "v4/r0",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-supermassive-acceptance",
+			"run": "v4/r1",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-supermassive-acceptance",
+			"run": "v4/r2",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-supernova-minimum",
+			"run": "v3/r0",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-supernova-minimum",
+			"run": "v3/r1",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-supernova-minimum",
+			"run": "v3/r2",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-supernova-minimum",
+			"run": "v4/r0",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-supernova-minimum",
+			"run": "v4/r1",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-supernova-minimum",
+			"run": "v4/r2",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-agn",
+			"run": "v3/r0",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-agn",
+			"run": "v3/r1",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-agn",
+			"run": "v3/r2",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-agn",
+			"run": "v4/r0",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-agn",
+			"run": "v4/r1",
+			"label": "F6",
+			"unsupported": "초대질량 블랙홀 후보를 품은 은하는 많지만",
+			"faithful": false,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-agn",
+			"run": "v4/r2",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-chandrasekhar",
+			"run": "v3/r0",
+			"label": "F1",
+			"unsupported": "찬드라세카르 한계와 톨먼, 오펜하이머, 볼코프 한계는 별이 블랙홀까지 붕괴할 수 있음을 보였다.",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-chandrasekhar",
+			"run": "v3/r1",
+			"label": "F3",
+			"unsupported": "찬드라세카르 한계를 넘는 별의 붕괴를 막을 물리 법칙은 없다고 결론지었다",
+			"faithful": false,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-chandrasekhar",
+			"run": "v3/r2",
+			"label": "F4",
+			"unsupported": "찬드라세카르 한계를 넘는 천체는 붕괴를 막을 수 없어 블랙홀이 될 수 있다",
+			"faithful": false,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-chandrasekhar",
+			"run": "v4/r0",
+			"label": "F6",
+			"unsupported": "찬드라세카르 한계를 넘는 별은 어떤 물리 법칙으로도 붕괴를 막을 수 없다",
+			"faithful": false,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-chandrasekhar",
+			"run": "v4/r1",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-chandrasekhar",
+			"run": "v4/r2",
+			"label": "F2",
+			"unsupported": "기성 학자들의 반대와 달리 안정성이 유지되지 않는다",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-definition",
+			"run": "v3/r0",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-definition",
+			"run": "v3/r1",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-definition",
+			"run": "v3/r2",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-definition",
+			"run": "v4/r0",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-definition",
+			"run": "v4/r1",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-definition",
+			"run": "v4/r2",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-disk-image",
+			"run": "v3/r0",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-disk-image",
+			"run": "v3/r1",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-disk-image",
+			"run": "v3/r2",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-disk-image",
+			"run": "v4/r0",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-disk-image",
+			"run": "v4/r1",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-disk-image",
+			"run": "v4/r2",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-evaporation",
+			"run": "v3/r0",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-evaporation",
+			"run": "v3/r1",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-evaporation",
+			"run": "v3/r2",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-evaporation",
+			"run": "v4/r0",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-evaporation",
+			"run": "v4/r1",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-evaporation",
+			"run": "v4/r2",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-event-horizon",
+			"run": "v3/r0",
+			"label": "F1",
+			"unsupported": "지평선을 넘은 사건의 정보는 외부 관찰자에게 도달하지 않아",
+			"faithful": false,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-event-horizon",
+			"run": "v3/r1",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-event-horizon",
+			"run": "v3/r2",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-event-horizon",
+			"run": "v4/r0",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-event-horizon",
+			"run": "v4/r1",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-event-horizon",
+			"run": "v4/r2",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-formation",
+			"run": "v3/r0",
+			"label": "F6",
+			"unsupported": "블랙홀은 큰 항성의 붕괴로 생기고",
+			"faithful": false,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-formation",
+			"run": "v3/r1",
+			"label": "F4",
+			"unsupported": "항성질량 블랙홀은 큰 항성이 붕괴해 생기고",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-formation",
+			"run": "v3/r2",
+			"label": "F3",
+			"unsupported": "블랙홀은 큰 항성의 붕괴로 생기고 질량을 흡수해 성장한다.",
+			"faithful": false,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-formation",
+			"run": "v4/r0",
+			"label": "F1",
+			"unsupported": "블랙홀은 큰 항성의 붕괴로 생기고",
+			"faithful": false,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-formation",
+			"run": "v4/r1",
+			"label": "F5",
+			"unsupported": "블랙홀은 항성 붕괴로 생기고 물질을 흡수해 초대질량 블랙홀로 성장한다.",
+			"faithful": false,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-formation",
+			"run": "v4/r2",
+			"label": "F2",
+			"unsupported": "블랙홀은 큰 항성이 붕괴해 생기고",
+			"faithful": false,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-growth-accretion",
+			"run": "v3/r0",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-growth-accretion",
+			"run": "v3/r1",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-growth-accretion",
+			"run": "v3/r2",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-growth-accretion",
+			"run": "v4/r0",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-growth-accretion",
+			"run": "v4/r1",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-growth-accretion",
+			"run": "v4/r2",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-growth-merger",
+			"run": "v3/r0",
+			"label": "F4",
+			"unsupported": "작은 천체들을 집어삼키며 성장한 초대질량 블랙홀",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-growth-merger",
+			"run": "v3/r1",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-growth-merger",
+			"run": "v3/r2",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-growth-merger",
+			"run": "v4/r0",
+			"label": "F2",
+			"unsupported": "중간질량 블랙홀 성장에서 특히 중요시된다",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-growth-merger",
+			"run": "v4/r1",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-growth-merger",
+			"run": "v4/r2",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-history",
+			"run": "v3/r0",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-history",
+			"run": "v3/r1",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-history",
+			"run": "v3/r2",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-history",
+			"run": "v4/r0",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-history",
+			"run": "v4/r1",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-history",
+			"run": "v4/r2",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-indirect",
+			"run": "v3/r0",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-indirect",
+			"run": "v3/r1",
+			"label": "F2",
+			"unsupported": "직접 전자기 복사를 거의 내지 않기",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-indirect",
+			"run": "v3/r2",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-indirect",
+			"run": "v4/r0",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-indirect",
+			"run": "v4/r1",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-indirect",
+			"run": "v4/r2",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-interaction",
+			"run": "v3/r0",
+			"label": "F5",
+			"unsupported": "강착원반의 열복사와 주위 항성의 궤도 관측으로 질량과 위치를 비정한다.",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-interaction",
+			"run": "v3/r1",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-interaction",
+			"run": "v3/r2",
+			"label": "F4",
+			"unsupported": "궤도로 질량과 위치를 비정할 수 있다",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-interaction",
+			"run": "v4/r0",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-interaction",
+			"run": "v4/r1",
+			"label": "F1",
+			"unsupported": "강착원반의 열복사와 주변 항성의 궤도 관측으로 질량과 위치를 밝힌다.",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-interaction",
+			"run": "v4/r2",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-ligo",
+			"run": "v3/r0",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-ligo",
+			"run": "v3/r1",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-ligo",
+			"run": "v3/r2",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-ligo",
+			"run": "v4/r0",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-ligo",
+			"run": "v4/r1",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-ligo",
+			"run": "v4/r2",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-no-hair",
+			"run": "v3/r0",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-no-hair",
+			"run": "v3/r1",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-no-hair",
+			"run": "v3/r2",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-no-hair",
+			"run": "v4/r0",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-no-hair",
+			"run": "v4/r1",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-no-hair",
+			"run": "v4/r2",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-tov-limit",
+			"run": "v3/r0",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-tov-limit",
+			"run": "v3/r1",
+			"label": "F5",
+			"unsupported": "잔해의 질량이 톨먼, 오펜하이머, 볼코프 한계를 넘으면 블랙홀로 붕괴한다.",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-tov-limit",
+			"run": "v3/r2",
+			"label": "F4",
+			"unsupported": "잔해의 질량이 톨먼, 오펜하이머, 볼코프 한계를 넘으면 블랙홀로 붕괴한다.",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-tov-limit",
+			"run": "v4/r0",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-tov-limit",
+			"run": "v4/r1",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-tov-limit",
+			"run": "v4/r2",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-xray-binary-mass",
+			"run": "v3/r0",
+			"label": "F4",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-xray-binary-mass",
+			"run": "v3/r1",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-xray-binary-mass",
+			"run": "v3/r2",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-xray-binary-mass",
+			"run": "v4/r0",
+			"label": "F6",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-xray-binary-mass",
+			"run": "v4/r1",
+			"label": "F5",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-xray-binary-mass",
+			"run": "v4/r2",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		}
+	]
+}

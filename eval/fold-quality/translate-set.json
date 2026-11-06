@@ -1,0 +1,330 @@
+[
+	{
+		"id": "tr-apollo",
+		"page": "/reading-en/",
+		"startsWith": "On July 20, 1969, Neil Armstrong",
+		"mainPoint": "On July 20, 1969, Armstrong and Aldrin landed on the Moon in the Apollo mission while Collins stayed in orbit.",
+		"facts": [
+			"They landed the lunar module Eagle in the Sea of Tranquility; Collins stayed aboard the command module Columbia.",
+			"Armstrong stepped out about six and a half hours after landing; the two spent roughly two and a half hours outside.",
+			"They collected 21.5 kilograms of rock and soil and set up a seismometer and a laser reflector still used to measure the distance to the Moon.",
+			"NASA flew the mission eight years after Kennedy asked Congress to commit to a landing before the decade was out."
+		],
+		"names": ["Neil Armstrong", "Buzz Aldrin", "Michael Collins", "Eagle", "Sea of Tranquility", "Columbia", "John F. Kennedy"]
+	},
+	{
+		"id": "tr-webb",
+		"page": "/reading-en/",
+		"startsWith": "The James Webb Space Telescope left Earth",
+		"mainPoint": "The James Webb Space Telescope is a large infrared telescope, launched in 2021, whose folding mirror and sunshield at the second Lagrange point keep it cold enough to observe in the infrared.",
+		"facts": [
+			"It launched on December 25, 2021, on an Ariane 5 from Kourou in French Guiana.",
+			"It is a joint project of NASA, ESA and the Canadian Space Agency.",
+			"Its 6.5-meter primary mirror has 18 hexagonal gold-coated beryllium segments that unfolded in space because the mirror did not fit in the fairing.",
+			"It orbits the second Lagrange point about 1.5 million km away, where a five-layer, tennis-court-sized sunshield keeps the instruments below 50 kelvin.",
+			"The cold matters because a warm telescope would glow at the infrared wavelengths it measures."
+		],
+		"names": ["James Webb Space Telescope", "Ariane 5", "Kourou", "French Guiana", "European Space Agency", "Canadian Space Agency"]
+	},
+	{
+		"id": "tr-gps",
+		"page": "/reading-en/",
+		"startsWith": "The Global Positioning System began in 1973",
+		"mainPoint": "GPS, a US military satellite system, became precise enough for everyday civilian navigation once Selective Availability was switched off in May 2000.",
+		"facts": [
+			"GPS began in 1973 as a US Department of Defense project; its 24-satellite constellation was declared operational in 1995.",
+			"Satellites carry atomic clocks and broadcast position and time; a receiver locates itself from signal delays from at least four satellites.",
+			"Until May 2000 Selective Availability degraded the civilian signal to about 100 meters of accuracy.",
+			"When Bill Clinton ordered it off, civilian error fell to about 20 meters almost overnight, enabling car navigation and later smartphone maps."
+		],
+		"names": ["Global Positioning System", "United States Department of Defense", "Selective Availability", "Bill Clinton"]
+	},
+	{
+		"id": "tr-tsmc",
+		"page": "/reading-en/",
+		"startsWith": "Taiwan Semiconductor Manufacturing Company, founded",
+		"mainPoint": "TSMC pioneered the foundry model of making chips that other firms design, and it leads chip manufacturing with its 3-nanometer process.",
+		"facts": [
+			"Morris Chang founded TSMC in Hsinchu in 1987 as the first company built only to make chips others design.",
+			"The foundry model lets Apple, Nvidia and AMD sell processors without owning a factory, when a leading-edge plant costs well over 20 billion dollars.",
+			"TSMC began volume production on its 3-nanometer process in late 2022; the name marks a density generation, not one feature size.",
+			"Its most advanced lines depend on EUV lithography machines that only ASML of the Netherlands can build."
+		],
+		"names": ["Taiwan Semiconductor Manufacturing Company", "Morris Chang", "Hsinchu", "Apple", "Nvidia"]
+	},
+	{
+		"id": "tr-linux",
+		"page": "/reading-en/",
+		"startsWith": "In August 1991, Linus Torvalds",
+		"mainPoint": "Linux began in 1991 as Linus Torvalds's hobby kernel and, released under the GPL and combined with GNU tools, grew into a free operating system that now runs all top supercomputers and Android.",
+		"facts": [
+			"Torvalds, a University of Helsinki student, announced it on the Usenet group comp.os.minix in August 1991 as a hobby.",
+			"He released it under the GNU General Public License in 1992, so anyone could change it if they shared changes under the same terms.",
+			"With tools from Richard Stallman's GNU Project it became a complete free operating system.",
+			"Linux runs on all of the 500 most powerful supercomputers and underlies Android."
+		],
+		"names": ["Linus Torvalds", "University of Helsinki", "Usenet", "GNU General Public License", "Richard Stallman", "GNU Project", "Linux", "Android"]
+	},
+	{
+		"id": "tr-transformer",
+		"page": "/reading-en/",
+		"startsWith": "In 2017, a team of eight researchers at Google",
+		"mainPoint": "The 2017 Google paper introduced the Transformer, whose parallel self-attention trained faster, set a translation record, and became the basis of nearly every later large language model.",
+		"facts": [
+			"Eight Google researchers published \"Attention Is All You Need\" in 2017.",
+			"Instead of reading word by word like recurrent networks, it relates every word to every other at once through self-attention.",
+			"The comparisons run in parallel, so it trained far faster on graphics processors.",
+			"It set a record of 28.4 BLEU on WMT 2014 English-to-German.",
+			"Nearly every large language model since, from BERT to GPT-4, is built on it."
+		],
+		"names": ["Google", "Attention Is All You Need"]
+	},
+	{
+		"id": "tr-rosetta",
+		"page": "/reading-en/",
+		"startsWith": "French soldiers found the Rosetta Stone",
+		"mainPoint": "The Rosetta Stone, carrying one decree in hieroglyphs, Demotic and Greek, gave scholars the key to Egyptian scripts, which Champollion deciphered in 1822.",
+		"facts": [
+			"French soldiers found it in 1799 near Rashid (Rosetta) in the Nile Delta.",
+			"It carries one decree issued at Memphis in 196 BC, written in hieroglyphs, Demotic and ancient Greek.",
+			"Because the Greek was readable it offered a key, yet decipherment took more than twenty years.",
+			"In 1822 Champollion showed hieroglyphs recorded sounds as well as ideas.",
+			"It has been on display at the British Museum in London since 1802."
+		],
+		"names": ["Rosetta Stone", "Rashid", "Nile Delta", "Memphis", "Jean-François Champollion", "British Museum"]
+	},
+	{
+		"id": "tr-crispr",
+		"page": "/reading-en/",
+		"startsWith": "In 2012, Jennifer Doudna and Emmanuelle Charpentier",
+		"mainPoint": "Doudna and Charpentier showed in 2012 that CRISPR-Cas9 can be programmed with a guide RNA to cut DNA at a chosen site, making gene editing far easier and leading to a Nobel Prize and the first approved therapy.",
+		"facts": [
+			"They reported it in Science in 2012: a bacterial defense system that can be programmed to cut DNA at a chosen site.",
+			"Cas9 is guided by a short RNA matching the target, so changing the guide retargets the cut.",
+			"Earlier tools needed a new protein per target, taking months; a guide RNA takes days.",
+			"They shared the 2020 Nobel Prize in Chemistry.",
+			"In 2023 UK regulators approved Casgevy, the first therapy based on it, for sickle cell disease."
+		],
+		"names": ["Jennifer Doudna", "Emmanuelle Charpentier", "Science", "Casgevy"]
+	},
+	{
+		"id": "tr-higgs",
+		"page": "/reading-en/",
+		"startsWith": "On July 4, 2012, physicists at CERN",
+		"mainPoint": "In 2012 CERN's ATLAS and CMS experiments found a particle of about 125 GeV matching the Higgs boson predicted in 1964 to explain how particles get mass.",
+		"facts": [
+			"The announcement came on July 4, 2012; ATLAS and CMS at the Large Hadron Collider each found it.",
+			"Its properties matched the boson Peter Higgs and others predicted in 1964 to explain how elementary particles acquire mass.",
+			"Finding it needed collision energies no earlier machine reached, in a 27-kilometer ring under the France-Switzerland border.",
+			"Higgs and Englert won the Nobel Prize in Physics the next year; the experiments keep measuring its decays to test the Standard Model."
+		],
+		"names": ["Large Hadron Collider", "Peter Higgs", "François Englert"]
+	},
+	{
+		"id": "tr-hangul",
+		"page": "/reading-en/",
+		"startsWith": "In 1443, King Sejong the Great",
+		"mainPoint": "King Sejong created Hangul in 1443 so ordinary people could write Korean, and its letters were designed systematically from the shapes of the speech organs.",
+		"facts": [
+			"Korean was until then written mostly with Chinese characters.",
+			"He promulgated it in 1446 in Hunminjeongeum, meaning the correct sounds for instructing the people.",
+			"Consonant shapes come from the positions of the mouth and tongue, so linguists often call it one of the most systematic scripts.",
+			"South Korea celebrates its creation every October 9 as Hangul Day."
+		],
+		"names": ["Hunminjeongeum", "Hangul"]
+	},
+	{
+		"id": "tr-seed-vault",
+		"page": "/reading-en/",
+		"startsWith": "The Svalbard Global Seed Vault opened",
+		"mainPoint": "The Svalbard Global Seed Vault is a frozen Arctic backup of the world's gene banks, and it first returned seeds in 2015 to researchers who lost their gene bank near Aleppo.",
+		"facts": [
+			"It opened in 2008 inside a mountain on Spitsbergen, about 1,300 km from the North Pole.",
+			"Norway owns it and the Crop Trust helps run it as a backup; gene banks keep their own seeds and send duplicates.",
+			"The chambers are at minus 18 degrees Celsius, and the permafrost would keep samples frozen if the power failed.",
+			"It can hold 4.5 million samples; in 2015 it returned seeds for the first time, to researchers cut off from their gene bank near Aleppo during the Syrian war."
+		],
+		"names": ["Svalbard Global Seed Vault", "Spitsbergen", "North Pole", "Crop Trust", "Aleppo"]
+	},
+	{
+		"id": "tr-everest",
+		"page": "/reading-en/",
+		"startsWith": "In December 2020, China and Nepal",
+		"mainPoint": "China and Nepal jointly set Mount Everest's height at 8,848.86 meters in 2020, slightly higher than Nepal's long-used figure.",
+		"facts": [
+			"The new figure is 86 centimeters higher than the one Nepal had used for decades.",
+			"Both countries' teams reached the summit separately; the Chinese team used satellite receivers and ground-penetrating radar to measure the snow depth.",
+			"It was first identified as the highest mountain in 1856 by the Great Trigonometrical Survey of British India and later named after George Everest.",
+			"In Nepal it is Sagarmatha, and in Tibet Chomolungma."
+		],
+		"names": ["Mount Everest", "Great Trigonometrical Survey", "George Everest", "Sagarmatha", "Tibet", "Chomolungma"]
+	},
+	{
+		"id": "tr-lehman",
+		"page": "/reading-en-more/",
+		"startsWith": "On September 15, 2008, Lehman Brothers",
+		"mainPoint": "Lehman Brothers' bankruptcy in September 2008, which the Federal Reserve and the Treasury let happen, froze lending between banks worldwide and led Congress to pass the 700 billion dollar rescue program; whether saving Lehman would have contained the panic is still debated.",
+		"facts": [
+			"Lehman filed on September 15, 2008, the largest bankruptcy in American history, with about 639 billion dollars in assets.",
+			"The Fed and the Treasury had arranged a rescue for Bear Stearns that March but let Lehman fail when no buyer would take it without a government guarantee.",
+			"Within days money market funds holding its debt lost value and banks stopped lending to one another.",
+			"Congress passed the 700 billion dollar Troubled Asset Relief Program on October 3; Bernanke later said he believed the Fed lacked the legal power to save Lehman.",
+			"Economists still debate whether a rescue would have contained the panic or only delayed it."
+		],
+		"names": ["Lehman Brothers", "Federal Reserve", "Bear Stearns", "Troubled Asset Relief Program", "Ben Bernanke"]
+	},
+	{
+		"id": "tr-gdpr",
+		"page": "/reading-en-more/",
+		"startsWith": "The European Union's General Data Protection Regulation",
+		"mainPoint": "The GDPR, in force since May 2018, gives people in the EU rights over their personal data and backs them with fines large enough to reach any company worldwide, such as Meta's 1.2 billion euro fine.",
+		"facts": [
+			"It took effect on May 25, 2018, and applies to any organization handling EU residents' personal data, wherever it is based.",
+			"People may see, correct and in many cases erase their data.",
+			"Fines reach up to 20 million euros or 4 percent of worldwide annual turnover, whichever is higher.",
+			"In May 2023 Ireland's Data Protection Commission fined Meta 1.2 billion euros for moving European Facebook users' data to the United States.",
+			"Critics argue the rules mainly produced consent pop-ups people click through without reading."
+		],
+		"names": ["General Data Protection Regulation", "Data Protection Commission", "Meta", "Facebook"]
+	},
+	{
+		"id": "tr-kipchoge",
+		"page": "/reading-en-more/",
+		"startsWith": "On October 12, 2019, in Vienna, Eliud Kipchoge",
+		"mainPoint": "Kipchoge ran the first marathon under two hours in 2019, but because of rotating pacemakers and a pace laser it is not a record; the official record is Kiptum's 2:00:35 from 2023.",
+		"facts": [
+			"On October 12, 2019, in Vienna, Kipchoge finished in 1:59:40.",
+			"It does not count because pacemakers rotated in front of him and a car projected a pace laser.",
+			"He had missed the goal at Monza in 2017 with 2:00:25.",
+			"Kelvin Kiptum holds the official record, 2:00:35 at the Chicago Marathon in October 2023, four months before he died in a car crash.",
+			"Sports scientists disagree how much of the margin came from the pacing and how much from carbon-plated shoes."
+		],
+		"names": ["Eliud Kipchoge", "Monza", "Kelvin Kiptum", "Chicago Marathon"]
+	},
+	{
+		"id": "tr-penicillin",
+		"page": "/reading-en-more/",
+		"startsWith": "In September 1928, Alexander Fleming",
+		"mainPoint": "Fleming noticed penicillin by chance in 1928 but could not purify it; it became a usable drug only after Florey and Chain at Oxford extracted it and American factories mass-produced it by 1944.",
+		"facts": [
+			"In September 1928 Fleming saw that a mould on a culture plate at St Mary's Hospital had killed the bacteria around it.",
+			"He named the substance penicillin but could not purify it in useful amounts.",
+			"Historians think the spores may have drifted up from a mycology lab below, though no one can be sure.",
+			"Florey and Chain at Oxford worked out how to extract and concentrate it and treated their first patient in 1941, a policeman who improved until the supply ran out.",
+			"American factories scaled up production so that by D-Day in 1944 there was enough to treat Allied casualties."
+		],
+		"names": ["Alexander Fleming", "St Mary's Hospital", "Howard Florey", "Ernst Chain", "University of Oxford"]
+	},
+	{
+		"id": "tr-smallpox",
+		"page": "/reading-en-more/",
+		"startsWith": "Smallpox killed an estimated 300 million",
+		"mainPoint": "A WHO campaign launched in 1967 wiped out smallpox through ring vaccination, ending natural cases in 1977 and making it the only human disease ever eradicated.",
+		"facts": [
+			"Smallpox killed an estimated 300 million people in the 20th century.",
+			"The WHO launched an intensified eradication programme in 1967, led by Donald Henderson.",
+			"Teams vaccinated the people around each new case (ring vaccination), which worked because the virus had no animal host.",
+			"The last natural case was Ali Maow Maalin in Merca, Somalia, in October 1977; he recovered.",
+			"The WHO declared it eradicated on May 8, 1980."
+		],
+		"names": ["World Health Organization", "Donald Henderson", "Ali Maow Maalin", "Merca"]
+	},
+	{
+		"id": "tr-wolves",
+		"page": "/reading-en-more/",
+		"startsWith": "In 1995 and 1996, the US Fish and Wildlife Service",
+		"mainPoint": "After 31 wolves were reintroduced to Yellowstone in 1995 and 1996 the elk herd fell sharply, but whether the wolves caused the recovery of willows and aspens through a trophic cascade is still debated.",
+		"facts": [
+			"The US Fish and Wildlife Service released 31 gray wolves from Canada in 1995 and 1996, about 70 years after the last wolves there were killed.",
+			"Northern range elk fell from about 19,000 in 1994 to fewer than 5,000 by 2012.",
+			"Some ecologists argue the wolves set off a trophic cascade: less browsing let willows and aspens grow back and beavers return.",
+			"Others point to hunting, drought and more bears, and note willows recovered only in some places.",
+			"It matters because the case is often cited as proof that restoring one predator can repair an ecosystem."
+		],
+		"names": ["US Fish and Wildlife Service", "Yellowstone National Park"]
+	},
+	{
+		"id": "tr-thwaites",
+		"page": "/reading-en-more/",
+		"startsWith": "Thwaites Glacier in West Antarctica",
+		"mainPoint": "Thwaites Glacier, which holds enough ice to raise sea level by about 65 centimeters, is losing ice as warm ocean water melts it from below, and how fast it may retreat is still uncertain.",
+		"facts": [
+			"It is sometimes called the Doomsday Glacier and holds about 65 centimeters of global sea-level rise.",
+			"It loses ice faster than in the 1990s, partly because warm ocean water melts its ice shelf from below.",
+			"Since 2018 the International Thwaites Glacier Collaboration (US NSF and UK NERC) has drilled through it and sent the robot Icefin beneath it.",
+			"Measurements suggest it could retreat faster later this century, but models disagree on decades or centuries.",
+			"Some researchers think it matters more because its loss could destabilize neighboring glaciers."
+		],
+		"names": ["Thwaites Glacier", "International Thwaites Glacier Collaboration", "National Science Foundation", "Natural Environment Research Council", "Icefin"]
+	},
+	{
+		"id": "tr-gobekli",
+		"page": "/reading-en-more/",
+		"startsWith": "Göbekli Tepe, a hilltop site",
+		"mainPoint": "Göbekli Tepe shows that people raised monumental carved stone circles around 9500 BC; Schmidt saw it as a hunter-gatherer sanctuary, but later finds suggest people also lived there.",
+		"facts": [
+			"The pillar circles in southeastern Turkey date to around 9500 BC, thousands of years before Stonehenge.",
+			"The T-shaped pillars, some over five meters, are carved with foxes, boars, snakes and vultures.",
+			"Klaus Schmidt of the German Archaeological Institute, who dug from 1995 to 2014, argued hunter-gatherers built it as a sanctuary and that building it may have pushed people toward farming.",
+			"Later digs found houses, cisterns and grain-grinding tools, so many archaeologists think people also lived there.",
+			"Only a small part has been excavated."
+		],
+		"names": ["Göbekli Tepe", "Stonehenge", "Klaus Schmidt", "German Archaeological Institute"]
+	},
+	{
+		"id": "tr-jikji",
+		"page": "/reading-en-more/",
+		"startsWith": "Jikji, a collection of Buddhist teachings",
+		"mainPoint": "Jikji, printed in Korea in 1377, is the oldest surviving book printed with movable metal type, about 78 years before the Gutenberg Bible, and its one surviving volume is held in France.",
+		"facts": [
+			"It is a collection of Buddhist teachings printed at Heungdeok Temple in Cheongju in 1377.",
+			"It predates the Gutenberg Bible, printed in Mainz around 1455, by about 78 years.",
+			"Only the second of two volumes survives, held by the National Library of France in Paris after a French diplomat took it in the late 19th century.",
+			"Korea has asked for its return; the library says it was acquired legally.",
+			"UNESCO added it to the Memory of the World Register in 2001."
+		],
+		"names": ["Jikji", "Heungdeok Temple", "Gutenberg Bible", "Mainz", "National Library of France", "Memory of the World"]
+	},
+	{
+		"id": "tr-beethoven",
+		"page": "/reading-en-more/",
+		"startsWith": "Ludwig van Beethoven's Ninth Symphony",
+		"mainPoint": "Beethoven's Ninth Symphony, premiered in Vienna in 1824 when he was nearly deaf, was the first major symphony to add singers, with Schiller's Ode to Joy, and its melody later became Europe's anthem.",
+		"facts": [
+			"It premiered in Vienna on May 7, 1824, when Beethoven was almost completely deaf.",
+			"It was the first symphony by a major composer to bring in singers, who sing Schiller's Ode to Joy in the last movement.",
+			"Several witnesses said a soloist turned him around to see the applause, though accounts differ in details.",
+			"It lasts about 70 minutes; a later legend holds that the compact disc was sized to fit it.",
+			"The Council of Europe adopted the melody as its anthem in 1972 and the European Union in 1985."
+		],
+		"names": ["Ludwig van Beethoven", "Friedrich Schiller", "Ode to Joy", "Council of Europe"]
+	},
+	{
+		"id": "tr-parasite",
+		"page": "/reading-en-more/",
+		"startsWith": "In February 2020, Parasite, directed by Bong Joon-ho",
+		"mainPoint": "Bong Joon-ho's Parasite, about a poor family working its way into a rich household, became in 2020 the first film not in English to win the Academy Award for Best Picture, after winning the Palme d'Or.",
+		"facts": [
+			"It won Best Picture in February 2020, the first non-English-language film to do so.",
+			"It won the Palme d'Or at Cannes in May 2019, the first Korean film to do so.",
+			"It follows the poor Kim family as they talk their way into jobs in the wealthy Park family's house in Seoul.",
+			"At the Golden Globes Bong spoke of the one-inch-tall barrier of subtitles.",
+			"It earned more than 250 million dollars worldwide on a budget of about 11 million dollars."
+		],
+		"names": ["Parasite", "Academy Award", "Palme d'Or", "Cannes Film Festival", "Golden Globe"]
+	},
+	{
+		"id": "tr-fermat",
+		"page": "/reading-en-more/",
+		"startsWith": "Around 1637, Pierre de Fermat",
+		"mainPoint": "Fermat's claim, written in a margin around 1637 without a proof, that a^n + b^n = c^n has no whole-number solutions for n above 2 was proved only by Andrew Wiles, who closed a gap with Richard Taylor in 1994.",
+		"facts": [
+			"Around 1637 Fermat wrote the claim in his copy of Diophantus's Arithmetica, saying the margin was too narrow for his proof.",
+			"No proof was found in his papers, and most mathematicians doubt he had one.",
+			"Andrew Wiles announced a proof in Cambridge in June 1993 after seven years of mostly secret work.",
+			"A reviewer found a gap, which Wiles closed the next year with his former student Richard Taylor.",
+			"It was published in the Annals of Mathematics in 1995, and Wiles received the Abel Prize in 2016."
+		],
+		"names": ["Pierre de Fermat", "Diophantus", "Arithmetica", "Andrew Wiles", "Richard Taylor", "Annals of Mathematics", "Abel Prize"]
+	}
+]

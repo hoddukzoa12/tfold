@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Harbor log</title>
+		<style>
+			body {
+				margin: 0;
+				font: 17px/1.55 Georgia, serif;
+				color: #1f2328;
+				background: #fff;
+			}
+			body.dark {
+				color: #e6edf3;
+				background: #0d1117;
+			}
+			nav {
+				padding: 12px 24px;
+				background: #eef;
+			}
+			.col {
+				max-width: 40em;
+				margin: 0 auto;
+				padding: 24px;
+			}
+			.col > p,
+			.col > ul,
+			.col > blockquote {
+				margin: 0 0 28px;
+			}
+			#photo,
+			#canvas {
+				display: block;
+				width: 400px;
+				height: 200px;
+				margin: 0 0 24px;
+				background: #bcd;
+			}
+			#rich,
+			#field {
+				display: block;
+				width: 100%;
+				min-height: 60px;
+				margin: 0 0 24px;
+				box-sizing: border-box;
+			}
+			#rtl {
+				direction: rtl;
+			}
+			#tail {
+				height: 1200px;
+			}
+		</style>
+	</head>
+	<body>
+		<nav id="nav">
+			<a href="#top">Home</a>
+			<span>The harbor log, written up each week by the people who work the docks, for anyone who reads it through.</span>
+		</nav>
+		<main class="col">
+			<h1 id="heading">The north pier</h1>
+			<p id="long-1">
+				The north pier opened in the spring after two years of work on its pilings. Fishing boats moved over first, and the ferry followed them once the new ramp had passed its load tests. By the end
+				of the summer the old pier stood empty, and the town began to argue about what to do with it.
+			</p>
+			<p id="long-2">
+				Most of the argument was about money, as these arguments usually are. Tearing the old pier down would cost more than the town had set aside for it. Leaving it up would cost less this year and far
+				more once the timbers began to rot, which the surveyors said would take about a decade.
+			</p>
+			<p id="short">Short note.</p>
+			<h2 id="subheading">What the survey found</h2>
+			<p id="long-3">
+				The survey found that the southern third of the pier had kept its strength, while the northern end had lost a quarter of its load rating. That was enough to close the northern end to vehicles at
+				once. It was not enough to settle the argument, because each side read the same figures as proof of what it had said all along. <a id="inline-link" href="#long-3">The full report</a> runs to ninety pages.
+			</p>
+			<ul id="short-list">
+				<li id="short-item">Pilings</li>
+				<li>Decking</li>
+			</ul>
+			<ul>
+				<li id="form-item">Write the name of the vessel here <input id="inner-field" aria-label="Vessel name" /> and the office will add it to the list of boats in the basin.</li>
+			</ul>
+			<p id="with-images">
+				The ferry ramp <img id="inline-mark" alt="" width="14" height="14" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Crect width='14' height='14' fill='%23456'/%3E%3C/svg%3E" /> passed its load tests in June, and the photo below shows the first crossing with a full deck of cars.
+				<img id="inner-photo" alt="" width="300" height="160" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='160'%3E%3Crect width='300' height='160' fill='%23bcd'/%3E%3C/svg%3E" />
+			</p>
+			<img id="photo" alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Crect width='400' height='200' fill='%23bcd'/%3E%3C/svg%3E" />
+			<canvas id="canvas" width="400" height="200"></canvas>
+			<blockquote id="quote">
+				We have spent more on talking about this pier than it would have cost to fix it. Everyone in this room knows it, and everyone in this room will vote the way they voted last time anyway.
+			</blockquote>
+			<textarea id="field" aria-label="A note"></textarea>
+			<div id="rich" contenteditable="true">A note you can edit, with more words in it than a paragraph needs before it counts as one, so that only its being editable keeps it from folding here.</div>
+			<table id="table">
+				<tr><td>Vessels in the north basin on the first of each month, counted by the harbor office and kept in this table.</td></tr>
+			</table>
+			<button id="button" type="button">Subscribe</button>
+			<p id="rtl">
+				هذه فقرة طويلة بما يكفي لكي تطوى، وفيها أكثر من جملة واحدة حتى تعد فقرة. وهي مكتوبة من اليمين إلى اليسار لكي يظهر الشريط في الجهة الصحيحة منها. ويقرأها القارئ كما يقرأ أي فقرة أخرى في الصفحة.
+			</p>
+			<p id="long-4">
+				A year later the town voted to keep the southern third as a walkway and take down the rest. The work took one winter, and the timbers that could be saved went into the benches along the new walk.
+				People who had argued for years now sit on those benches and argue about something else.
+			</p>
+			<div id="tail"></div>
+		</main>
+		<footer id="footer">Harbor log, printed and posted at the harbor office every week of the year since the first pier went up.</footer>
+	</body>
+</html>

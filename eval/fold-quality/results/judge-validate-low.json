@@ -1,0 +1,280 @@
+{
+	"model": "anthropic/claude-sonnet-5.5",
+	"runs": [
+		"v2"
+	],
+	"cost": 0.05623399999999999,
+	"verdicts": [
+		{
+			"item": "ax-conclusion",
+			"run": "v2/r0",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-conclusion",
+			"run": "v2/r1",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ax-conclusion",
+			"run": "v2/r2",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-jets",
+			"run": "v2/r0",
+			"label": "F1",
+			"unsupported": "quasars and microquasars are supermassive and stellar-mass jet systems respectively",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-jets",
+			"run": "v2/r1",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "en-jets",
+			"run": "v2/r2",
+			"label": "F3",
+			"unsupported": "Jets occur around spinning black holes with strongly magnetized accretion disks.",
+			"faithful": false,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "en-sgr-a",
+			"run": "v2/r0",
+			"label": "F1",
+			"unsupported": "a mass of 3×10^6 solar masses",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-sgr-a",
+			"run": "v2/r1",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-sgr-a",
+			"run": "v2/r2",
+			"label": "F2",
+			"unsupported": "prove a supermassive black hole sits at the galaxy's center",
+			"faithful": false,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "en-supermassive-acceptance",
+			"run": "v2/r0",
+			"label": "F1",
+			"unsupported": "Quasar models and NGC 4258 maser orbits ruled out dense stellar clusters",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-supermassive-acceptance",
+			"run": "v2/r1",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "en-supermassive-acceptance",
+			"run": "v2/r2",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-agn",
+			"run": "v2/r0",
+			"label": "F2",
+			"unsupported": "대부분 AGN이 초대질량 블랙홀을 품지만",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-agn",
+			"run": "v2/r1",
+			"label": "F3",
+			"unsupported": "대부분 AGN은 초대질량 블랙홀을 품지만",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-agn",
+			"run": "v2/r2",
+			"label": "F1",
+			"unsupported": "대부분 AGN이 초대질량 블랙홀을 품지만",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-chandrasekhar",
+			"run": "v2/r0",
+			"label": "F3",
+			"unsupported": "중성자별도 한계 질량을 넘으면 블랙홀까지 붕괴한다",
+			"faithful": false,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-chandrasekhar",
+			"run": "v2/r1",
+			"label": "F1",
+			"unsupported": "어떤 물리 법칙도 이를 막지 못한다",
+			"faithful": false,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-chandrasekhar",
+			"run": "v2/r2",
+			"label": "F2",
+			"unsupported": "오펜하이머 등은 붕괴를 막을 물리 법칙이 없다고 결론지었다",
+			"faithful": false,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-disk-image",
+			"run": "v2/r0",
+			"label": "F3",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-disk-image",
+			"run": "v2/r1",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-disk-image",
+			"run": "v2/r2",
+			"label": "F2",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-evaporation",
+			"run": "v2/r0",
+			"label": "F1",
+			"unsupported": "",
+			"faithful": true,
+			"mainPoint": true,
+			"completeSentence": false
+		},
+		{
+			"item": "ko-evaporation",
+			"run": "v2/r1",
+			"label": "F3",
+			"unsupported": "지름이 0.1 밀리미터 이하여야 한다",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-evaporation",
+			"run": "v2/r2",
+			"label": "F2",
+			"unsupported": "직경은 0.1 밀리미터 이하여야 한다",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-formation",
+			"run": "v2/r0",
+			"label": "F1",
+			"unsupported": "큰 항성의 붕괴나 블랙홀끼리의 융합, 물질 흡수를 통해 성장할 수 있기 때문이다",
+			"faithful": false,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-formation",
+			"run": "v2/r1",
+			"label": "F3",
+			"unsupported": "블랙홀은 큰 항성의 붕괴로 생기고",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-formation",
+			"run": "v2/r2",
+			"label": "F2",
+			"unsupported": "블랙홀은 큰 항성의 붕괴로 생기고",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-interaction",
+			"run": "v2/r0",
+			"label": "F1",
+			"unsupported": "강착원반의 열복사와 공전 항성 궤도 관측으로 질량과 위치를 비정하며",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-interaction",
+			"run": "v2/r1",
+			"label": "F2",
+			"unsupported": "강착원반과 궁수자리 A* 사례로 질량과 위치를 밝혀냈다",
+			"faithful": false,
+			"mainPoint": false,
+			"completeSentence": true
+		},
+		{
+			"item": "ko-interaction",
+			"run": "v2/r2",
+			"label": "F3",
+			"unsupported": "강착원반의 열복사와 주변 항성의 궤도를 관측해 질량과 위치를 비정한다",
+			"faithful": false,
+			"mainPoint": true,
+			"completeSentence": true
+		}
+	],
+	"missing": []
+}

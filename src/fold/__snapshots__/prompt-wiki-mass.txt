@@ -1,0 +1,96 @@
+Text: Black hole - Wikipedia
+
+Outline (▶ marks this section):
+Black hole
+History
+  General relativity
+  Singular solutions in general relativity
+  Gravity vs. degeneracy pressure
+  Birth of modern model
+  Golden age
+  Modern research and observation
+  Etymology
+Definition
+Properties
+  ▶ Mass
+  Spin and angular momentum
+  Charge
+Classification
+Structure
+  External geometry
+    Relativistic jets
+    Accretion disk
+    Innermost stable circular orbit (ISCO)
+    Photon sphere and shadow
+    Ergosphere
+    Plunging region
+  Radius
+  Event horizon
+  Internal geometry
+    Cauchy horizon
+    Singularity
+Formation
+  Supernova
+  Other mechanisms
+  Primordial black holes and the Big Bang
+  High-energy collisions
+Evolution
+  Merger
+  Accretion of matter
+  Interaction with galaxies
+  Evaporation
+  Laws of mechanics and thermodynamics
+Observational evidence
+  Direct interferometry
+  Gravitational waves
+  Stars orbiting Sagittarius A*
+  Binaries
+  Galactic nuclei
+    Active galactic nucleus
+  Microlensing
+Areas of investigation
+  Information loss paradox
+  Supermassive black holes in the early universe
+  Alternatives to black holes
+In fiction
+References
+External links
+  Videos
+
+This section: Mass
+
+Its units in reading order. A unit is a paragraph, a list item, a quotation or a definition; each unit's sentences are numbered from 0.
+
+[U0] paragraph
+  0: The simplest static black holes have mass but neither electric charge nor angular momentum.
+  1: Contrary to the popular notion of a black hole "sucking in everything" in its surroundings, from far away, the external gravitational field of a black hole is identical to that of any other body of the same mass.
+
+[U1] paragraph
+  0: While a black hole can theoretically have any positive mass, its charge and angular momentum are limited by its mass, with this limit being greater for more massive black holes.
+  1: The net electric charge Q and the total angular momentum J satisfy the inequality {\frac {Q^{2}}{4\pi \epsilon _{0}}}+{\frac {c^{2}J^{2}}{GM^{2}}}\leq GM^{2} for a black hole of mass M, where \epsilon _{0} is the vacuum permittivity constant, c is the speed of light and G is the gravitational constant.
+  2: Black holes with the maximum possible combination of charge and spin satisfying this inequality are called extremal black holes.
+  3: Adding a low-mass object with a lot of charge or angular momentum to an extremal black hole would create a so-called naked singularity, a singularity outside of a black hole.
+  4: Because these singularities make the universe inherently unpredictable, many physicists believe they could not exist.
+  5: The weak cosmic censorship hypothesis, proposed by Penrose, rules out the formation of such singularities, when they are created through the gravitational collapse of realistic matter.
+  6: This hypothesis remains an important area of study because has not yet been proven and it relates to many aspects of general relativity and quantum gravity.
+
+[U2] paragraph
+  0: The total mass of a nearby black hole can be estimated by analysing the motion of the stars or gas surrounding it.
+  1: The mass of distant supermassive black holes can be inferred from Doppler broadening of spectral lines emitted by rapidly orbiting gas, a technique called reverberation mapping.
+
+A reader zooms out of this text level by level: full text, then key sentences, then brief, then takeaway. Write the short levels for every unit.
+
+For each unit:
+- takeaway: ONE English sentence of at most 14 words stating the unit's main point: what the whole unit establishes, the claim its other sentences support, explain or illustrate. Not one detail, example or closing fact from it, unless the unit is about that one thing. Write a plain, complete sentence with a verb, not a headline. Name the thing itself, not the activity ("this paragraph describes", "the authors discuss", "details of"). Keep the text's own terms. Someone reading only the takeaways of the whole text in order should be able to follow its argument.
+- reason: ONE more English sentence of at most 22 words that reads on from the takeaway with the unit's main support for it: a reason, mechanism, condition, consequence or key fact. Do not restate the takeaway. Use "" when the unit is a single short sentence.
+- evidence: the numbers of the 1 or 2 sentences (3 only when the unit has 7 or more) whose verbatim text best backs the takeaway, best first, and fewer than the unit has: one number for a unit of 2 sentences, [0] for a unit of one; prefer sentences that state a result, a definition or a decision over sentences that only set up or list.
+- A unit that is not a passage of the text (a label, a heading read as a line of text, an author's note or address, a date), or that is already as short as its takeaway would be, stays as written: give its takeaway and reason as "".
+
+Each line stands in for its unit, so it says only what the unit says:
+- No fact, name, standard, number or date of your own, and every number exactly as the unit gives it. When it writes "the cross-border payment system", write that, not the name of one particular system.
+- Keep the unit's certainty and scope. What it calls thought, believed, expected, possible, a candidate, a general view or only found stays so in the line: never make it confirmed, proven or known. Keep may, most and some, and keep a claim about one kind of thing about that kind. When the line is too long, drop a detail, never a hedge.
+- Keep each cause, actor and step in its own role. When one process forms a thing and others grow it, never write that all of them grow it. Join two facts with because or so only when the unit links them.
+
+Style: no em or en dashes as punctuation, use commas or colons (hyphenated terms such as "zero-shot" are fine). No citations; no figure or table numbers.
+
+Return JSON: {"units": [{"id": "U0", "takeaway": "...", "reason": "...", "evidence": [0]}, ...]} with exactly one entry per unit, in order.

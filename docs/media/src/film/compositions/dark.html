@@ -1,0 +1,56 @@
+<template>
+	<style>
+		#root {
+			position: absolute;
+			inset: 0;
+		}
+		#dark-card {
+			position: absolute;
+			left: 40px;
+			top: 84px;
+			width: 1840px;
+			height: 956px;
+			border-radius: 20px;
+			overflow: hidden;
+			background: #17181c;
+		}
+		#dark-camera {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 1840px;
+			height: 956px;
+		}
+		#dark-footage {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 1840px;
+			height: 956px;
+			object-fit: contain;
+		}
+		#dark-pointer {
+			position: absolute;
+			left: 1156px;
+			top: 237px;
+			width: 40px;
+			height: 54px;
+		}
+	</style>
+	<div id="root" data-composition-id="dark" data-width="1920" data-height="1080">
+		<div id="dark-card" data-layout-allow-overflow>
+			<div id="dark-camera">
+				<video id="dark-footage" class="clip" src="assets/footage/film-dark.mp4" muted playsinline data-start="0" data-duration="2.2" data-track-index="1"></video>
+				<svg id="dark-pointer" viewBox="0 0 22 30" aria-hidden="true">
+					<path d="M2 2 L2 24 L8 18.5 L12 28 L16.5 26 L12.5 16.8 L20 16.5 Z" fill="#fff" stroke="#2a2a2e" stroke-width="1.6" stroke-linejoin="round" />
+				</svg>
+			</div>
+		</div>
+	</div>
+	<script>
+		const tl = gsap.timeline({ paused: true });
+		tl.fromTo('#dark-card', { clipPath: 'circle(0px at 1156px 237px)' }, { clipPath: 'circle(2100px at 1156px 237px)', duration: 0.4, ease: 'power2.inOut' }, 0);
+		tl.to('#dark-card', { y: 40, opacity: 0, duration: 0.2, ease: 'power3.in' }, 1.96);
+		window.__timelines['dark'] = tl;
+	</script>
+</template>

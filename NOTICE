@@ -1,0 +1,70 @@
+tfold
+Copyright 2026 The tfold authors
+
+tfold is licensed under the GNU Affero General Public License, version 3
+only (see LICENSE). Files derived from TextFold, listed below, also remain
+under the Apache License, Version 2.0 (see LICENSES/Apache-2.0.txt).
+
+This product includes software derived from TextFold
+(https://github.com/chenxiachan/textfold), licensed under the Apache License,
+Version 2.0. TextFold's NOTICE file at commit
+5fc941dc4560ee2809c0f278da28457292c7f739 follows verbatim between the marker
+lines.
+
+----- begin TextFold NOTICE -----
+TextFold (formerly PaperFold)
+Copyright 2026 Xia Chen
+
+This product includes software developed by Xia Chen
+(https://github.com/chenxiachan/textfold), licensed under the Apache License,
+Version 2.0 (see LICENSE).
+
+It includes the fonts Inter and Source Serif 4 (SIL Open Font License 1.1, in web/vendor/fonts), KaTeX
+(MIT License, in web/vendor/katex), Mermaid (MIT License, in web/vendor/mermaid) and PDF.js (Apache License 2.0,
+in web/vendor/pdfjs), kept with TextFold so that its pages ask no other server for anything.
+
+Its browser extension includes Defuddle (MIT License, with temml and mathml-to-latex, MIT License; changed as
+tools/defuddle/build.mjs says, in extension/vendor/defuddle) and Readability (Apache License 2.0, in
+extension/vendor/readability).
+
+
+Papers and their licenses
+
+The license covers TextFold's source code only. Papers read with TextFold, and the levels, links,
+translations and pages made from them, remain under the licenses their authors chose. Whoever stores,
+shares or publishes that content is responsible for respecting those licenses.
+----- end TextFold NOTICE -----
+
+Files derived from TextFold, each with the TextFold file it comes from:
+- src/fold/local.ts, from textfold/tokens.py
+- src/fold/prompt.ts, from textfold/ladder.py, textfold/llm.py and textfold/kinds.py
+- src/fold/align.ts, from textfold/tokens.py and textfold/ladder.py
+- src/content/morph.ts, from textfold/web/reader.js
+
+TextFold's textfold/ladder.py says that its ladder prompt is ported from
+ThoughtDAG (https://github.com/chenxiachan/thoughtdag, src/lib/ladder.ts), so
+src/fold/prompt.ts also derives from ThoughtDAG. ThoughtDAG is licensed under
+the MIT License, whose text at commit d450c9826a3fb940930456bf418890d11ba0d63d
+follows:
+
+MIT License
+
+Copyright (c) 2026 Xia Chen
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

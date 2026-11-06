@@ -1,0 +1,6 @@
+node_modules/
+dist/
+dist-store/
+dist-dev/
+tfold-store.zip
+e2e/out/

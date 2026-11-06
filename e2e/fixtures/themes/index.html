@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-light">
+<head>
+<meta charset="utf-8">
+<title>Harbor almanac</title>
+<style>
+.theme-light { color-scheme: light; --page: #ffffff; --ink: #1f2328; --note: #fff4c2; --preset: #e0f2e9; --tint: #dbeafe; }
+.theme-dark { color-scheme: dark; --page: #0d1117; --ink: #e6edf3; --note: #3a2f05; --preset: #12372a; --tint: #10243e; }
+body { margin: 0; padding: 24px 24px 320px; font: 17px/1.55 Georgia, serif; color: var(--ink); background: var(--page); }
+.col { max-width: 40em; margin: 0 auto; }
+.col > * { margin: 0 0 20px; }
+.has-background { padding: 12px 16px; }
+.has-preset-background-color { background-color: var(--preset) !important; }
+#theme-id { background: var(--tint); padding: 12px 16px; border-radius: 6px; }
+.panel { padding: 16px; background: var(--panel); color: var(--panel-ink); }
+.panel-light { --panel: #f6f8fa; --panel-ink: #1f2328; --panel-note: #ddf4ff; }
+.panel-dark { --panel: #161b22; --panel-ink: #e6edf3; --panel-note: #0c2d6b; }
+.term { font-weight: 600; }
+.term-plain { color: inherit; }
+.term-marked { color: #8a1c1c; background: #fde2e2; }
+</style>
+<style id="dusk" media="not all">
+:root:root { --tint: #fde68a; }
+</style>
+<style id="night">
+:root:root { color-scheme: dark; --page: #0d1117; --ink: #e6edf3; --note: #3a2f05; --preset: #12372a; --tint: #10243e; }
+</style>
+<script>document.getElementById('night').sheet.disabled = true;</script>
+</head>
+<body>
+<div class="col">
+<p id="plain">The almanac lists the first frost on the harbor at the end of October in most years. Boats that winter in the water need their hoses drained before then.</p>
+<p id="wp-note" class="has-background" style="background-color: var(--note)">The crane at the boatyard lifts boats out on the second and fourth Saturday of each month. Book a lift at least ten days ahead.</p>
+<p id="wp-preset" class="has-background has-preset-background-color">The fuel dock takes cards only from November until the spring. Diesel is cheaper before nine in the morning.</p>
+<p id="theme-id">The pilot boat answers on <span id="term" class="term term-plain">channel twelve</span> at any hour of the day or night. Call it before you cross the bar in fog.</p>
+<div id="panel" class="panel panel-light">
+<p id="panel-plain">The swimming float comes out of the water in September and goes back in at the end of May. The ladder stays on the pier all year.</p>
+<p id="panel-note" class="has-background" style="background-color: var(--panel-note)">The bait shop on the north pier closes on Tuesdays in the winter. It sells ice and coffee too.</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="268 267 718 718" role="img" aria-label="tfold">
+	<rect x="268" y="267" width="718" height="718" rx="150" fill="#C9FB2C" />
+	<g fill="none" stroke="#2A2A2E" transform="translate(624.5 642.5) scale(1.25) translate(-624.5 -642.5)">
+		<path d="M365 510.5H629" stroke-width="58" />
+		<path d="M488.5 510.5V736" stroke-width="70" />
+		<path d="M488.5 720V735.8A22.7 22.7 0 0 0 527.25 751.85L683.31 595.81A103.5 103.5 0 1 1 668.73 723.85" stroke-width="64" />
+	</g>
+</svg>

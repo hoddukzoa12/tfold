@@ -1,0 +1,145 @@
+<template>
+	<style>
+		@font-face {
+			font-family: Pretendard;
+			font-weight: 500;
+			src: url('assets/fonts/Pretendard-Medium.woff2') format('woff2');
+		}
+		@font-face {
+			font-family: Pretendard;
+			font-weight: 600;
+			src: url('assets/fonts/Pretendard-SemiBold.woff2') format('woff2');
+		}
+		#root {
+			position: absolute;
+			inset: 0;
+			font-family: Pretendard, sans-serif;
+			color: #fff;
+		}
+		#band-row {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 1920px;
+			height: 84px;
+		}
+		#band-wordmark {
+			position: absolute;
+			left: 44px;
+			top: 24px;
+			width: 103px;
+			height: 36px;
+		}
+		.band-caption {
+			position: absolute;
+			left: 186px;
+			top: 18px;
+			height: 48px;
+			font-size: 30px;
+			font-weight: 500;
+			line-height: 48px;
+			white-space: nowrap;
+		}
+		#band-caption-ko,
+		#band-caption-dark {
+			opacity: 0;
+		}
+		#band-input {
+			position: absolute;
+			left: 1120px;
+			top: 18px;
+			width: 210px;
+			height: 48px;
+			font-size: 28px;
+			font-weight: 500;
+			line-height: 48px;
+			color: #d9d9de;
+			text-align: right;
+			white-space: nowrap;
+		}
+		#band-steps {
+			position: absolute;
+			right: 40px;
+			top: 18px;
+			display: flex;
+			gap: 6px;
+		}
+		.band-step {
+			position: relative;
+			height: 48px;
+			padding: 0 18px;
+			font-size: 28px;
+			font-weight: 600;
+			line-height: 48px;
+			color: #c4c4cb;
+		}
+		.band-step span {
+			position: relative;
+		}
+		.band-pill {
+			position: absolute;
+			inset: 0;
+			border-radius: 12px;
+			background: #c9fb2c;
+			opacity: 0;
+		}
+		#band-pill-0 {
+			opacity: 1;
+		}
+		#band-label-0 {
+			color: #2a2a2e;
+		}
+	</style>
+	<div id="root" data-composition-id="band" data-width="1920" data-height="1080">
+		<div id="band-row" data-layout-allow-overflow>
+			<svg id="band-wordmark" viewBox="0 0 325 114" role="img" aria-label="tfold">
+				<g fill="none" stroke="#FFFFFF" stroke-width="15">
+					<path d="M0 13.5H73.5M36.75 13.5V96A10.5 10.5 0 0 0 47.25 106.5H61.5" />
+					<path d="M132.89 10.72A29.5 29.5 0 0 0 90 37V106.04L145.02 51.02A32.5 32.5 0 1 1 137.46 85.12M90 37H121.5" />
+					<path d="M224 0V114M317.5 0V74" />
+					<circle cx="285" cy="74" r="32.5" />
+				</g>
+			</svg>
+			<div class="band-caption" id="band-caption-en" data-layout-allow-overlap>Shortens the paragraph under your pointer, in place.</div>
+			<div class="band-caption" id="band-caption-ko" data-layout-allow-overlap>A Korean paragraph folds in Korean.</div>
+			<div class="band-caption" id="band-caption-dark" data-layout-allow-overlap>Follows the page's dark theme.</div>
+			<div id="band-input">Ctrl + scroll ↓</div>
+			<div id="band-steps">
+				<div class="band-step"><div class="band-pill" id="band-pill-0"></div><span id="band-label-0">Full</span></div>
+				<div class="band-step"><div class="band-pill" id="band-pill-1"></div><span id="band-label-1">Brief</span></div>
+				<div class="band-step"><div class="band-pill" id="band-pill-2"></div><span id="band-label-2">Key</span></div>
+				<div class="band-step"><div class="band-pill" id="band-pill-3"></div><span id="band-label-3">Takeaway</span></div>
+			</div>
+		</div>
+	</div>
+	<script>
+		const tl = gsap.timeline({ paused: true });
+		const levelAt = [
+			[0, 0],
+			[1.1, 1],
+			[2.6, 2],
+			[4.35, 3],
+			[5.7, 0],
+			[6.2, 1],
+			[6.95, 2],
+			[7.9, 3],
+			[8.9, 0],
+			[9.35, 1],
+			[9.95, 2],
+		];
+		for (const [i, [at, level]] of levelAt.entries()) {
+			if (i === 0) continue;
+			const was = levelAt[i - 1][1];
+			tl.to(`#band-pill-${was}`, { opacity: 0, duration: 0.14, ease: 'power2.out' }, at);
+			tl.to(`#band-label-${was}`, { color: '#c4c4cb', duration: 0.14, ease: 'power2.out' }, at);
+			tl.to(`#band-pill-${level}`, { opacity: 1, duration: 0.14, ease: 'power2.out' }, at);
+			tl.to(`#band-label-${level}`, { color: '#2a2a2e', duration: 0.14, ease: 'power2.out' }, at);
+		}
+		tl.to('#band-caption-en', { opacity: 0, filter: 'blur(6px)', duration: 0.15 }, 5.55);
+		tl.fromTo('#band-caption-ko', { opacity: 0, filter: 'blur(8px)' }, { opacity: 1, filter: 'blur(0px)', duration: 0.18, ease: 'power4.out' }, 5.75);
+		tl.to('#band-caption-ko', { opacity: 0, filter: 'blur(6px)', duration: 0.15 }, 8.75);
+		tl.fromTo('#band-caption-dark', { opacity: 0, filter: 'blur(8px)' }, { opacity: 1, filter: 'blur(0px)', duration: 0.18, ease: 'power4.out' }, 8.95);
+		tl.to('#band-row', { y: -84, opacity: 0, duration: 0.22, ease: 'power3.in' }, 10.86);
+		window.__timelines['band'] = tl;
+	</script>
+</template>

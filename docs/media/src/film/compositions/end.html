@@ -1,0 +1,115 @@
+<template>
+	<style>
+		@font-face {
+			font-family: Pretendard;
+			font-weight: 500;
+			src: url('assets/fonts/Pretendard-Medium.woff2') format('woff2');
+		}
+		@font-face {
+			font-family: Pretendard;
+			font-weight: 400;
+			src: url('assets/fonts/Pretendard-Regular.woff2') format('woff2');
+		}
+		#root {
+			position: absolute;
+			inset: 0;
+			font-family: Pretendard, sans-serif;
+			color: #fff;
+		}
+		#end-ground {
+			position: absolute;
+			inset: 0;
+			background: #2a2a2e;
+		}
+		#end-lockup {
+			position: absolute;
+			left: 717px;
+			top: 342px;
+			width: 486px;
+			height: 140px;
+		}
+		#end-mark {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 140px;
+			height: 140px;
+		}
+		#end-wordmark {
+			position: absolute;
+			left: 186px;
+			top: 18px;
+			width: 300px;
+			height: 105px;
+		}
+		#end-line {
+			position: absolute;
+			left: 0;
+			width: 1920px;
+			top: 544px;
+			font-size: 46px;
+			font-weight: 500;
+			text-align: center;
+		}
+		#end-note {
+			position: absolute;
+			left: 0;
+			width: 1920px;
+			top: 622px;
+			font-size: 32px;
+			font-weight: 400;
+			text-align: center;
+			color: #c4c4cb;
+		}
+		#end-url {
+			position: absolute;
+			left: 0;
+			width: 1920px;
+			top: 692px;
+			font-size: 34px;
+			font-weight: 500;
+			text-align: center;
+			color: #c9fb2c;
+		}
+	</style>
+	<div id="root" data-composition-id="end" data-width="1920" data-height="1080">
+		<div id="end-ground"></div>
+		<div id="end-lockup">
+			<svg id="end-mark" viewBox="268 267 718 718" role="img" aria-label="tfold mark">
+				<defs>
+					<clipPath id="end-mark-fold">
+						<polygon points="268 267 986 267 986 986 371 986 697 660 268 660" />
+					</clipPath>
+				</defs>
+				<rect x="268" y="267" width="718" height="718" rx="150" fill="#C9FB2C" />
+				<g fill="none" stroke="#2A2A2E">
+					<path d="M365 510.5H629" stroke-width="46" />
+					<path d="M488.5 510.5V736" stroke-width="56" />
+					<path d="M488.5 720V735.8A22.7 22.7 0 0 0 527.25 751.85L683.31 595.81A103.5 103.5 0 0 1 697.14 584.22" stroke-width="51" />
+					<path d="M683.31 595.81A103.5 103.5 0 1 1 653.39 678.02" stroke-width="51" clip-path="url(#end-mark-fold)" />
+				</g>
+			</svg>
+			<svg id="end-wordmark" viewBox="0 0 325 114" role="img" aria-label="tfold">
+				<g fill="none" stroke="#FFFFFF" stroke-width="15">
+					<path d="M0 13.5H73.5M36.75 13.5V96A10.5 10.5 0 0 0 47.25 106.5H61.5" />
+					<path d="M132.89 10.72A29.5 29.5 0 0 0 90 37V106.04L145.02 51.02A32.5 32.5 0 1 1 137.46 85.12M90 37H121.5" />
+					<path d="M224 0V114M317.5 0V74" />
+					<circle cx="285" cy="74" r="32.5" />
+				</g>
+			</svg>
+		</div>
+		<div id="end-line">Shorten the paragraph you are reading, right where it is.</div>
+		<div id="end-note">Open source under AGPL-3.0. Pre-release.</div>
+		<div id="end-url">github.com/hoddukzoa12/tfold</div>
+	</div>
+	<script>
+		const tl = gsap.timeline({ paused: true });
+		tl.fromTo('#end-ground', { opacity: 0 }, { opacity: 1, duration: 0.2, ease: 'power2.inOut' }, 0);
+		tl.fromTo('#end-mark', { clipPath: 'inset(100% 0% 0% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 0.42, ease: 'power3.out' }, 0.1);
+		tl.fromTo('#end-wordmark', { clipPath: 'inset(0% 100% 0% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 0.34, ease: 'power3.out' }, 0.32);
+		tl.fromTo('#end-line', { opacity: 0, filter: 'blur(8px)' }, { opacity: 1, filter: 'blur(0px)', duration: 0.2, ease: 'power4.out' }, 0.45);
+		tl.fromTo('#end-note', { opacity: 0, filter: 'blur(8px)' }, { opacity: 1, filter: 'blur(0px)', duration: 0.2, ease: 'power4.out' }, 0.55);
+		tl.fromTo('#end-url', { opacity: 0, filter: 'blur(8px)' }, { opacity: 1, filter: 'blur(0px)', duration: 0.2, ease: 'power4.out' }, 0.65);
+		window.__timelines['end'] = tl;
+	</script>
+</template>

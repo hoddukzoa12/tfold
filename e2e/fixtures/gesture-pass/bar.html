@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Harbor bulletin</title>
+		<style>
+			body {
+				margin: 0;
+				font: 17px/1.55 Georgia, serif;
+				color: #1f2328;
+			}
+			p {
+				margin: 0;
+			}
+			#narrow {
+				width: 60%;
+			}
+			#pane {
+				height: 160px;
+				width: 500px;
+				margin: 120px 0 0 300px;
+				overflow: auto;
+				border: 1px solid #ccc;
+			}
+			#pane-long {
+				padding: 0 16px;
+			}
+			#side {
+				display: flex;
+				height: 200px;
+				margin: 40px 0 0;
+			}
+			#side-nav {
+				width: 200px;
+				background: #eee;
+			}
+			#side-pane {
+				flex: 1;
+				overflow: hidden;
+			}
+			#tail {
+				height: 1200px;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="flush">
+			This paragraph runs the full width of the window with no margin and no padding on either side, so that no room is left beside its text for anything at all. It says so at some length, in several sentences, so that its first line and its last line each reach all the way across the window at every size a reader is likely to use, and so that its words begin in the very first column of pixels on the screen and end in the last column of pixels on the screen, with nothing to spare between them and the edge of the window.
+		</p>
+		<p id="narrow">
+			This paragraph starts at the left edge of the window with no margin, and stops well short of the right edge. Its own box leaves the right side of the window empty, so a mark can sit there in the clear instead of over the first letters of each line of text.
+		</p>
+		<div id="pane">
+			<p id="pane-long">
+				This paragraph lives in a small pane that scrolls on its own. It is much taller than the pane, so most of it is out of sight at any moment. The pier opened in the spring after two years of work on its pilings. Fishing boats moved over first, and the ferry followed them once the new ramp had passed its load tests. By the end of the summer the old pier stood empty, and the town began to argue about what to do with it. Most of the argument was about money, as these arguments usually are. Tearing the old pier down would cost more than the town had set aside for it. Leaving it up would cost less this year and far more once the timbers began to rot, which the surveyors said would take about a decade. The survey found that the southern third of the pier had kept its strength, while the northern end had lost a quarter of its load rating. That was enough to close the northern end to vehicles at once. It was not enough to settle the argument, because each side read the same figures as proof of what it had said all along. A year later the town voted to keep the southern third as a walkway and take down the rest.
+			</p>
+			<p id="pane-next">
+				This second paragraph in the pane starts out below the part that shows, and it has enough words in it to count as a paragraph that folds. Its own bar has nothing to mark until the reader scrolls the pane far enough down to bring it into view.
+			</p>
+		</div>
+		<div id="side">
+			<div id="side-nav"></div>
+			<div id="side-pane">
+				<p id="side-text">
+					This paragraph sits flush against a sidebar, in a pane that clips what spills out of it. The bar must stay inside this pane and leave the sidebar next to it alone, because whatever is over there is not part of this paragraph and may hold text of its own that a reader wants to see.
+				</p>
+			</div>
+		</div>
+		<div id="tail"></div>
+	</body>
+</html>

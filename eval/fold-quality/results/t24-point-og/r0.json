@@ -1,0 +1,725 @@
+{
+	"label": "t24-point-og",
+	"repeat": 0,
+	"promptVersion": 4,
+	"model": "deepseek/deepseek-v4.1-flash-ultrafast",
+	"commit": "97bf639",
+	"provider": "opengateway",
+	"startedAt": "2026-11-03T20:06:44.838Z",
+	"set": "translate",
+	"translateTo": "ko",
+	"calls": [
+		{
+			"call": 0,
+			"blocks": 3,
+			"status": 200,
+			"ms": 2046,
+			"upstream": "-",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1949,
+			"completionTokens": 512,
+			"cost": 0,
+			"blank": 0
+		},
+		{
+			"call": 1,
+			"blocks": 3,
+			"status": 200,
+			"ms": 1676,
+			"upstream": "-",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1910,
+			"completionTokens": 395,
+			"cost": 0,
+			"blank": 0
+		},
+		{
+			"call": 2,
+			"blocks": 3,
+			"status": 200,
+			"ms": 2071,
+			"upstream": "-",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1928,
+			"completionTokens": 421,
+			"cost": 0,
+			"blank": 0
+		},
+		{
+			"call": 3,
+			"blocks": 3,
+			"status": 200,
+			"ms": 1832,
+			"upstream": "-",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1915,
+			"completionTokens": 407,
+			"cost": 0,
+			"blank": 0
+		},
+		{
+			"call": 4,
+			"blocks": 3,
+			"status": 200,
+			"ms": 1358,
+			"upstream": "-",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 2006,
+			"completionTokens": 373,
+			"cost": 0,
+			"blank": 0
+		},
+		{
+			"call": 5,
+			"blocks": 3,
+			"status": 200,
+			"ms": 3641,
+			"upstream": "-",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 2006,
+			"completionTokens": 387,
+			"cost": 0,
+			"blank": 0
+		},
+		{
+			"call": 6,
+			"blocks": 3,
+			"status": 200,
+			"ms": 1597,
+			"upstream": "-",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 1975,
+			"completionTokens": 362,
+			"cost": 0,
+			"blank": 0
+		},
+		{
+			"call": 7,
+			"blocks": 3,
+			"status": 200,
+			"ms": 1489,
+			"upstream": "-",
+			"ok": true,
+			"detail": "",
+			"promptTokens": 2013,
+			"completionTokens": 364,
+			"cost": 0,
+			"blank": 0
+		}
+	],
+	"items": [
+		{
+			"item": "tr-apollo",
+			"call": 0,
+			"fold": {
+				"sentences": [
+					"On July 20, 1969, Neil Armstrong and Buzz Aldrin landed the lunar module Eagle in the Sea of Tranquility while Michael Collins stayed in orbit aboard the command module Columbia.",
+					"Armstrong stepped onto the surface about six and a half hours after the landing, and the two men spent roughly two and a half hours outside.",
+					"They collected 21.5 kilograms of rock and soil and set up a seismometer and a laser reflector that observatories still use to measure the distance to the Moon.",
+					"NASA flew the mission eight years after John F. Kennedy asked Congress to commit the country to a landing before the decade was out."
+				],
+				"brief": [
+					0,
+					2
+				],
+				"key": "1969년 7월 20일 Neil Armstrong(닐 암스트롱)과 Buzz Aldrin(버즈 올드린)이 달에 착륙해 월면을 걸었다. 두 사람은 약 2시간 30분 동안 밖에서 21.5킬로그램의 암석과 토양을 채집하고 지진계와 레이저 반사경을 설치했다.",
+				"takeaway": "1969년 7월 20일 Neil Armstrong(닐 암스트롱)과 Buzz Aldrin(버즈 올드린)이 달에 착륙해 월면을 걸었다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true,
+				"names": true
+			}
+		},
+		{
+			"item": "tr-webb",
+			"call": 0,
+			"fold": {
+				"sentences": [
+					"The James Webb Space Telescope left Earth on December 25, 2021, on an Ariane 5 rocket from Kourou in French Guiana.",
+					"It is a joint project of NASA, the European Space Agency and the Canadian Space Agency.",
+					"Its primary mirror is 6.5 meters across and is made of 18 hexagonal segments of gold-coated beryllium, which had to unfold in space because the full mirror did not fit inside the rocket's fairing.",
+					"The telescope orbits the second Lagrange point, about 1.5 million kilometers from Earth, where a five-layer sunshield the size of a tennis court keeps its instruments below 50 kelvin.",
+					"That cold matters because Webb observes in the infrared, and a warm telescope would glow at the very wavelengths it is trying to measure."
+				],
+				"brief": [
+					2,
+					3
+				],
+				"key": "James Webb(제임스 웹) 우주망원경은 적외선 관측을 위해 지구에서 150만 킬로미터 떨어진 제2라그랑주점을 돈다. 로켓 안에 들어가지 못한 6.5미터 거울은 18개 육각 조각으로 우주에서 펼쳐졌고, 테니스코트 크기 차양이 장비를 50켈빈 아래로 식힌다.",
+				"takeaway": "James Webb(제임스 웹) 우주망원경은 적외선 관측을 위해 지구에서 150만 킬로미터 떨어진 제2라그랑주점을 돈다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-gps",
+			"call": 0,
+			"fold": {
+				"sentences": [
+					"The Global Positioning System began in 1973 as a project of the United States Department of Defense, and its full constellation of 24 satellites was declared operational in 1995.",
+					"Each satellite carries atomic clocks and broadcasts its position and the exact time, and a receiver works out where it is from the delays of signals from at least four satellites.",
+					"Until May 2000 the military deliberately degraded the civilian signal, a policy called Selective Availability, which limited ordinary receivers to an accuracy of about 100 meters.",
+					"When President Bill Clinton ordered it switched off, the error for civilian users fell to about 20 meters almost overnight, which opened the way for car navigation and, later, smartphone maps."
+				],
+				"brief": [
+					2,
+					3
+				],
+				"key": "GPS(지피에스)는 2000년 Selective Availability(선택적 가용성)가 꺼지면서 민간 정확도가 크게 개선되었다. 군이 일부러 민간 신호를 저하시켜 오차가 약 100미터였으나, Bill Clinton(빌 클린턴)이 끄라고 명령하자 거의 하루아침에 약 20미터로 줄었다.",
+				"takeaway": "GPS(지피에스)는 2000년 Selective Availability(선택적 가용성)가 꺼지면서 민간 정확도가 크게 개선되었다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true,
+				"names": true
+			}
+		},
+		{
+			"item": "tr-tsmc",
+			"call": 1,
+			"fold": {
+				"sentences": [
+					"Taiwan Semiconductor Manufacturing Company, founded by Morris Chang in Hsinchu in 1987, was the first company built only to make chips that other firms design.",
+					"That foundry model let companies such as Apple, Nvidia and AMD sell processors without owning a factory, at a time when a leading-edge plant costs well over 20 billion dollars.",
+					"TSMC began volume production on its 3-nanometer process in late 2022, a name that no longer measures any single feature on the chip but marks a generation of transistor density.",
+					"Its most advanced lines depend on extreme ultraviolet lithography machines that only one company, ASML of the Netherlands, can build."
+				],
+				"brief": [
+					0,
+					2
+				],
+				"key": "TSMC는 다른 회사가 설계한 칩만 만드는 최초의 파운드리 회사였다. 선단 공정은 200억 달러가 넘고, 3나노 공정과 EUV 장비 의존이 그 위치를 뒷받침한다.",
+				"takeaway": "TSMC는 다른 회사가 설계한 칩만 만드는 최초의 파운드리 회사였다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-linux",
+			"call": 1,
+			"fold": {
+				"sentences": [
+					"In August 1991, Linus Torvalds, then a student at the University of Helsinki, announced on the Usenet group comp.os.minix that he was writing a free operating system kernel as a hobby.",
+					"He released it under the GNU General Public License in 1992, which meant anyone could change the code as long as they shared their changes under the same terms.",
+					"Paired with tools from Richard Stallman's GNU Project, the kernel became a complete free operating system.",
+					"Today Linux runs on every one of the 500 most powerful supercomputers in the world and underlies Android, the most widely used phone operating system."
+				],
+				"brief": [
+					1,
+					3
+				],
+				"key": "Linus Torvalds(리누스 토르발스)가 취미로 만든 무료 커널은 GNU와 결합해 완전한 무료 운영체제가 되었다. GPL(일반 공중 라이선스) 아래 공개되어 누구나 코드를 바꿀 수 있었고, 지금은 최상위 슈퍼컴퓨터 전부와 Android를 뒷받침한다.",
+				"takeaway": "Linus Torvalds(리누스 토르발스)가 취미로 만든 무료 커널은 GNU와 결합해 완전한 무료 운영체제가 되었다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true,
+				"names": false
+			}
+		},
+		{
+			"item": "tr-transformer",
+			"call": 1,
+			"fold": {
+				"sentences": [
+					"In 2017, a team of eight researchers at Google published \"Attention Is All You Need\", the paper that introduced the Transformer.",
+					"Instead of reading a sentence one word at a time as recurrent networks did, the model relates every word to every other word at once through a mechanism called self-attention.",
+					"Because these comparisons can run in parallel, the Transformer trained far faster on graphics processors, and it set a new record of 28.4 BLEU on the WMT 2014 English-to-German translation benchmark.",
+					"Nearly every large language model since, from BERT to GPT-4, is built on this architecture."
+				],
+				"brief": [
+					1,
+					2
+				],
+				"key": "Google(구글) 연구진이 2017년 발표한 Transformer(트랜스포머)는 self-attention(셀프 어텐션)으로 단어를 한꺼번에 비교하는 구조다. 비교를 병렬로 처리해 그래픽 프로세서에서 훨씬 빠르게 학습했고, 이후 거의 모든 대규모 언어 모델이 이 구조를 쓴다.",
+				"takeaway": "Google(구글) 연구진이 2017년 발표한 Transformer(트랜스포머)는 self-attention(셀프 어텐션)으로 단어를 한꺼번에 비교하는 구조다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true,
+				"names": true
+			}
+		},
+		{
+			"item": "tr-rosetta",
+			"call": 2,
+			"fold": {
+				"sentences": [
+					"French soldiers found the Rosetta Stone in 1799 near the town of Rashid, which Europeans called Rosetta, in the Nile Delta.",
+					"The slab carries one decree issued at Memphis in 196 BC, written three times: in hieroglyphs, in Demotic script and in ancient Greek.",
+					"Because scholars could read the Greek, the stone offered a key to the two Egyptian scripts, yet decipherment took more than twenty years.",
+					"In 1822 Jean-François Champollion showed that hieroglyphs recorded sounds as well as ideas, and the stone has been on display at the British Museum in London since 1802."
+				],
+				"brief": [
+					1,
+					2
+				],
+				"key": "Rosetta Stone(로제타석)은 세 가지 문자로 된 하나의 칙령을 담아 이집트 문자 해독의 열쇠를 제공했다. 1822년 Jean-François Champollion(장프랑수아 샹폴리옹)은 상형문자가 소리도 기록함을 밝혔고, 석판은 1802년부터 런던 대영박물관에 전시되어 있다.",
+				"takeaway": "Rosetta Stone(로제타석)은 세 가지 문자로 된 하나의 칙령을 담아 이집트 문자 해독의 열쇠를 제공했다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true,
+				"names": true
+			}
+		},
+		{
+			"item": "tr-crispr",
+			"call": 2,
+			"fold": {
+				"sentences": [
+					"In 2012, Jennifer Doudna and Emmanuelle Charpentier reported in the journal Science that a bacterial defense system called CRISPR-Cas9 could be programmed to cut DNA at a chosen site.",
+					"The Cas9 enzyme is guided by a short strand of RNA that matches the target sequence, so changing that guide is enough to aim the cut somewhere else.",
+					"Earlier gene-editing tools required building a new protein for every target, which took months, while a new guide RNA can be made in days.",
+					"The two scientists shared the 2020 Nobel Prize in Chemistry, and in 2023 regulators in the United Kingdom approved Casgevy, the first therapy based on the method, for sickle cell disease."
+				],
+				"brief": [
+					1,
+					2
+				],
+				"key": "CRISPR-Cas9(크리스퍼 카스9)은 안내 RNA를 바꾸어 원하는 부위의 DNA를 자르는 유전자 편집 도구이다. 기존 도구는 표적마다 새 단백질을 만드는 데 몇 달이 걸렸지만 새 안내 RNA는 며칠 만에 만들 수 있었다.",
+				"takeaway": "CRISPR-Cas9(크리스퍼 카스9)은 안내 RNA를 바꾸어 원하는 부위의 DNA를 자르는 유전자 편집 도구이다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-higgs",
+			"call": 2,
+			"fold": {
+				"sentences": [
+					"On July 4, 2012, physicists at CERN announced that the ATLAS and CMS experiments at the Large Hadron Collider had each found a new particle with a mass of about 125 gigaelectronvolts.",
+					"Its properties matched the boson that Peter Higgs and others had predicted in 1964 to explain how elementary particles acquire mass.",
+					"Finding it took collisions at energies no earlier machine could reach, inside a ring 27 kilometers around beneath the border of France and Switzerland.",
+					"Higgs and François Englert received the Nobel Prize in Physics the following year, and the experiments have since measured the particle's decays to test whether it behaves exactly as the Standard Model predicts."
+				],
+				"brief": [
+					0,
+					1
+				],
+				"key": "CERN(유럽입자물리연구소)의 ATLAS와 CMS 실험은 2012년 질량 약 125 gigaelectronvolts의 새 입자를 발견했다. 그 성질은 1964년 Peter Higgs(피터 힉스) 등이 입자의 질량 획득을 설명하려 예측한 보손과 일치했다.",
+				"takeaway": "CERN(유럽입자물리연구소)의 ATLAS와 CMS 실험은 2012년 질량 약 125 gigaelectronvolts의 새 입자를 발견했다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true,
+				"names": true
+			}
+		},
+		{
+			"item": "tr-hangul",
+			"call": 3,
+			"fold": {
+				"sentences": [
+					"In 1443, King Sejong the Great of the Joseon dynasty completed a new alphabet so that ordinary people could read and write Korean, which until then was written mostly with Chinese characters.",
+					"He promulgated it in 1446 in a document called Hunminjeongeum, meaning the correct sounds for instructing the people.",
+					"The shapes of its consonant letters were drawn from the positions of the mouth and tongue that produce them, which is why linguists often call Hangul one of the most systematic writing systems ever designed.",
+					"South Korea celebrates its creation every October 9 as Hangul Day."
+				],
+				"brief": [
+					0,
+					2
+				],
+				"key": "세종대왕은 평범한 사람들이 한국어를 읽고 쓸 수 있도록 1443년에 새 문자를 완성했다. 그는 1446년 Hunminjeongeum(훈민정음)을 반포했고, 자음의 모양은 발음할 때의 입과 혀의 위치에서 따왔다.",
+				"takeaway": "세종대왕은 평범한 사람들이 한국어를 읽고 쓸 수 있도록 1443년에 새 문자를 완성했다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true,
+				"names": true
+			}
+		},
+		{
+			"item": "tr-seed-vault",
+			"call": 3,
+			"fold": {
+				"sentences": [
+					"The Svalbard Global Seed Vault opened in 2008 inside a mountain on Spitsbergen, an Arctic island about 1,300 kilometers from the North Pole.",
+					"Norway owns the vault, and the Crop Trust helps run it as a backup for gene banks around the world, which keep their own seeds but send duplicates there.",
+					"The chambers are kept at minus 18 degrees Celsius, and the permafrost around them would keep the samples frozen even if the power failed.",
+					"The vault can hold 4.5 million seed samples, and in 2015 it returned seeds for the first time, to researchers who had lost access to their gene bank near Aleppo during the Syrian war."
+				],
+				"brief": [
+					0,
+					1
+				],
+				"key": "Svalbard Global Seed Vault(스발바르 국제 종자 저장고)는 세계 유전자 은행을 위한 백업으로 2008년 문을 열었다. 노르웨이가 소유하고 Crop Trust(작물 신탁)가 운영하며, 영하 18도의 저장실은 정전이 되어도 영구동토 덕에 얼어 있게 된다.",
+				"takeaway": "Svalbard Global Seed Vault(스발바르 국제 종자 저장고)는 세계 유전자 은행을 위한 백업으로 2008년 문을 열었다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true,
+				"names": true
+			}
+		},
+		{
+			"item": "tr-everest",
+			"call": 3,
+			"fold": {
+				"sentences": [
+					"In December 2020, China and Nepal jointly announced that Mount Everest stands 8,848.86 meters above sea level, 86 centimeters higher than the figure Nepal had used for decades.",
+					"Survey teams from both countries had reached the summit separately, and the Chinese team carried satellite receivers and a ground-penetrating radar to measure the depth of the snow cap.",
+					"The mountain was first identified as the world's highest in 1856 by the Great Trigonometrical Survey of British India, and it was later named after George Everest, a former Surveyor General of India.",
+					"In Nepal it is called Sagarmatha, and in Tibet Chomolungma."
+				],
+				"brief": [
+					0,
+					1
+				],
+				"key": "중국과 네팔은 2020년 12월 에베레스트의 높이가 8,848.86미터라고 공동으로 발표했다. 양국 측량대가 따로 정상에 올랐고, 1856년 영국령 인도 대삼각측량이 이 산을 세계 최고봉으로 처음 확인했다.",
+				"takeaway": "중국과 네팔은 2020년 12월 에베레스트의 높이가 8,848.86미터라고 공동으로 발표했다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-lehman",
+			"call": 4,
+			"fold": {
+				"sentences": [
+					"On September 15, 2008, Lehman Brothers filed for the largest bankruptcy in American history, listing about 639 billion dollars in assets.",
+					"The Federal Reserve and the Treasury had arranged a rescue for Bear Stearns that March, but they let Lehman fail after no buyer would take it without a government guarantee.",
+					"Within days, money market funds that held its debt began to lose value, and banks around the world stopped lending to one another.",
+					"Congress passed the 700 billion dollar Troubled Asset Relief Program on October 3, and Ben Bernanke later said that he had believed the Fed lacked the legal power to save the firm.",
+					"Economists still debate whether a rescue would have contained the panic or only delayed it."
+				],
+				"brief": [
+					1,
+					2
+				],
+				"key": "2008년 Lehman Brothers(리먼 브라더스)의 파산은 구제 거부 뒤 전 세계 금융 불안으로 번졌다. 정부 보증 없는 인수자가 없어 연준은 구제하지 않았고, 곧 자금시장과 은행 간 대출이 얼어붙었다.",
+				"takeaway": "2008년 Lehman Brothers(리먼 브라더스)의 파산은 구제 거부 뒤 전 세계 금융 불안으로 번졌다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true,
+				"names": true
+			}
+		},
+		{
+			"item": "tr-gdpr",
+			"call": 4,
+			"fold": {
+				"sentences": [
+					"The European Union's General Data Protection Regulation took effect on May 25, 2018, and applies to any organization that handles the personal data of people in the EU, wherever the organization is based.",
+					"It gives people the right to see the data held about them, to correct it and in many cases to have it erased.",
+					"Regulators can fine a company up to 20 million euros or 4 percent of its worldwide annual turnover, whichever is higher.",
+					"In May 2023, Ireland's Data Protection Commission fined Meta 1.2 billion euros for moving the data of European Facebook users to the United States.",
+					"Critics argue that the rules have mainly produced consent pop-ups that most people click through without reading."
+				],
+				"brief": [
+					2,
+					3
+				],
+				"key": "GDPR(일반개인정보보호규정)은 EU 개인정보를 다루는 모든 조직에 권리와 거액의 과징금을 부과한다. 위반 시 최대 2000만 유로나 전 세계 연매출의 4퍼센트를 물리며, Meta는 12억 유로를 부과받았다.",
+				"takeaway": "GDPR(일반개인정보보호규정)은 EU 개인정보를 다루는 모든 조직에 권리와 거액의 과징금을 부과한다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true,
+				"names": false
+			}
+		},
+		{
+			"item": "tr-kipchoge",
+			"call": 4,
+			"fold": {
+				"sentences": [
+					"On October 12, 2019, in Vienna, Eliud Kipchoge of Kenya became the first person to run a marathon in under two hours, finishing in 1:59:40.",
+					"The run does not count as a world record, because teams of pacemakers rotated in front of him and a car projected a laser line on the road to show the target pace.",
+					"Kipchoge had narrowly missed the same goal at Monza in Italy in 2017, running 2:00:25.",
+					"The official record now belongs to Kelvin Kiptum, also of Kenya, who ran 2:00:35 at the Chicago Marathon in October 2023, four months before he died in a car crash.",
+					"Sports scientists still disagree about how much of Kipchoge's margin came from the pacing and how much from new carbon-plated shoes."
+				],
+				"brief": [
+					0,
+					1
+				],
+				"key": "Kipchoge(키프초게)는 2시간 미만 마라톤을 처음 달성했으나 기록으로 인정되지 않았다. 페이스메이커가 교대하며 앞서 달리고 차량이 레이저로 목표 페이스를 비춘 덕분이었기 때문이다.",
+				"takeaway": "Kipchoge(키프초게)는 2시간 미만 마라톤을 처음 달성했으나 기록으로 인정되지 않았다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-penicillin",
+			"call": 5,
+			"fold": {
+				"sentences": [
+					"In September 1928, Alexander Fleming returned from a holiday to his laboratory at St Mary's Hospital in London and noticed that a mould growing on one of his culture plates had killed the bacteria around it.",
+					"He named the active substance penicillin, but he could not purify it in useful amounts and turned to other work.",
+					"Historians think the spores may have drifted up from a mycology laboratory on the floor below, although no one can be sure.",
+					"A decade later, Howard Florey and Ernst Chain at the University of Oxford worked out how to extract and concentrate the drug, and in 1941 they treated their first patient, a policeman who improved for several days before the supply ran out.",
+					"American factories then scaled up production so far that by D-Day in 1944 there was enough penicillin to treat Allied casualties."
+				],
+				"brief": [
+					3,
+					4
+				],
+				"key": "Alexander Fleming(알렉산더 플레밍)이 발견한 penicillin(페니실린)은 이후 대량 생산되어 환자 치료에 쓰였다. Florey와 Chain이 추출법을 알아냈고 미국 공장들이 생산을 확대해 1944년 노르망디 상륙작전에 충분한 양이 있었다.",
+				"takeaway": "Alexander Fleming(알렉산더 플레밍)이 발견한 penicillin(페니실린)은 이후 대량 생산되어 환자 치료에 쓰였다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true,
+				"names": true
+			}
+		},
+		{
+			"item": "tr-smallpox",
+			"call": 5,
+			"fold": {
+				"sentences": [
+					"Smallpox killed an estimated 300 million people in the 20th century alone before a global campaign wiped it out.",
+					"In 1967 the World Health Organization launched an intensified eradication programme, led by the American epidemiologist Donald Henderson.",
+					"Instead of trying to vaccinate everyone, teams found each new case and vaccinated the people around it, a strategy called ring vaccination that worked because the virus had no animal host to hide in.",
+					"The last natural case was Ali Maow Maalin, a hospital cook in Merca, Somalia, who fell ill in October 1977 and recovered.",
+					"The WHO declared smallpox eradicated on May 8, 1980, and it remains the only human disease ever eradicated."
+				],
+				"brief": [
+					2,
+					4
+				],
+				"key": "WHO(세계보건기구)의 집중 프로그램이 ring vaccination(고리 예방접종) 방식으로 smallpox(천연두)를 박멸했다. 모든 사람을 접종하는 대신 환자 주변 사람을 접종했고, 바이러스가 숨을 동물 숙주가 없었기 때문이다.",
+				"takeaway": "WHO(세계보건기구)의 집중 프로그램이 ring vaccination(고리 예방접종) 방식으로 smallpox(천연두)를 박멸했다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-wolves",
+			"call": 5,
+			"fold": {
+				"sentences": [
+					"In 1995 and 1996, the US Fish and Wildlife Service released 31 gray wolves from Canada into Yellowstone National Park, about 70 years after the last wolves there had been killed.",
+					"The number of elk in the park's northern range fell from about 19,000 in 1994 to fewer than 5,000 by 2012.",
+					"Some ecologists argue that the wolves set off a trophic cascade: elk browsed less along streams, so willows and aspens grew back and beavers returned.",
+					"Others point out that hunting, drought and a rising number of bears also cut the elk herd, and that willows recovered in some places but not in others.",
+					"The debate matters because the Yellowstone wolves are often cited as proof that restoring a single predator can repair a whole ecosystem."
+				],
+				"brief": [
+					2,
+					3
+				],
+				"key": "Yellowstone(옐로스톤)에 늑대를 다시 들인 것이 생태계 전체를 회복시킨다는 주장은 논쟁 중이다. 일부는 trophic cascade(영양 단계 연쇄)를 주장하지만 사냥과 가뭄, 곰 증가도 엘크 수를 줄였다는 반론이 있다.",
+				"takeaway": "Yellowstone(옐로스톤)에 늑대를 다시 들인 것이 생태계 전체를 회복시킨다는 주장은 논쟁 중이다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true
+			}
+		},
+		{
+			"item": "tr-thwaites",
+			"call": 6,
+			"fold": {
+				"sentences": [
+					"Thwaites Glacier in West Antarctica, sometimes called the Doomsday Glacier, holds enough ice to raise global sea level by about 65 centimeters.",
+					"It is losing ice faster than it did in the 1990s, partly because warm ocean water reaches the underside of its floating ice shelf and melts it from below.",
+					"Since 2018 the International Thwaites Glacier Collaboration, run by the US National Science Foundation and the UK Natural Environment Research Council, has sent teams to drill through the ice and lower a robot called Icefin beneath it.",
+					"Their measurements suggest that the glacier could retreat faster later this century, but models disagree on whether that would take decades or centuries.",
+					"Because its loss could also destabilize neighboring glaciers, some researchers think it matters more than its own 65 centimeters suggest."
+				],
+				"brief": [
+					1,
+					2
+				],
+				"key": "Thwaites Glacier(스웨이츠 빙하)는 아래에서 녹으며 빙상 유실이 빨라지고 있다. 따뜻한 해수가 떠 있는 빙붕 밑면을 녹이고, 연구팀은 로봇 Icefin(아이스핀)으로 이를 관측했다.",
+				"takeaway": "Thwaites Glacier(스웨이츠 빙하)는 아래에서 녹으며 빙상 유실이 빨라지고 있다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true,
+				"names": true
+			}
+		},
+		{
+			"item": "tr-gobekli",
+			"call": 6,
+			"fold": {
+				"sentences": [
+					"Göbekli Tepe, a hilltop site in southeastern Turkey, holds circles of carved stone pillars that were raised around 9500 BC, thousands of years before Stonehenge.",
+					"The T-shaped pillars, some more than five meters tall, are carved with foxes, boars, snakes and vultures.",
+					"Klaus Schmidt of the German Archaeological Institute, who led excavations from 1995 until his death in 2014, argued that hunter-gatherers built it as a sanctuary and that the effort of building it may have pushed people toward farming.",
+					"Later digs found houses, water cisterns and tools for grinding grain, so many archaeologists now think that people also lived there.",
+					"Only a small part of the site has been excavated."
+				],
+				"brief": [
+					0,
+					3
+				],
+				"key": "Göbekli Tepe(괴베클리 테페)는 기원전 9500년경 세워진 조각 기둥 유적이다. Klaus Schmidt(클라우스 슈미트)는 성소로 보았으나, 주거 흔적이 나와 거주설도 힘을 얻었다.",
+				"takeaway": "Göbekli Tepe(괴베클리 테페)는 기원전 9500년경 세워진 조각 기둥 유적이다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true,
+				"names": true
+			}
+		},
+		{
+			"item": "tr-jikji",
+			"call": 6,
+			"fold": {
+				"sentences": [
+					"Jikji, a collection of Buddhist teachings printed at Heungdeok Temple in Cheongju in 1377, is the oldest surviving book printed with movable metal type.",
+					"It predates the Gutenberg Bible, printed in Mainz around 1455, by about 78 years.",
+					"Only the second of its two volumes survives, and it is held by the National Library of France in Paris, after a French diplomat took it from Korea in the late 19th century.",
+					"Korea has asked for its return, but the library holds that it was acquired legally.",
+					"UNESCO added it to the Memory of the World Register in 2001."
+				],
+				"brief": [
+					0,
+					1
+				],
+				"key": "Jikji(직지)는 현존하는 가장 오래된 금속 활자 인쇄본이다. 1455년경 구텐베르크 성서보다 약 78년 앞서며, 프랑스 국립도서관이 소장하고 있다.",
+				"takeaway": "Jikji(직지)는 현존하는 가장 오래된 금속 활자 인쇄본이다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true,
+				"names": true
+			}
+		},
+		{
+			"item": "tr-beethoven",
+			"call": 7,
+			"fold": {
+				"sentences": [
+					"Ludwig van Beethoven's Ninth Symphony was first performed in Vienna on May 7, 1824, when the composer was almost completely deaf.",
+					"It was the first symphony by a major composer to bring in singers, who in the last movement sing Friedrich Schiller's poem \"Ode to Joy\".",
+					"According to several people who were there, a soloist had to turn Beethoven around at the end so that he could see the audience applauding, though their accounts differ in the details.",
+					"The work lasts about 70 minutes, and a later legend holds that the compact disc was sized to fit it.",
+					"In 1972 the Council of Europe adopted the melody of the final movement as its anthem, and the European Union took it up in 1985."
+				],
+				"brief": [
+					0,
+					4
+				],
+				"key": "Ludwig van Beethoven(루트비히 판 베토벤)의 교향곡 9번은 청각을 잃은 채 초연되었고 이후 유럽의 anthem(안them) 선율이 되었다. 합창이 Schiller(실러)의 시를 노래했고, 1972년과 1985년에 그 선율이 채택되었다.",
+				"takeaway": "Ludwig van Beethoven(루트비히 판 베토벤)의 교향곡 9번은 청각을 잃은 채 초연되었고 이후 유럽의 anthem(안them) 선율이 되었다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true,
+				"names": true
+			}
+		},
+		{
+			"item": "tr-parasite",
+			"call": 7,
+			"fold": {
+				"sentences": [
+					"In February 2020, Parasite, directed by Bong Joon-ho, became the first film not in English to win the Academy Award for Best Picture.",
+					"It had already won the Palme d'Or at the Cannes Film Festival the previous May, the first Korean film to do so.",
+					"The story follows the poor Kim family as they talk their way, one by one, into jobs in the house of the wealthy Park family in Seoul.",
+					"Accepting a Golden Globe a month earlier, Bong told the audience: \"Once you overcome the one-inch-tall barrier of subtitles, you will be introduced to so many more amazing films.\"",
+					"The film earned more than 250 million dollars worldwide, on a budget of about 11 million dollars."
+				],
+				"brief": [
+					0,
+					4
+				],
+				"key": "Parasite(기생충)는 영어가 아닌 영화 최초로 아카데미 작품상을 받았고 흥행에도 성공했다. Bong Joon-ho(봉준호)는 상을 받으며 자막이라는 장벽을 넘으라고 말했다.",
+				"takeaway": "Parasite(기생충)는 영어가 아닌 영화 최초로 아카데미 작품상을 받았고 흥행에도 성공했다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true,
+				"names": true
+			}
+		},
+		{
+			"item": "tr-fermat",
+			"call": 7,
+			"fold": {
+				"sentences": [
+					"Around 1637, Pierre de Fermat wrote in the margin of his copy of Diophantus's Arithmetica that no positive whole numbers a, b and c satisfy a^n + b^n = c^n for any n greater than 2, adding that he had \"a truly marvellous proof of this, which this margin is too narrow to contain\".",
+					"No such proof was ever found among his papers, and most mathematicians doubt that he had one.",
+					"In June 1993, Andrew Wiles announced a proof at a lecture in Cambridge after seven years of working largely in secret.",
+					"A reviewer found a gap in it, and Wiles closed the gap the following year with his former student Richard Taylor.",
+					"The proof was published in the Annals of Mathematics in 1995, and Wiles received the Abel Prize for it in 2016."
+				],
+				"brief": [
+					0,
+					2
+				],
+				"key": "Fermat(페르마)의 여백 주장은 300여 년 뒤 Andrew Wiles(앤드루 와일스)의 증명으로 해결되었다. Wiles는 1993년 증명을 발표했고 결함을 메운 뒤 1995년에 출판했다.",
+				"takeaway": "Fermat(페르마)의 여백 주장은 300여 년 뒤 Andrew Wiles(앤드루 와일스)의 증명으로 해결되었다.",
+				"writtenIn": "ko"
+			},
+			"checks": {
+				"briefShorter": true,
+				"language": true,
+				"finalStop": true,
+				"names": true
+			}
+		}
+	]
+}

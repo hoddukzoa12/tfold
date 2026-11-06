@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title data-i18n="settingsTitle">tfold settings</title>
+		<link rel="stylesheet" href="../ui/tfold.css" />
+		<style>
+			main {
+				width: 100%;
+				max-width: 640px;
+				margin-inline: auto;
+				padding: 40px clamp(16px, 4vw, 32px) 64px;
+				display: grid;
+				gap: 40px;
+			}
+			main > * {
+				min-width: 0;
+			}
+			.top {
+				display: grid;
+				gap: 16px;
+			}
+			h1 {
+				font-size: var(--text-xl);
+				font-weight: 600;
+			}
+			.lead {
+				display: grid;
+				justify-items: start;
+				gap: 16px;
+			}
+			.lead p {
+				color: var(--text-secondary);
+				font-size: var(--text-base);
+			}
+			/* store */
+			#sign-in {
+				min-height: var(--control-height-md);
+			}
+			/* /store */
+			#auto-translate-reason-link {
+				display: inline-flex;
+				align-items: center;
+				min-height: 24px;
+				border-radius: var(--radius-key);
+				color: inherit;
+				text-underline-offset: 2px;
+			}
+			section {
+				display: grid;
+				gap: 16px;
+				scroll-margin-top: 16px;
+			}
+			h2 {
+				font-size: var(--text-lg);
+				font-weight: 600;
+			}
+			.hint,
+			.row-hint {
+				font-size: var(--text-sm);
+				color: var(--text-secondary);
+			}
+			section > .hint {
+				margin-top: -8px;
+			}
+			form {
+				display: grid;
+				gap: 16px;
+			}
+			.choices {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 12px;
+				margin: 0;
+				padding: 0;
+				border: 0;
+			}
+			.choice {
+				display: flex;
+				align-items: center;
+				gap: 12px;
+				min-height: var(--control-height-md);
+				padding: 0 16px;
+				border: 1px solid var(--border-control);
+				border-radius: var(--radius-control);
+				background: var(--surface);
+				font-weight: 500;
+				cursor: pointer;
+			}
+			.choice:hover {
+				border-color: var(--foreground);
+			}
+			.choice:has(input:checked) {
+				border-color: var(--foreground);
+				box-shadow: inset 0 0 0 1px var(--foreground);
+				background: var(--accent-subtle);
+			}
+			.choice input {
+				margin: 0;
+				width: 16px;
+				height: 16px;
+				accent-color: var(--foreground);
+			}
+			.key-row {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				gap: 8px 12px;
+				min-height: var(--control-height-sm);
+			}
+			#remove-key {
+				margin-inline-start: auto;
+			}
+			.field {
+				display: grid;
+				gap: 6px;
+			}
+			.field > label {
+				font-weight: 500;
+			}
+			.field-foot {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				align-items: center;
+				gap: 0 12px;
+				min-height: 24px;
+			}
+			#undo,
+			#try-sample {
+				color: var(--foreground);
+				font-weight: 500;
+			}
+			.sample {
+				display: grid;
+				border: 1px solid var(--border-control);
+				border-radius: var(--radius-panel);
+				background: var(--surface);
+			}
+			.sample:hover {
+				border-color: var(--foreground);
+			}
+			.sample-sizer,
+			.sample-text {
+				grid-area: 1 / 1;
+				padding: 18px 20px;
+				color: var(--foreground);
+				font-size: var(--text-base);
+				line-height: 1.6;
+			}
+			.sample-sizer {
+				visibility: hidden;
+			}
+			.sample-level {
+				justify-self: start;
+				padding: 6px 10px;
+				border: 1px solid rgb(255 255 255 / 0.16);
+				border-radius: var(--radius-key);
+				background: var(--graphite);
+				color: var(--white);
+				font-size: var(--text-xs);
+				font-weight: 500;
+				line-height: 1.4;
+			}
+			.sample-level b {
+				color: var(--lime);
+				font-weight: 500;
+			}
+			#sample-next {
+				min-height: 1lh;
+				color: var(--foreground);
+				font-weight: 500;
+			}
+			.sample-compare {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+				gap: 12px;
+				padding: 14px 16px;
+				border-radius: var(--radius-panel);
+				background: var(--surface-muted);
+				font-size: var(--text-sm);
+			}
+			.compare-name {
+				margin-bottom: 4px;
+				color: var(--text-secondary);
+				font-size: var(--text-xs);
+				font-weight: 500;
+			}
+			.segments {
+				display: inline-flex;
+				margin: 0;
+				padding: 0;
+				border: 1px solid var(--border-control);
+				border-radius: var(--radius-control);
+				overflow: hidden;
+			}
+			.segments label {
+				display: flex;
+				align-items: center;
+				min-height: var(--control-height-sm);
+				padding: 0 12px;
+				font-size: var(--text-sm);
+				font-weight: 500;
+				cursor: pointer;
+			}
+			.segments label + label {
+				border-inline-start: 1px solid var(--border-control);
+			}
+			.segments label:hover {
+				background: var(--surface-muted);
+			}
+			.segments label:has(input:checked) {
+				background: var(--accent-subtle);
+				box-shadow: inset 0 0 0 1px var(--foreground);
+			}
+			.segments label:has(input:focus-visible) {
+				outline: 2px solid var(--focus-outline);
+				outline-offset: -2px;
+			}
+			.segments input {
+				position: absolute;
+				clip-path: inset(50%);
+				width: 1px;
+				height: 1px;
+				margin: 0;
+			}
+			.get-key {
+				gap: 4px;
+			}
+			.get-key::after {
+				content: '';
+				width: 14px;
+				height: 14px;
+				background: currentColor;
+				mask: var(--icon-out) center / contain no-repeat;
+			}
+			.field input {
+				min-height: var(--control-height-md);
+				padding: 0 12px;
+				border: 1px solid var(--border-control);
+				border-radius: var(--radius-control);
+				background: var(--surface);
+				color: var(--foreground);
+				font: 400 var(--text-sm) / 1 var(--font-body);
+			}
+			.field input::placeholder {
+				color: var(--text-secondary);
+			}
+			.field input:focus-visible {
+				outline-offset: 1px;
+				border-color: var(--foreground);
+			}
+			.field input[aria-invalid='true'] {
+				border-color: var(--danger-ink);
+				box-shadow: inset 0 0 0 1px var(--danger-ink);
+			}
+			#advanced > summary {
+				display: inline-flex;
+				align-items: center;
+				gap: 4px;
+				min-height: 24px;
+				padding-inline-end: 4px;
+				border-radius: var(--radius-key);
+				color: var(--foreground);
+				font-weight: 500;
+				list-style: none;
+				cursor: pointer;
+			}
+			#advanced > summary::-webkit-details-marker {
+				display: none;
+			}
+			#advanced > summary::before {
+				content: '';
+				width: 14px;
+				height: 14px;
+				background: currentColor;
+				mask: var(--icon-chevron) center / contain no-repeat;
+				transition: transform var(--duration-fast) var(--ease-standard);
+			}
+			#advanced[open] > summary::before {
+				transform: rotate(90deg);
+			}
+			.advanced-body {
+				display: grid;
+				justify-items: stretch;
+				gap: 16px;
+				padding-top: 12px;
+			}
+			#use-other {
+				justify-self: start;
+			}
+			.actions {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 8px 12px;
+				align-items: flex-start;
+			}
+			.status-line {
+				flex: 1 1 240px;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				gap: 0 8px;
+				min-width: 0;
+				min-height: var(--control-height-sm);
+			}
+			#shortcuts {
+				margin: 0;
+			}
+			#shortcuts dd {
+				display: flex;
+				align-items: center;
+				gap: 12px;
+				margin: 0;
+			}
+			#shortcuts kbd {
+				font-size: var(--text-sm);
+			}
+			#shortcuts button[aria-pressed='true'] {
+				border-color: var(--foreground);
+				background: var(--accent-subtle);
+			}
+			/* store */
+			#dev-account button[aria-pressed='true'] {
+				border-color: var(--foreground);
+				background: var(--accent-subtle);
+			}
+			#dev-account {
+				padding: 16px;
+				border: 1px dashed var(--border-strong);
+				border-radius: var(--radius-panel);
+			}
+			/* /store */
+			#sites {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			#sites:empty {
+				display: none;
+			}
+			#sites li span {
+				overflow-wrap: anywhere;
+			}
+			#sites-status:empty {
+				display: none;
+			}
+			#privacy {
+				display: grid;
+				grid-template-columns: auto minmax(0, 1fr);
+				gap: 8px 16px;
+				margin: 0;
+				padding: 16px;
+				border-radius: var(--radius-panel);
+				background: var(--surface-muted);
+				color: var(--text-secondary);
+			}
+			#privacy dt {
+				color: var(--foreground);
+				font-weight: 500;
+			}
+			#privacy dd {
+				margin: 0;
+			}
+			@media (max-width: 480px) {
+				.choices {
+					grid-template-columns: 1fr;
+				}
+				.row {
+					flex-wrap: wrap;
+				}
+			}
+			@media (prefers-reduced-motion: reduce) {
+				#advanced > summary::before {
+					transition: none;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<header class="top">
+				<div class="brand">
+					<img class="mark" src="../ui/tfold-mark.svg" alt="" />
+					<div class="wordmark" role="img" aria-label="tfold"></div>
+				</div>
+				<h1 data-i18n="settingsHeading"></h1>
+			</header>
+			<div class="lead">
+				<p id="intro"></p>
+				<!-- store -->
+				<button class="button" id="sign-in" type="button" hidden>
+					<img class="google" src="../ui/google.svg" alt="" />
+					<span data-i18n="popupContinue"></span>
+				</button>
+				<!-- /store -->
+			</div>
+			<section id="sample-section" aria-labelledby="sample-heading">
+				<h2 id="sample-heading" data-i18n="sampleHeading"></h2>
+				<p class="hint" id="sample-hint"></p>
+				<div class="sample" id="sample-stage" tabindex="0" role="group" aria-labelledby="sample-heading" aria-describedby="sample-hint">
+					<div class="sample-sizer" id="sample-sizer" aria-hidden="true"></div>
+					<p class="sample-text" id="sample-text"></p>
+				</div>
+				<p class="sample-level" id="sample-level" role="status" aria-atomic="true"></p>
+				<p class="hint" id="sample-next" role="status"></p>
+				<div class="sample-compare" id="sample-compare" hidden>
+					<div>
+						<p class="compare-name" data-i18n="compareQuick"></p>
+						<p id="sample-compare-quick"></p>
+					</div>
+					<div>
+						<p class="compare-name" data-i18n="compareAi"></p>
+						<p id="sample-compare-ai"></p>
+					</div>
+				</div>
+			</section>
+			<section id="provider-section" aria-labelledby="provider-heading">
+				<h2 id="provider-heading" data-i18n="providerHeading"></h2>
+				<p class="hint" id="route" role="status"></p>
+				<form id="provider">
+					<div class="key-row">
+						<a class="button primary get-key" id="get-key" target="_blank" rel="noopener"></a>
+						<span class="hint" id="key-state"></span>
+						<button class="text-button" type="button" id="remove-key"></button>
+					</div>
+					<p id="key-money"></p>
+					<div class="field">
+						<label for="key" id="key-label"></label>
+						<input id="key" type="password" autocomplete="off" spellcheck="false" aria-describedby="key-state key-money key-stays status" />
+						<p class="hint" id="key-stays" data-i18n="keyStays"></p>
+					</div>
+					<details id="advanced">
+						<summary data-i18n="advanced"></summary>
+						<div class="advanced-body">
+							<button class="button" type="button" id="use-other"></button>
+							<div class="field">
+								<label for="backup-key" id="backup-key-label"></label>
+								<input id="backup-key" type="password" autocomplete="off" spellcheck="false" aria-describedby="backup-key-state backup-hint status" />
+								<p class="hint" id="backup-hint"></p>
+								<div class="field-foot">
+									<span class="hint" id="backup-key-state"></span>
+									<button class="text-button" type="button" id="remove-backup-key"></button>
+									<a class="text-button get-key" id="get-backup-key" target="_blank" rel="noopener"></a>
+								</div>
+							</div>
+							<div class="field">
+								<label for="model" data-i18n="modelLabel"></label>
+								<input id="model" type="text" autocomplete="off" spellcheck="false" aria-describedby="model-hint" />
+								<span class="hint" id="model-hint"></span>
+							</div>
+						</div>
+					</details>
+					<div class="actions">
+						<button class="button primary" id="save" type="submit" disabled></button>
+						<div class="status-line">
+							<p class="notice" id="status" role="status"></p>
+							<button class="text-button" type="button" id="undo" hidden></button>
+							<a class="text-button" id="try-sample" href="#sample-section" data-i18n="sampleTry" hidden></a>
+						</div>
+					</div>
+				</form>
+			</section>
+			<section id="keyboard" aria-labelledby="keyboard-heading">
+				<h2 id="keyboard-heading" data-i18n="keyboardHeading"></h2>
+				<p class="hint" id="ways-intro"></p>
+				<dl id="shortcuts" class="group">
+					<div class="row">
+						<dt data-i18n="foldOneLevel"></dt>
+						<dd><kbd class="fold-keys"></kbd><button class="button" type="button" data-change="fold" aria-pressed="false"></button></dd>
+					</div>
+					<div class="row">
+						<dt data-i18n="unfoldOneLevel"></dt>
+						<dd><kbd class="unfold-keys"></kbd><button class="button" type="button" data-change="unfold" aria-pressed="false"></button></dd>
+					</div>
+					<div class="row" id="scroll-row">
+						<dt class="row-text">
+							<span id="scroll-title" data-i18n="scrollTitle"></span>
+							<span class="row-hint" id="scroll-hint" data-i18n="scrollHintMac" hidden></span>
+						</dt>
+						<dd>
+							<fieldset class="segments" id="scroll-modifier" aria-labelledby="scroll-title">
+								<label id="scroll-meta-choice"><input type="radio" name="scroll-modifier" value="meta" /><span id="scroll-meta"></span></label>
+								<label><input type="radio" name="scroll-modifier" value="ctrl" /><span id="scroll-ctrl"></span></label>
+								<label><input type="radio" name="scroll-modifier" value="alt" /><span id="scroll-alt"></span></label>
+								<label><input type="radio" name="scroll-modifier" value="off" /><span data-i18n="scrollOff"></span></label>
+							</fieldset>
+						</dd>
+					</div>
+				</dl>
+				<p class="hint" id="keyboard-hint" data-i18n="keyboardHint"></p>
+				<div class="actions">
+					<button class="button" type="button" id="default-keys" data-i18n="useDefaults"></button>
+					<div class="status-line"><p class="notice" id="keys-status" role="status"></p></div>
+				</div>
+			</section>
+			<section id="language-section" aria-labelledby="language-heading">
+				<h2 id="language-heading"><span lang="ko">언어</span> / <span lang="en">Language</span></h2>
+				<fieldset class="choices" id="language" aria-labelledby="language-heading">
+					<label class="choice"><input type="radio" name="language" value="auto" /> <span data-i18n="languageAuto"></span></label>
+					<label class="choice" lang="ko"><input type="radio" name="language" value="ko" /> 한국어</label>
+					<label class="choice" lang="en"><input type="radio" name="language" value="en" /> English</label>
+				</fieldset>
+				<div class="group">
+					<div class="row">
+						<div class="row-text">
+							<span class="row-title" id="auto-translate-title" data-i18n="autoTranslate"></span>
+							<span class="row-hint" id="auto-translate-hint" data-i18n="autoTranslateHint"></span>
+							<span class="row-hint row-reason" id="auto-translate-reason" hidden><a id="auto-translate-reason-link" href="#"></a></span>
+						</div>
+						<button
+							class="switch"
+							id="auto-translate"
+							type="button"
+							role="switch"
+							aria-checked="false"
+							aria-labelledby="auto-translate-title"
+							aria-describedby="auto-translate-reason auto-translate-hint"
+						></button>
+					</div>
+				</div>
+			</section>
+			<section id="sites-section" aria-labelledby="sites-heading">
+				<h2 id="sites-heading" data-i18n="sitesHeading"></h2>
+				<p class="hint" data-i18n="sitesHint"></p>
+				<ul id="sites" class="group"></ul>
+				<p class="hint" id="no-sites" data-i18n="noSites"></p>
+				<p class="notice" id="sites-status" role="alert"></p>
+			</section>
+			<section aria-labelledby="privacy-heading">
+				<h2 id="privacy-heading" data-i18n="privacyHeading"></h2>
+				<dl id="privacy"></dl>
+			</section>
+		</main>
+		<script src="options.js"></script>
+	</body>
+</html>

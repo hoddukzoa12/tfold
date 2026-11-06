@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>No main</title>
+		<style>
+			body { margin: 0; font: 17px/1.55 Georgia, serif; }
+			#content { width: 720px; margin: 0 auto; padding: 40px 20px 200px; }
+			#content p { margin: 0 0 20px; }
+			#cookie { position: fixed; left: 0; right: 0; bottom: 0; background: #eee; padding: 8px 40px; }
+			#cookie p { margin: 0; }
+			#notice { position: sticky; top: 0; background: #fe9; padding: 6px; z-index: 5; }
+			#notice p { margin: 0; }
+			#modal { position: fixed; left: 50%; top: 80px; transform: translateX(-50%); width: 640px; background: #fff; border: 2px solid #333; padding: 20px; z-index: 10; }
+			#modal p { margin: 0 0 16px; }
+			#drawer { position: fixed; left: 0; top: 0; bottom: 0; width: 760px; background: #fff; border-right: 2px solid #333; padding: 20px; z-index: 9; box-sizing: border-box; }
+			#drawer p { margin: 0 0 16px; }
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<div id="notice"><p id="note">Our harbor office closes early on Friday this month because the roof crew needs the stairs, so please plan your visit around that.</p></div>
+			<p id="a1">The pier opened in the spring after two years of work on its pilings, and the fishing boats moved over first because the old berths were failing fast.</p>
+			<p id="a2">By the end of that summer the old pier stood empty, and the town began to argue about what to do with it, which took most of the decade.</p>
+			<p id="a3">Tearing the old pier down would cost more than the town had set aside for it, and leaving it up would cost more each year in the insurance alone.</p>
+			<p id="a4">The survey found that the southern third of the pier had kept its strength, while the northern end had lost most of the timber below the tide line.</p>
+			<p id="a5">It was not enough to settle the argument, because each side read the same figures as proof of what it had said all along about the town budget.</p>
+			<p id="a6">The walkway opened with a brass band and a good deal of rain, and within a month it had become the place where everyone went on an evening.</p>
+			<p id="a7">The tide tables on the kiosk wall were the first thing anyone asked about, so the harbor master began to post them by hand every single week.</p>
+			<p id="a8">The ferry timetable changed twice that decade, once for the new ramp and once when the mainland terminal moved to the far end of the bay.</p>
+			<p id="a9">Winter storms took the last of the northern pilings in a single night, which saved the town the cost of pulling them out by barge that spring.</p>
+			<p id="a10">The museum itself began as a shelf in the harbor office, with a brass lamp, a ledger and a jar of old rivets that nobody could bear to throw away.</p>
+			<p id="a11">School groups come through every spring and are allowed to hold the rivets, which is the part they remember and the part they talk about on the ferry.</p>
+			<p id="a12">Nobody knows for certain, though the ledger records a pair of boots drying on the harbor office stove in the same week the stories say the dog arrived.</p>
+			<p id="a13">Fishing never came back to what it had been before the channel silted, but the crews that stayed moved to crab and did better than they had feared.</p>
+			<p id="a14">That second ledger is the one the historians ask for, because it runs unbroken for forty years and gives the weather as well as the catch each day.</p>
+			<p id="a15">The band still plays on the walkway on the first dry Sunday of each summer, although it has been some years since anyone agreed on what to play.</p>
+		</div>
+		<div id="cookie"><p id="cook">We keep a small cookie on your device so that the harbor site remembers your language and your tide station between visits to this page.</p></div>
+		<template id="modal-t">
+			<div id="modal" role="dialog" aria-modal="true">
+				<p id="m1">Before you book the ferry, please read how the deposit works, because the harbor office cannot return it once the sailing has been confirmed by the crew.</p>
+				<p id="m2">A booking can move to another sailing once at no charge, as long as you ask a full day ahead and the sailing you want still has room on deck.</p>
+				<p id="m3">Vehicles over two tons need the morning sailing, because the ramp at the far end of the bay is only rated for that weight when the tide is high.</p>
+			</div>
+		</template>
+		<template id="drawer-t">
+			<div id="drawer">
+				<p id="d1">Saved items from your last visit are kept in this drawer, and the harbor office keeps them for thirty days unless you remove them sooner than that.</p>
+				<p id="d2">The second saved item says that the upper floor of the museum opens only on weekends in winter, and that the stairs are steep for a small child.</p>
+				<p id="d3">The third saved item is a note about the tide tables, which change each week, so a printed copy from last month will not help on the walkway now.</p>
+			</div>
+		</template>
+	</body>
+</html>

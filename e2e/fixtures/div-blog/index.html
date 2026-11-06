@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Field notes from a small garden</title>
+<style>
+body { margin: 0; font: 18px/1.6 Georgia, "Noto Serif KR", serif; color: #222; background: #fdfcf8; }
+.site { display: flex; align-items: center; justify-content: space-between; padding: 12px 32px; border-bottom: 1px solid #e6e1d6; font-family: system-ui, sans-serif; font-size: 15px; }
+.site nav a { margin-left: 16px; color: #555; }
+.nav-note { margin-left: 16px; color: #666; font-size: 12px; max-width: 30em; }
+.layout { max-width: 40em; margin: 32px auto; padding: 0 16px; }
+.title { font-size: 34px; line-height: 1.2; font-weight: 700; }
+.byline { color: #666; font-size: 15px; margin: 8px 0 24px; font-family: system-ui, sans-serif; }
+.para { margin: 0 0 1em; }
+.callout { border-left: 4px solid #c9b98f; padding: 4px 0 4px 16px; margin: 0 0 1em; background: #f6f1e4; }
+.share { display: flex; gap: 12px; font: 14px/1.4 system-ui, sans-serif; color: #555; margin: 24px 0; }
+.subscribe { display: block; width: 100%; padding: 12px; font: 15px/1.4 system-ui, sans-serif; text-align: left; }
+.card { margin-top: 16px; padding: 12px; border: 1px solid #e6e1d6; border-radius: 8px; cursor: pointer; font: 15px/1.4 system-ui, sans-serif; }
+.ornament { color: #6b6b6b; font-size: 13px; text-align: center; margin: 24px 0; }
+footer { padding: 24px 32px; border-top: 1px solid #e6e1d6; color: #666; font: 13px/1.5 system-ui, sans-serif; }
+@media (prefers-color-scheme: dark) {
+	:root { color-scheme: dark; }
+	body { color: #e8e4da; background: #1b1a17; }
+	.callout { background: #2a261d; }
+}
+</style>
+</head>
+<body>
+<div class="site">
+	<div class="logo">Field notes</div>
+	<nav aria-label="Site">
+		<a href="/div-blog/">Home</a><a href="/div-blog/">Archive</a><a href="/div-blog/">About</a>
+		<div class="nav-note" data-p5d="nav">Every note in the archive is grouped by month, and the about page lists the plants by bed.</div>
+	</nav>
+</div>
+<main class="layout">
+	<article>
+		<div class="title">What the tomatoes taught me this summer</div>
+		<div class="byline">By the gardener, on a rainy Sunday</div>
+		<div class="para" id="first">I planted six tomato seedlings in late April, and by the end of July only four of them were still standing after the <a href="/div-blog/storms">two summer storms</a> that flattened the fence. The survivors were the ones I had tied to <em>bamboo stakes</em> early, before the stems grew heavy with fruit.</div>
+		<div class="para">Watering turned out to matter more than feeding. On the weeks when I watered deeply twice instead of a little every evening, the leaves stayed green and the fruit split less often after rain.</div>
+		<div class="para" id="korean" lang="ko">올해 가장 크게 배운 점은 지지대를 일찍 세워야 한다는 것이다. 줄기가 열매 무게를 견디지 못하고 꺾이기 시작하면 그때는 이미 늦다. 내년에는 모종을 심는 날 바로 지지대를 함께 꽂아 둘 생각이다.</div>
+		<div class="callout"><div class="para" id="nested">A note for next year: the bed by the north wall gets two fewer hours of sun, so the cherry tomatoes should go there and the large ones should get the warm corner.</div></div>
+		<div class="para">The notebook I kept by the back door, with <code>dates</code>, <strong>rainfall</strong> and the first ripe fruit of each plant,<br>turned out to be the most useful tool of the whole season, more than any gadget I bought.</div>
+		<div class="para">Next spring I want to try two heirloom varieties from the seed swap at the library, and I will start them indoors three weeks earlier than this year.</div>
+		<div class="share" role="toolbar"><div data-p5d="toolbar">Share this note with a friend, save it for later, or print a copy for the garden shed wall.</div></div>
+		<button type="button" class="subscribe"><div data-p5d="button">Subscribe to get every new note from the garden by email, about twice a month and never more.</div></button>
+		<div class="card" role="button" tabindex="0"><div data-p5d="role-button">Read the next note, about the squash that climbed the fence and took over half of the path.</div></div>
+		<div class="ornament" aria-hidden="true"><div data-p5d="aria-hidden">A row of small leaves drawn in text, which a screen reader skips, long enough to count as a paragraph.</div></div>
+	</article>
+</main>
+<footer><div data-p5d="footer">Written for the tfold fixtures. Every note on this page is invented, and no part of it describes a real garden.</div></footer>
+</body>
+</html>

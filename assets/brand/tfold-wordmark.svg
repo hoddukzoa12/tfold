@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 325 114" role="img" aria-label="tfold">
+	<defs>
+		<clipPath id="tfold-baseline">
+			<rect x="-10" y="-10" width="345" height="124" />
+		</clipPath>
+	</defs>
+	<g fill="none" stroke="#2A2A2E" stroke-width="15" clip-path="url(#tfold-baseline)">
+		<path d="M0 13.5H73.5M36.75 13.5V96A10.5 10.5 0 0 0 47.25 106.5H61.5" />
+		<path d="M132.89 10.72A29.5 29.5 0 0 0 90 37V106.04L145.02 51.02A32.5 32.5 0 1 1 137.46 85.12M90 37H121.5" />
+		<path d="M224 0V114M317.5 0V74" />
+		<circle cx="285" cy="74" r="32.5" />
+	</g>
+</svg>

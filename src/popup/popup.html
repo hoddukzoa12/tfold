@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>tfold</title>
+		<link rel="stylesheet" href="../ui/tfold.css" />
+		<style>
+			/* On a screen too short for the popup, Chrome reserves 30 px for scrollbars and widens the popup past 320 px. It still scrolls by wheel and keyboard. */
+			html {
+				scrollbar-width: none;
+			}
+			body {
+				width: 320px;
+				--gutter: 20px;
+				background: var(--surface-muted);
+			}
+			@media (prefers-color-scheme: dark) {
+				body {
+					background: var(--background);
+				}
+			}
+			.group {
+				border-color: var(--border-subtle);
+			}
+			.row {
+				padding: 14px 18px;
+			}
+			header {
+				padding: 14px var(--gutter) 10px;
+			}
+			main {
+				display: grid;
+				gap: 12px;
+				padding: 0 var(--gutter);
+			}
+			.row-title,
+			.row-hint {
+				min-height: 1lh;
+			}
+			#site-host {
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+			.keys {
+				display: grid;
+				grid-template-columns: auto minmax(0, 1fr);
+				align-items: center;
+				gap: 6px 8px;
+				margin-top: 8px;
+				color: var(--text-secondary);
+				font-size: var(--text-xs);
+			}
+			.keys kbd {
+				justify-self: start;
+				white-space: normal;
+			}
+			#provider-row {
+				flex-direction: column;
+				align-items: stretch;
+				gap: 10px;
+			}
+			footer {
+				padding: 6px var(--gutter) 10px;
+			}
+			footer a {
+				display: inline-flex;
+				align-items: center;
+				min-height: 24px;
+				border-radius: var(--radius-key);
+				color: var(--foreground);
+				font-weight: 500;
+				text-decoration: underline;
+				text-decoration-color: var(--border-strong);
+				text-underline-offset: 3px;
+			}
+			footer a:hover {
+				text-decoration-color: currentColor;
+			}
+			/* store */
+			#signed-out {
+				display: grid;
+				gap: 16px;
+				padding: 0 var(--gutter) var(--gutter);
+			}
+			#signed-out p {
+				color: var(--text-secondary);
+			}
+			#signed-out .button {
+				width: 100%;
+				min-height: var(--control-height-md);
+			}
+			#signed-out .lines {
+				display: grid;
+				gap: 4px;
+			}
+			#signed-out .lines p:first-child {
+				color: var(--foreground);
+				font-weight: 500;
+			}
+			#try-first {
+				justify-self: center;
+				margin-top: -8px;
+			}
+			/* /store */
+			.text-button {
+				align-self: flex-start;
+			}
+			.brief .row-title {
+				display: none;
+			}
+			.brief .keys {
+				display: flex;
+				flex-wrap: wrap;
+				margin-top: 0;
+			}
+			.brief .keys span {
+				position: absolute;
+				clip-path: inset(50%);
+			}
+			/* store */
+			#usage {
+				display: grid;
+				gap: 8px;
+				padding: 12px 18px;
+				font-variant-numeric: tabular-nums;
+			}
+			#usage-left {
+				font-weight: 500;
+			}
+			.usage-lines {
+				display: grid;
+				gap: 2px;
+			}
+			.meter {
+				height: 8px;
+				border-radius: var(--radius-pill);
+				background: var(--meter-track);
+				overflow: hidden;
+			}
+			.meter span {
+				display: block;
+				height: 100%;
+				width: var(--remaining, 0%);
+				border-radius: inherit;
+				background: var(--accent);
+			}
+			#usage.low #usage-left {
+				color: var(--caution-ink);
+				font-weight: 700;
+			}
+			#usage.low .meter {
+				background: var(--border-strong);
+			}
+			#usage.low .meter span {
+				background: var(--caution-ink);
+			}
+			#trial-left.urgent {
+				display: flex;
+				gap: 6px;
+				color: var(--caution-ink);
+				font-weight: 700;
+			}
+			#trial-left.urgent::before {
+				content: '';
+				flex: none;
+				width: 14px;
+				height: 1lh;
+				background: currentColor;
+				mask: var(--icon-caution) center / 14px no-repeat;
+			}
+			.dev-link {
+				display: block;
+				padding-block: 4px;
+				border-radius: var(--radius-key);
+				color: var(--text-secondary);
+				font-size: var(--text-xs);
+				text-align: center;
+				word-break: keep-all;
+			}
+			/* /store */
+		</style>
+	</head>
+	<body>
+		<header class="brand">
+			<img class="mark" src="../ui/tfold-mark.svg" alt="" />
+			<div class="wordmark" role="img" aria-label="tfold"></div>
+		</header>
+		<!-- store -->
+		<section id="signed-out" aria-labelledby="signed-out-name" hidden>
+			<span id="signed-out-name" data-i18n="popupSignedOutName" hidden></span>
+			<div class="lines">
+				<p data-i18n="popupSignedOut"></p>
+				<p data-i18n="popupSignedOutUnlock"></p>
+			</div>
+			<button class="button" id="continue" type="button">
+				<img class="google" src="../ui/google.svg" alt="" />
+				<span data-i18n="popupContinue"></span>
+			</button>
+			<a class="text-button" id="try-first" href="../options/options.html" data-i18n="popupTryFirst"></a>
+		</section>
+		<!-- /store -->
+		<div id="view" hidden>
+			<main>
+				<!-- store -->
+				<div class="group" id="usage" hidden>
+					<span id="usage-left" aria-hidden="true"></span>
+					<div class="meter" id="meter" role="meter" aria-valuemin="0" aria-valuemax="100"><span></span></div>
+					<div class="usage-lines">
+						<p class="row-hint notice" id="usage-low" data-tone="caution" hidden></p>
+						<p class="row-hint" id="usage-reset"></p>
+						<p class="row-hint" id="trial-left" hidden></p>
+					</div>
+				</div>
+				<!-- /store -->
+				<div class="group">
+					<div class="row">
+						<div class="row-text">
+							<span class="row-title" id="site-title" data-i18n="popupSite"></span>
+							<span class="row-hint" id="site-host"></span>
+							<p class="row-hint notice" id="site-error" data-tone="error" role="alert" hidden></p>
+						</div>
+						<button class="switch" id="site" type="button" role="switch" aria-checked="false" aria-labelledby="site-title" aria-describedby="site-host"></button>
+					</div>
+					<div class="row" id="provider-row">
+						<div class="row-text">
+							<span class="row-title" id="provider-title"></span>
+							<span class="row-hint" id="provider-state"></span>
+						</div>
+						<button class="button primary" id="add-key" type="button" data-i18n="popupAddKey" hidden></button>
+					</div>
+					<div class="row" id="how-to">
+						<div class="row-text">
+							<span class="row-title" id="how-title"></span>
+							<div class="keys">
+								<span data-i18n="popupFold"></span><kbd id="fold-keys"></kbd>
+								<span data-i18n="popupUnfold"></span><kbd id="unfold-keys"></kbd>
+								<span class="way-scroll" data-i18n="popupScroll"></span><kbd class="way-scroll" id="scroll-keys"></kbd>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer>
+				<a id="settings" href="../options/options.html" data-i18n="popupSettings"></a>
+			</footer>
+		</div>
+		<script src="popup.js"></script>
+	</body>
+</html>

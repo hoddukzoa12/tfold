@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Harbor report viewer</title>
+		<style>
+			body {
+				margin: 0;
+				font: 17px/1.55 Georgia, serif;
+				color: #1f2328;
+			}
+			main {
+				max-width: 44em;
+				margin: 0 auto;
+				padding: 24px;
+			}
+			.sheet {
+				position: relative;
+				height: 260px;
+				margin: 0 0 24px;
+				background: #f4f1ea;
+			}
+			.sheet canvas {
+				position: absolute;
+				inset: 0;
+				width: 100%;
+				height: 100%;
+			}
+			.textLayer {
+				position: absolute;
+				inset: 0;
+			}
+			.textLayer span {
+				position: absolute;
+				white-space: pre;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<h1 id="heading">Report on the north pier</h1>
+			<p id="prose">
+				The report runs to ninety pages, and this viewer draws each of them for itself. The reader zooms it with the same gesture that zooms any page, except that the viewer takes the gesture and redraws the sheet at the new size rather than leaving it for the browser to do.
+			</p>
+			<p id="short">Page one.</p>
+			<div class="sheet" id="sheet">
+				<canvas width="400" height="260"></canvas>
+				<div class="textLayer">
+					<span id="sheet-text" style="left: 40px; top: 40px">The southern third of the pier kept its strength.</span>
+				</div>
+			</div>
+			<p id="more">
+				The viewer has been the harbor office's favorite part of the whole project, largely because it was the only part delivered on time. Its author moved inland shortly afterward and has not answered any letter about the second edition, which the office has decided to take as approval.
+			</p>
+		</main>
+		<script>
+			const viewer = { wheels: 0, sawPrevented: 0, zoom: 1 };
+			window.viewer = viewer;
+			// The way a document viewer takes Control and the wheel on the window for itself. The page's own listener reads the event before anything else acts on it.
+			addEventListener(
+				'wheel',
+				(event) => {
+					if (!event.ctrlKey) return;
+					viewer.wheels++;
+					if (event.defaultPrevented) {
+						viewer.sawPrevented++;
+						return;
+					}
+					event.preventDefault();
+					viewer.zoom *= Math.exp(-event.deltaY / 100);
+				},
+				{ passive: false },
+			);
+		</script>
+	</body>
+</html>

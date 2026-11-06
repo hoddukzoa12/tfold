@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Crew room</title>
+<style>
+body { margin: 0; font: 15px/1.45 Arial, sans-serif; color: #1f2328; background: #fff; }
+.shell { position: fixed; inset: 0; display: grid; grid-template-columns: 220px 1fr; overflow: hidden; }
+.rooms { padding: 12px; background: #f6f8fa; border-right: 1px solid #d0d7de; }
+.room { padding: 4px 0; }
+.pane { overflow-y: auto; padding: 0 24px 320px; }
+.day { position: sticky; top: 0; padding: 8px 0; background: #fff; border-bottom: 1px solid #eaeef2; color: #57606a; font-size: 13px; }
+.message { max-width: 40em; margin: 16px 0; }
+.who { font-size: 13px; font-weight: 700; }
+.consent { position: fixed; left: 0; right: 0; bottom: 0; max-height: 90%; overflow-x: hidden; overflow-y: auto; padding: 12px; background: #f0f0f0; border-top: 1px solid #999; }
+.notice { position: fixed; left: 0; right: 0; bottom: 120px; padding: 12px; background: #eef2ff; }
+.notice .scroll { max-height: 4.5em; overflow-y: auto; }
+.popup { position: fixed; inset: 0; overflow-y: auto; background: rgba(0, 0, 0, .4); }
+.popup .sheet { max-width: 30em; margin: 80px auto; padding: 16px; background: #fff; border-radius: 8px; }
+</style>
+</head>
+<body>
+<div class="shell">
+<div class="rooms">
+<div class="room">Harbor crew</div>
+<div class="room">Night boats</div>
+<div class="room">Pier maintenance</div>
+<div class="room">Timetable team</div>
+</div>
+<div class="pane">
+<div class="day" data-chrome="day">Tuesday, November 3. Older messages in this room are kept in the archive for a year.</div>
+<div class="message"><div class="who">Captain Oh</div><div class="text" data-prose="1">The six o'clock boat is running late because of the fog at the river mouth. I will radio the pier as soon as we clear the outer buoy.</div></div>
+<div class="message"><div class="who">Mina Park</div><div class="text" data-prose="2">Thanks for the warning, I moved the morning commuters onto the bus that leaves from the ticket office. Two of them asked whether the evening boat is still running.</div></div>
+<div class="message"><div class="who">Captain Oh</div><div class="text" data-prose="3">The evening boat should be fine once the wind turns in the afternoon. Tell them to check the board by the ticket windows after lunch.</div></div>
+<div class="message"><div class="who">Jun Seo</div><div class="text" data-prose="4">The north pier lights are out again, so I taped a lantern to the last bollard for tonight. A new cable for the lights arrives on Thursday morning.</div></div>
+<div class="message"><div class="who">Mina Park</div><div class="text" data-prose="5">I printed three more copies of the winter timetable and left them in the crew room. Take one for each boat before the first crossing tomorrow.</div></div>
+<div class="message"><div class="who">Harbor office</div><div class="text" data-prose="6">The harbor master will walk the slipway on Friday to check the new rails. Please keep the boatyard gate open for her between nine and ten.</div></div>
+</div>
+</div>
+<div class="consent" role="region" aria-label="Cookies"><div data-chrome="consent">This crew room keeps a small cookie to remember which room you read last and when you signed in. You can clear it at any time from the <a href="#settings">room settings</a>.</div><button type="button">Accept</button> <button type="button">Settings</button></div>
+<div class="notice"><div class="scroll"><div data-chrome="notice">The harbor office reads every room to keep the crossings safe and logs each message for a year. Ask the office if you want a message taken down early.</div></div><button type="button">Got it</button></div>
+<div class="popup"><div class="sheet"><div data-chrome="popup">Before you go, get the tide table in your inbox every Sunday morning. We send one letter a week and never share your address.</div><button type="button">Subscribe</button> <button type="button">No thanks</button></div></div>
+</body>
+</html>
