@@ -503,6 +503,7 @@ test.describe('lanes with a mock model', () => {
 		test.setTimeout(120_000);
 		const png = await fresh('p4-korean');
 		const close = await mockProvider(h);
+		await h.worker.evaluate(() => chrome.storage.sync.set({ autoTranslate: false }));
 		const paragraph = await target(h, koWiki, 3);
 		await foldWithModel(h, paragraph);
 		await unfold(h, paragraph);
