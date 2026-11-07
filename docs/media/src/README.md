@@ -5,7 +5,7 @@ This directory rebuilds `docs/media/tfold-*`. Nothing here ships in the extensio
 - `demo/` is the page that folds. Its text is original, written for this repository.
 - `../../../scripts/capture-media.ts` loads a real extension build in Playwright's Chromium, folds the demo page with a real Control key and wheel events, seeks each morph frame by frame, and writes the footage and the raw stills to `assets/`.
 - `hero/` and `film/` are [HyperFrames](https://github.com/heygen-com/hyperframes) projects that compose the footage into the hero GIF and the product video. Their band and pointer are added in editing, and the pointer sits where the real pointer was.
-- `stills/` composes the social preview and the README stills from the raw stills.
+- `stills/` composes the social preview, the README stills and the Chrome Web Store images from the raw stills.
 - `README.md` shows the English stills. `README.ko.md` shows `tfold-levels-ko.png` and `tfold-popup-ko.png`.
 - `model-lines.json` records the unedited model output of the last live capture, with token counts and an estimate at list price.
 

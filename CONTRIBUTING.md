@@ -20,8 +20,8 @@ One repository makes two editions, and each build has its own folder.
 | `npm run build` | `dist/` | The open edition. It has no account and folds at once. |
 | `npm run build:store` | `dist-store/` | The store edition. It starts signed out and folds nothing until an account is set. |
 | `npm run build:dev` | `dist-dev/` | The store edition with its development tool: a section at the top of settings that sets the account without signing in. |
-| `npm run package:open` | `tfold-open.zip` | Builds the open edition and zips `dist/`. This is the file attached to a GitHub release. |
-| `npm run package:store` | `tfold-store.zip` | Builds the store edition and zips `dist-store/`. Only this command makes a store upload. |
+| `npm run package:open` | `tfold-open.zip` | Builds the open edition and zips `dist/`. This is the file for a GitHub release and for the Chrome Web Store, and [docs/store-listing.md](docs/store-listing.md) holds the store listing. |
+| `npm run package:store` | `tfold-store.zip` | Builds the store edition and zips `dist-store/`. This edition folds nothing until sign-in exists, so do not upload it yet. |
 
 To use the extension by hand, run `npm run build`, load `dist/` unpacked from `chrome://extensions`, and fold. After a rebuild, click **Reload** on the tfold card. A Chrome restart alone keeps the old service worker.
 
@@ -68,8 +68,8 @@ A change to `README.md` also changes `README.ko.md` in the same pull request.
 - `npm run build` runs `scripts/build.ts`. It bundles the content script, the service worker, the settings page and the toolbar popup with esbuild, and copies the manifest, the pages, the shared stylesheet, the store name and description in `src/_locales/` and the icons into `dist/`, as the open edition. Every other string the extension shows lives in `src/strings/`, in English and Korean, and the reader picks the language in settings.
 - `npm run build:store` builds the store edition into `dist-store/`. It starts signed out.
 - `npm run build:dev` builds the store edition with its development tool into `dist-dev/`.
-- `npm run package:open` builds the open edition and zips it as `tfold-open.zip`, the file to attach to a GitHub release.
-- `npm run package:store` builds the store edition and zips it as `tfold-store.zip`, the file to upload to the store.
+- `npm run package:open` builds the open edition and zips it as `tfold-open.zip`, the file for a GitHub release and for the Chrome Web Store.
+- `npm run package:store` builds the store edition and zips it as `tfold-store.zip`. Do not upload it until sign-in exists.
 - `npm run icons` draws `assets/brand/tfold-mark.svg` into the PNG icons in `src/icons/` with Playwright's Chromium.
 - `npm run lint` runs ESLint. `npm run typecheck` runs `tsc`.
 - `npm test` runs the Vitest unit tests.

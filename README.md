@@ -49,7 +49,7 @@ npm run build
 
 After you rebuild, click **Reload** on the tfold card in `chrome://extensions`. A Chrome restart alone keeps the old service worker.
 
-This build is the open edition. The Chrome Web Store build is `npm run build:store`, and [CONTRIBUTING.md](CONTRIBUTING.md) explains the editions.
+This build is the open edition. The store edition, `npm run build:store`, waits for sign-in, and [CONTRIBUTING.md](CONTRIBUTING.md) explains the editions.
 
 ## Ways to fold
 
