@@ -98,6 +98,15 @@ test('Wikipedia: paragraphs are blocks, and references, short paragraphs, captio
 	await page.close();
 });
 
+test('a short line is a block, and one word, a link item and a short div are not', async () => {
+	const page = await openHtml(
+		'<main><p id="line">For this game:</p><p id="word">Note.</p><ul><li id="link"><a href="#a">The harbor rules page</a></li><li id="mixed"><a href="#b">Charts</a> of the tide at each harbor</li></ul>' +
+			'<div id="div">A short div here.</div></main>',
+	);
+	expect(await levelsAt(page, { line: '#line', word: '#word', link: '#link', mixed: '#mixed', div: '#div' })).toEqual({ line: 0, word: null, link: null, mixed: 0, div: null });
+	await page.close();
+});
+
 test('Korean Wikipedia: footnotes and the bibliography are not blocks', async () => {
 	const page = await open('/wikipedia-ko-black-hole/');
 	expect(await levelsAt(page, {

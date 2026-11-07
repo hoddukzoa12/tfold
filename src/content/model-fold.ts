@@ -1,5 +1,5 @@
 import { paragraphLanguage, translateFor } from '../fold/language.ts';
-import { localFold } from '../fold/local.ts';
+import { isShortLine, localFold } from '../fold/local.ts';
 import type { FoldRequest, Heading } from '../fold/prompt.ts';
 import type { FoldError } from '../fold/providers/index.ts';
 import type { BlockId, Fold } from '../fold/types.ts';
@@ -62,6 +62,9 @@ const answers = (known: Remote | undefined, { text, translateTo }: Asked) =>
 
 const stillWaiting = (known: Remote | undefined, now: number) => known?.state === 'failed' && now - known.at < failedWaitMs;
 
+// A short line has nothing to shorten, so it costs a request only when it needs translating.
+const wantsModel = ({ text, translateTo }: Asked) => translateTo !== undefined || !isShortLine(text);
+
 const writtenAlike = (a: Asked, b: Asked) => a.lang === b.lang && a.translateTo === b.translateTo;
 
 export function foldFor(id: BlockId, text: string): Shown {
@@ -112,7 +115,7 @@ export function requestFolds(
 	const known = remote.get(target);
 	const asked = askFor(targetEl, textOf(targetEl));
 	const now = performance.now();
-	if (answers(known, asked) || (known?.state === 'failed' && !retryFailed) || stillWaiting(known, now)) return [];
+	if (!wantsModel(asked) || answers(known, asked) || (known?.state === 'failed' && !retryFailed) || stillWaiting(known, now)) return [];
 	const headings = pageHeadings();
 	const section = sectionOf(targetEl, headings);
 	const members = blocks
@@ -123,7 +126,7 @@ export function requestFolds(
 		members,
 		members.findIndex((member) => member.id === target),
 		asked.translateTo ? translatedWindowSize : windowSize,
-		(member) => writtenAlike(member, asked) && !answers(remote.get(member.id), member) && !stillWaiting(remote.get(member.id), now),
+		(member) => wantsModel(member) && writtenAlike(member, asked) && !answers(remote.get(member.id), member) && !stillWaiting(remote.get(member.id), now),
 	);
 	const asking = window.map(({ id, text, lang, translateTo }) => [id, { state: 'pending', text, lang, translateTo }] as const);
 	for (const [id, pending] of asking) remote.set(id, pending);
