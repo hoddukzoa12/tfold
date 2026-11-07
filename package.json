@@ -12,6 +12,7 @@
     "build": "node scripts/build.ts",
     "build:store": "node scripts/build.ts --store",
     "build:dev": "node scripts/build.ts --dev",
+    "package:open": "rm -f tfold-open.zip && npm run build && cd dist && zip -qrX ../tfold-open.zip .",
     "package:store": "rm -f tfold-store.zip && npm run build:store && cd dist-store && zip -qrX ../tfold-store.zip .",
     "icons": "node scripts/brand-icons.ts",
     "lint": "eslint .",

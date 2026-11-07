@@ -2,5 +2,6 @@ node_modules/
 dist/
 dist-store/
 dist-dev/
+tfold-open.zip
 tfold-store.zip
 e2e/out/

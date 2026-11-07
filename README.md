@@ -23,15 +23,19 @@
 
 tfold is a Chrome extension that shortens the paragraph under the pointer, in place, on the page you are reading. Each paragraph steps through Full, Brief, Key and Takeaway, and back, and keeps its own level. tfold needs no local app, and the model text comes from your own API key.
 
-**tfold is pre-release.** It is not on the Chrome Web Store yet. To try it today, build it from source and load it unpacked.
+**tfold is pre-release.** It is not on the Chrome Web Store yet. To try it today, [download the latest build](https://github.com/hoddukzoa12/tfold/releases/latest/download/tfold-open.zip) or build it from source, then load it unpacked. A copy loaded this way does not update itself.
 
 > **한국어 요약.** tfold는 읽고 있는 문단을 그 자리에서 줄여 주는 크롬 확장 프로그램이에요. 문단에 포인터를 올리고 Ctrl 키(맥에서는 Cmd 키)를 누른 채 아래로 스크롤하거나 Alt+Shift+↓ (맥에서는 ⌥⇧↓)를 누르면 Full, Brief, Key, Takeaway 순서로 짧아지고, 위로 스크롤하거나 ↑를 누르면 다시 길어져요. 키를 누르고 있으면 초록 선이 접힐 문단을 표시하고, 누른 채 포인터를 옮기면 여러 문단을 함께 접을 수 있어요. Key와 Takeaway는 직접 넣은 OpenGateway나 OpenRouter 키로 AI가 써 줘요. 아직 출시 전이라 크롬 웹 스토어에는 없고, 소스를 빌드해서 직접 설치해야 해요.
 >
-> `npm run build`로 만든 `dist`를 불러오면 계정도 키도 없이 바로 접혀요. 키가 없으면 빠른 요약으로 접혀요. 설정 화면이 영어로 나오면 **언어 / Language**에서 **한국어**를 고르세요. **여기서 접어 보기**의 문단은 키 없이도 접혀요. AI 요약을 받으려면 **AI 요약**에서 **OpenGateway에서 키 받기**로 키를 받아 **OpenGateway API 키**에 붙여 넣고 **키 저장**을 눌러요. 저장할 때 tfold가 그 키를 OpenGateway에 보내 확인해요. OpenRouter를 쓰려면 먼저 **고급**에서 **대신 OpenRouter 쓰기**를 눌러요.
+> 최신 릴리스의 `tfold-open.zip`을 푼 폴더나 `npm run build`로 만든 `dist`를 불러오면 계정도 키도 없이 바로 접혀요. 키가 없으면 빠른 요약으로 접혀요. 설정 화면이 영어로 나오면 **언어 / Language**에서 **한국어**를 고르세요. **여기서 접어 보기**의 문단은 키 없이도 접혀요. AI 요약을 받으려면 **AI 요약**에서 **OpenGateway에서 키 받기**로 키를 받아 **OpenGateway API 키**에 붙여 넣고 **키 저장**을 눌러요. 저장할 때 tfold가 그 키를 OpenGateway에 보내 확인해요. OpenRouter를 쓰려면 먼저 **고급**에서 **대신 OpenRouter 쓰기**를 눌러요.
 
 ## Quick start
 
-You need Node 22 or newer and Chrome or Chromium. You need no account and no key.
+You need Chrome or Chromium. You need no account and no key.
+
+To skip the build, download [`tfold-open.zip`](https://github.com/hoddukzoa12/tfold/releases/latest/download/tfold-open.zip) and unzip it into a folder you keep, because Chrome reads the extension from that folder.
+
+To build it instead, you need Node 22 or newer:
 
 ```sh
 git clone https://github.com/hoddukzoa12/tfold.git
@@ -41,7 +45,7 @@ npm run build
 ```
 
 1. Open `chrome://extensions` and turn on **Developer mode**.
-2. Click **Load unpacked** and select the `dist` directory.
+2. Click **Load unpacked** and select the unzipped folder, or the `dist` directory if you built it.
 3. Open any article, point at a paragraph, hold Ctrl (Cmd on a Mac), and scroll down. The paragraph folds at once to a quick summary made from its own text, with no network request. Scroll up to unfold it.
 4. Optional: to get model text, click the tfold icon in the toolbar, then click **Open settings**. Under **AI summaries**, click **Get an OpenGateway key**, paste the key into **OpenGateway API key**, and click **Save key**. tfold sends the key to OpenGateway to check it before it saves the key. To use [OpenRouter](https://openrouter.ai) instead of [OpenGateway](https://opengateway.ai), first open **Advanced** and click **Use OpenRouter instead**.
 

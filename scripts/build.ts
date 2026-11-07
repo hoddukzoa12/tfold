@@ -43,3 +43,4 @@ for (const file of ['options/options.html', 'popup/popup.html', 'ui/tfold.css'])
 	await writeFile(copy, forEdition(await readFile(copy, 'utf8')));
 }
 for (const file of ['tfold-wordmark.svg', 'tfold-mark.svg']) await cp(path.join(root, 'assets', 'brand', file), path.join(outdir, 'ui', file));
+for (const file of ['LICENSE', 'NOTICE', 'LICENSES']) await cp(path.join(root, file), path.join(outdir, file), { recursive: true });
