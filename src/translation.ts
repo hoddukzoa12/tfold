@@ -4,7 +4,8 @@ export const autoTranslateKey = 'autoTranslate';
 export const translationKeys = [autoTranslateKey, readerLanguageKey] as const;
 export type StoredTranslation = Partial<Record<(typeof translationKeys)[number], unknown>>;
 
-export const parseAutoTranslate = (raw: unknown): boolean => raw === true;
+// On unless the reader turned it off, so a reader who switched it off keeps that choice.
+export const parseAutoTranslate = (raw: unknown): boolean => raw !== false;
 
 export function translationTarget(stored: StoredTranslation): Language | undefined {
 	return parseAutoTranslate(stored[autoTranslateKey]) ? languageOf(parseReaderLanguage(stored[readerLanguageKey])) : undefined;
