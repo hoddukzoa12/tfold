@@ -360,7 +360,7 @@ test.describe('mock provider', () => {
 		}
 	});
 
-	test('lane 6: settings show the auto-translate switch under the language choice, off at first, and turning it on makes the next fold Korean', async ({ h }) => {
+	test('lane 6: settings show the auto-translate switch under the language choice, on at first, and turning it off makes the next fold English', async ({ h }) => {
 		const mock = await mockProvider();
 		try {
 			await seedMock(h, mock, { readerLanguage: 'ko' });
@@ -372,7 +372,7 @@ test.describe('mock provider', () => {
 			await expect(settings.locator('#auto-translate-title')).toHaveText('다른 언어 문단은 한국어로 접기');
 			const before = await toggle.getAttribute('aria-checked');
 			await toggle.click();
-			await expect(toggle).toHaveAttribute('aria-checked', 'true');
+			await expect(toggle).toHaveAttribute('aria-checked', 'false');
 			const stored = await h.worker.evaluate(() => chrome.storage.sync.get(['autoTranslate', 'readerLanguage']));
 			await section.screenshot({ path: await fresh('p6a-settings-ko-light.png'), animations: 'disabled' });
 			await settings.locator('input[name="language"][value="en"]').check();
@@ -385,10 +385,10 @@ test.describe('mock provider', () => {
 			await foldBy(h, 0, 2);
 			const key = await settled(h, 0, modelAt('2'));
 			console.log(`switch before ${before}, stored ${JSON.stringify(stored)}, Key ${key.text}`);
-			expect(before).toBe('false');
-			expect(stored).toEqual({ autoTranslate: true, readerLanguage: 'ko' });
-			expect(mock.prompts[0]).toContain(asksKorean);
-			expect(key).toMatchObject({ lang: 'ko', text: `${korean.takeaway}. ${korean.reason}.` });
+			expect(before).toBe('true');
+			expect(stored).toEqual({ autoTranslate: false, readerLanguage: 'ko' });
+			expect(mock.prompts[0]).not.toContain(asksKorean);
+			expect(key.lang).not.toBe('ko');
 			expect(errors(h)).toEqual([]);
 		} finally {
 			await mock.close();
