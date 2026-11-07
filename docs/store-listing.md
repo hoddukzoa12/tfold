@@ -30,7 +30,7 @@ QUICK SUMMARIES
 These need no account and no key. tfold makes them inside your browser from the paragraph's own text, and nothing leaves your browser.
 
 AI SUMMARIES
-These are optional. Save your own OpenGateway or OpenRouter key in settings. When you fold a paragraph, tfold sends it to that service with some of the paragraphs around it, the page title and the page's headings. The service you got the key from charges your account there. AI summaries can be wrong or miss something, so unfold the paragraph to check what matters.
+These are optional. Save your own OpenGateway or OpenRouter key in settings. When you fold a paragraph, tfold sends it to that service with some of the paragraphs around it, the page title and the page's headings. Fold other languages into your own language is on by default, and it can send the next paragraphs before you fold them, so they are ready when you get there. The service you got the key from charges your account there. AI summaries can be wrong or miss something, so unfold the paragraph to check what matters.
 
 ALSO
 - Fold a run of up to 20 paragraphs together.
@@ -51,7 +51,7 @@ tfold는 읽고 있는 문단을 그 자리에서 짧게 줄여 줘요.
 계정도 키도 필요 없어요. 문단의 글로 브라우저 안에서 만들고, 아무것도 브라우저 밖으로 나가지 않아요.
 
 AI 요약
-원할 때만 써요. 설정에서 내 OpenGateway 또는 OpenRouter 키를 저장하세요. 문단을 접으면 그 문단과 주변 문단 일부, 페이지 제목과 제목들을 그 서비스로 보내요. 비용은 키를 만든 서비스에서 내 계정으로 청구돼요. AI 요약은 틀리거나 빠뜨릴 수 있으니 중요한 내용은 펼쳐서 확인해 주세요.
+원할 때만 써요. 설정에서 내 OpenGateway 또는 OpenRouter 키를 저장하세요. 문단을 접으면 그 문단과 주변 문단 일부, 페이지 제목과 제목들을 그 서비스로 보내요. 다른 언어 문단을 내 언어로 접기는 기본으로 켜져 있고, 읽어 내려가는 동안 다음 문단을 미리 보내 둘 수 있어요. 비용은 키를 만든 서비스에서 내 계정으로 청구돼요. AI 요약은 틀리거나 빠뜨릴 수 있으니 중요한 내용은 펼쳐서 확인해 주세요.
 
 그 밖에
 - 문단을 최대 20개까지 한꺼번에 접어요.
@@ -81,7 +81,7 @@ Shortens the paragraph the reader points at, in place, on the page they are read
 
 **Data usage.** `SECURITY.md` describes each request. Tick these two:
 
-- **Website content.** With a saved key, a fold sends the paragraph, up to seven neighbors, the page title and the page's headings to the service the reader chose. The page URL is not sent.
+- **Website content.** With a saved key, a fold sends the paragraph, up to seven neighbors, the page title and the page's headings to the service the reader chose. With translation on, which is the default, the next paragraphs can go before the reader folds them. The page URL is not sent.
 - **Authentication information.** The reader's API key stays in the browser, and it leaves only in the `Authorization` header of a request to its own service.
 
 The three certifications at the end are yours to make: no sale of data, no use unrelated to the single purpose, and no use for credit decisions.

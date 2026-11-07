@@ -98,10 +98,11 @@ test('with auto-translate on, a Korean reader gets the Mass section in Korean, n
 	expect(translateTo).toBe('ko');
 });
 
-test('auto-translate asks for no translation where the paragraph is already in the reader language, and is off by default', async () => {
+test('auto-translate asks for no translation where the paragraph is already in the reader language, is on by default, and stays off once turned off', async () => {
 	const koreanReader = { autoTranslate: true, readerLanguage: 'ko' };
 	expect((await requestFor('/wikipedia-ko-black-hole/', '#형성과_진화', koreanReader)).translateTo).toBeUndefined();
-	expect((await requestFor('/wikipedia-black-hole/', '#Mass', { readerLanguage: 'ko' })).translateTo).toBeUndefined();
+	expect((await requestFor('/wikipedia-black-hole/', '#Mass', { readerLanguage: 'ko' })).translateTo).toBe('ko');
+	expect((await requestFor('/wikipedia-black-hole/', '#Mass', { autoTranslate: false, readerLanguage: 'ko' })).translateTo).toBeUndefined();
 	expect((await requestFor('/wikipedia-ko-black-hole/', '#형성과_진화', { autoTranslate: true })).translateTo).toBe('en');
 });
 
@@ -143,7 +144,7 @@ test('a Korean paragraph on a page that declares English is asked on its own, fo
 		{ lang: 'en', translateTo: 'ko', firsts: englishFirsts },
 		{ lang: 'ko', translateTo: undefined, firsts: koreanFirst },
 	]);
-	expect(await mixedSection({})).toEqual([
+	expect(await mixedSection({ autoTranslate: false })).toEqual([
 		{ lang: 'en', translateTo: undefined, firsts: englishFirsts },
 		{ lang: 'ko', translateTo: undefined, firsts: koreanFirst },
 	]);
@@ -175,7 +176,7 @@ test.each(Object.entries(undeclared))(
 test('a paragraph takes the lang that it or its nearest ancestor declares, not the page lang', async () => {
 	const html = `<html lang="en"><body><main><h2>Mixed</h2><p lang="fr">${undeclared.French}</p><section lang="de"><p>${undeclared.German}</p></section><h2>Next</h2></main></body></html>`;
 	const asked = async (stored: StoredTranslation) => (await sentOn(html, stored, [0, 1])).map(({ lang, translateTo }) => ({ lang, translateTo }));
-	expect(await asked({})).toEqual([
+	expect(await asked({ autoTranslate: false })).toEqual([
 		{ lang: 'fr', translateTo: undefined },
 		{ lang: 'de', translateTo: undefined },
 	]);

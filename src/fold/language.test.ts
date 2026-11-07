@@ -71,10 +71,11 @@ test('a paragraph is translated only when it is provably not in the reader langu
 	expect(translateFor(paragraphLanguage('', french), undefined)).toBeUndefined();
 });
 
-test('auto-translate is off unless stored as true, and the Auto reader language follows Chrome', () => {
+test('auto-translate is on unless stored as false, and the Auto reader language follows Chrome', () => {
 	chromeLanguage('ko-KR');
-	expect(translationTarget({})).toBeUndefined();
-	expect(translationTarget({ autoTranslate: 'yes', readerLanguage: 'ko' })).toBeUndefined();
+	expect(translationTarget({})).toBe('ko');
+	expect(translationTarget({ autoTranslate: false, readerLanguage: 'ko' })).toBeUndefined();
+	expect(translationTarget({ autoTranslate: false })).toBeUndefined();
 	expect(translationTarget({ autoTranslate: true })).toBe('ko');
 	expect(translationTarget({ autoTranslate: true, readerLanguage: 'en' })).toBe('en');
 	chromeLanguage('en-US');
