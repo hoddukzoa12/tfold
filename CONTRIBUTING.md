@@ -61,6 +61,8 @@ The live test in `e2e/lanes/p5f.spec.ts` needs both keys. Some lanes also need `
 
 Never commit a key, and never put one in a log, a screenshot or a video.
 
+A change to `README.md` also changes `README.ko.md` in the same pull request.
+
 ## Scripts
 
 - `npm run build` runs `scripts/build.ts`. It bundles the content script, the service worker, the settings page and the toolbar popup with esbuild, and copies the manifest, the pages, the shared stylesheet, the store name and description in `src/_locales/` and the icons into `dist/`, as the open edition. Every other string the extension shows lives in `src/strings/`, in English and Korean, and the reader picks the language in settings.

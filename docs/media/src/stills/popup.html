@@ -27,8 +27,12 @@
 	</head>
 	<body>
 		<main>
-			<img src="../assets/stills/popup-en-light.png" alt="" />
-			<img src="../assets/stills/popup-ko-dark.png" alt="" />
+			<img data-still="popup-LANG-light.png" alt="" />
+			<img data-still="popup-LANG-dark.png" alt="" />
 		</main>
+		<script>
+			const lang = new URLSearchParams(location.search).get('lang') ?? 'en';
+			for (const image of document.images) image.src = `../assets/stills/${image.dataset.still.replace('LANG', lang)}`;
+		</script>
 	</body>
 </html>

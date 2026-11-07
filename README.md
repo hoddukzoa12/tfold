@@ -7,6 +7,8 @@
 
 <p align="center"><b>Shorten the paragraph you are reading, right where it is.</b></p>
 
+<p align="center"><b>English</b> | <a href="README.ko.md">한국어</a></p>
+
 <p align="center">
   <a href="#quick-start">Quick start</a> |
   <a href="#ways-to-fold">Ways to fold</a> |
@@ -24,10 +26,6 @@
 tfold is a Chrome extension that shortens the paragraph under the pointer, in place, on the page you are reading. Each paragraph steps through Full, Brief, Key and Takeaway, and back, and keeps its own level. tfold needs no local app, and the model text comes from your own API key.
 
 **tfold is pre-release.** It is not on the Chrome Web Store yet. To try it today, [download the latest build](https://github.com/hoddukzoa12/tfold/releases/latest/download/tfold-open.zip) or build it from source, then load it unpacked. A copy loaded this way does not update itself.
-
-> **한국어 요약.** tfold는 읽고 있는 문단을 그 자리에서 줄여 주는 크롬 확장 프로그램이에요. 문단에 포인터를 올리고 Ctrl 키(맥에서는 Cmd 키)를 누른 채 아래로 스크롤하거나 Alt+Shift+↓ (맥에서는 ⌥⇧↓)를 누르면 Full, Brief, Key, Takeaway 순서로 짧아지고, 위로 스크롤하거나 ↑를 누르면 다시 길어져요. 키를 누르고 있으면 초록 선이 접힐 문단을 표시하고, 누른 채 포인터를 옮기면 여러 문단을 함께 접을 수 있어요. Key와 Takeaway는 직접 넣은 OpenGateway나 OpenRouter 키로 AI가 써 줘요. 아직 출시 전이라 크롬 웹 스토어에는 없고, 소스를 빌드해서 직접 설치해야 해요.
->
-> 최신 릴리스의 `tfold-open.zip`을 푼 폴더나 `npm run build`로 만든 `dist`를 불러오면 계정도 키도 없이 바로 접혀요. 키가 없으면 빠른 요약으로 접혀요. 설정 화면이 영어로 나오면 **언어 / Language**에서 **한국어**를 고르세요. **여기서 접어 보기**의 문단은 키 없이도 접혀요. AI 요약을 받으려면 **AI 요약**에서 **OpenGateway에서 키 받기**로 키를 받아 **OpenGateway API 키**에 붙여 넣고 **키 저장**을 눌러요. 저장할 때 tfold가 그 키를 OpenGateway에 보내 확인해요. OpenRouter를 쓰려면 먼저 **고급**에서 **대신 OpenRouter 쓰기**를 눌러요.
 
 ## Quick start
 
@@ -82,7 +80,7 @@ To try a fold without leaving settings, go to **Try it here**, point at the test
 tfold shows a quick summary from the page's own text at once, with no network request, and swaps in the model's text when it arrives. Without a key you keep the quick summary. How long the model takes depends on your provider.
 
 <p align="center">
-  <img src="docs/media/tfold-levels.png" width="760" alt="One Korean paragraph shown at all four levels, from five lines at Full to one line at Takeaway.">
+  <img src="docs/media/tfold-levels.png" width="760" alt="One paragraph shown at all four levels, from its full length at Full to one sentence at Takeaway.">
 </p>
 
 A fold takes its colors and type from the page, including a page's own dark theme.
@@ -94,7 +92,7 @@ A fold takes its colors and type from the page, including a page's own dark them
 The toolbar popup turns tfold on or off for the site you are on. It also shows which provider folds your paragraphs, or an **Add a key** button when no key is saved. Before your first fold on a web page, the popup shows the shortcuts and the scroll key above that row. After that fold, they move below that row.
 
 <p align="center">
-  <img src="docs/media/tfold-popup.png" width="640" alt="The content of the toolbar popup in English on a light theme and in Korean on a dark theme, with a key saved.">
+  <img src="docs/media/tfold-popup.png" width="640" alt="The content of the toolbar popup on a light theme and on a dark theme, with a key saved.">
 </p>
 
 Settings also has a language setting for the interface, and a switch that folds paragraphs in another language into your reading language from Key on. The switch is off by default and needs a saved key.
