@@ -51,7 +51,7 @@ npm run build
 
 다시 빌드한 뒤에는 `chrome://extensions`의 tfold 카드에서 새로고침을 눌러요. 크롬을 다시 시작하기만 하면 이전 서비스 워커가 그대로 남아요.
 
-이 빌드는 오픈 에디션이에요. 크롬 웹 스토어용 빌드는 `npm run build:store`이고, 에디션의 차이는 [CONTRIBUTING.md](CONTRIBUTING.md)에 있어요.
+이 빌드는 오픈 에디션이에요. 스토어 에디션(`npm run build:store`)은 로그인 기능이 나올 때까지 기다리고, 에디션의 차이는 [CONTRIBUTING.md](CONTRIBUTING.md)에 있어요.
 
 ## 접는 방법
 

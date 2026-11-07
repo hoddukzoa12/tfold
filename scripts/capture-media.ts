@@ -470,6 +470,8 @@ const stills: { file: string; page: string; viewport: Viewport; scale: number; f
 	{ file: 'tfold-themes.png', page: 'themes.html', viewport: { width: 860, height: 400 }, scale: 2, fullPage: true },
 	{ file: 'tfold-popup.png', page: 'popup.html', viewport: { width: 760, height: 400 }, scale: 2, fullPage: true },
 	{ file: 'tfold-popup-ko.png', page: 'popup.html?lang=ko', viewport: { width: 760, height: 400 }, scale: 2, fullPage: true },
+	...['fold', 'levels', 'themes', 'popup'].map((name) => ({ file: `tfold-store-${name}.png`, page: `store-${name}.html`, viewport: { width: 1280, height: 800 }, scale: 1, fullPage: false })),
+	{ file: 'tfold-store-tile.png', page: 'store-tile.html', viewport: { width: 440, height: 280 }, scale: 1, fullPage: false },
 ];
 
 async function composeStills(outDir: string): Promise<void> {
