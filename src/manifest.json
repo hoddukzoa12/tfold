@@ -10,7 +10,7 @@
     "48": "icons/icon-48.png",
     "128": "icons/icon-128.png"
   },
-  "permissions": ["storage", "scripting", "activeTab"],
+  "permissions": ["storage", "scripting"],
   "host_permissions": ["https://apis.opengateway.ai/*", "https://openrouter.ai/*", "http://*/*", "https://*/*"],
   "background": {
     "service_worker": "background/index.js"

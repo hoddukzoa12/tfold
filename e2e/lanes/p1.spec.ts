@@ -173,6 +173,14 @@ test('lane 7: two builds of each edition produce the same tree', async ({ h }) =
 	await h.page.screenshot({ path: png, fullPage: true });
 });
 
+test('lane 7b: each edition carries the license files of the code it ships', async () => {
+	for (const dir of Object.values(editionDirs)) {
+		for (const file of ['LICENSE', 'NOTICE', 'LICENSES/Apache-2.0.txt']) {
+			expect(await readFile(path.join(dir, file), 'utf8'), `${dir} ${file}`).toBe(await readFile(path.join(repoRoot, file), 'utf8'));
+		}
+	}
+});
+
 test('lane 8: chrome://extensions shows the tfold card with no errors', async ({ h }) => {
 	const png = await fresh('p1-extensions');
 	await reloadWithErrorCollection(h);
