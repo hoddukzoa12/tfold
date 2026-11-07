@@ -459,6 +459,46 @@ test.describe('mock provider', () => {
 	});
 });
 
+test.describe('short lines', () => {
+	test.use({ allowLiveHosts: ['127.0.0.1'] });
+	const shortLine = 1;
+
+	test('lane 9: with auto-translate on, a short line is asked for and shows in Korean from Key on', async ({ h }) => {
+		const mock = await mockProvider();
+		try {
+			await seedMock(h, mock, koreanReader);
+			await h.navigate('/short-lines/');
+			await foldBy(h, shortLine, 2);
+			const key = await settled(h, shortLine, modelAt('2'));
+			expect(mock.prompts[0]).toContain(asksKorean);
+			expect(mock.prompts[0]).toContain('Reading the table:');
+			expect(key).toMatchObject({ lang: 'ko' });
+			expect(errors(h)).toEqual([]);
+		} finally {
+			await mock.close();
+		}
+	});
+
+	test('lane 10: with auto-translate off, a short line folds with no request and keeps its words, and a long paragraph beside it asks without it', async ({ h }) => {
+		const mock = await mockProvider();
+		try {
+			await seedMock(h, mock, { ...koreanReader, autoTranslate: false });
+			await h.navigate('/short-lines/');
+			await foldBy(h, shortLine, 2);
+			await expect.poll(async () => (await overlay(h.page, shortLine)).text).toBe('Reading the table:');
+			await h.page.waitForTimeout(300);
+			expect(mock.prompts).toEqual([]);
+			await foldBy(h, 0, 1);
+			await settled(h, 0, modelAt('1'));
+			expect(mock.prompts[0]).toContain('A tide table lists');
+			expect(mock.prompts[0]).not.toContain('Reading the table:');
+			expect(errors(h)).toEqual([]);
+		} finally {
+			await mock.close();
+		}
+	});
+});
+
 test.describe('a Korean page in the default font', () => {
 	test.use({ allowLiveHosts: ['127.0.0.1'] });
 

@@ -242,7 +242,7 @@ test('lane 6: each fixture keeps its block count, less the navbox list items tha
 	const expected = {
 		[fixtures.wiki]: 115,
 		[koWiki]: 85,
-		[fixtures.arxiv]: 36,
+		[fixtures.arxiv]: 39,
 		[fixtures.react]: 3,
 		[xLike]: 6,
 		[divBlog]: 6,

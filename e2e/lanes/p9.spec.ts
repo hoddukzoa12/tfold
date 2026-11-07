@@ -588,7 +588,7 @@ test.describe('a sweep across paragraphs', () => {
 		await open(h);
 	};
 
-	test('lane 8: moving down extends, moving back shrinks, moving above the anchor selects upward, headings and short paragraphs are skipped, and a jump takes in what is between', async ({ h }) => {
+	test('lane 8: moving down extends, moving back shrinks, moving above the anchor selects upward, headings and one-word paragraphs are skipped, and a jump takes in what is between', async ({ h }) => {
 		await tall(h);
 		await open(h);
 		await overId(h, 'p2');
@@ -1105,6 +1105,25 @@ async function mockProvider(takeawayIn = 'A mocked takeaway from the provider.',
 		},
 	};
 }
+
+test.describe('short lines in a run', () => {
+	test('lane 38: a run takes in the short lines between long paragraphs and folds them all to one level, and one word or a link item stays out', async ({ h }) => {
+		await h.navigate('/short-lines/');
+		await tall(h);
+		await overId(h, 'long-1');
+		await keys.down(h, 'Control');
+		await h.page.waitForTimeout(beatMs + 60);
+		await expectBar(h, 'long-1');
+		await overId(h, 'long-3');
+		await expectBar(h, 'long-1', 'long-3');
+		await h.page.mouse.wheel(0, 120);
+		const run = ['long-1', 'lead-in', 'item-1', 'item-2', 'long-2', 'mixed-item', 'long-3'];
+		await expect.poll(() => levelsOf(h, run)).toEqual(run.map(() => 1));
+		await keys.up(h, 'Control');
+		expect(await levelsOf(h, ['one-word', 'link-item'])).toEqual([null, null]);
+		expect(await h.page.locator('#item-1').evaluate((el) => (el.nextElementSibling ?? el).textContent)).toContain('Rows: one for each harbor along the coast');
+	});
+});
 
 test.describe('what a run asks for', () => {
 	test.use({ allowLiveHosts: ['127.0.0.1'] });
