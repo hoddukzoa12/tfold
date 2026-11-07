@@ -60,6 +60,9 @@ const minColumnShare = 0.6;
 const sameParagraphShare = 3 / 4;
 export const dialogs = 'dialog[open], [role="dialog"], [role="alertdialog"], [aria-modal="true"]';
 const layerPositions = new Set(['fixed', 'sticky']);
+const offFlowPositions = new Set(['absolute', 'fixed', 'sticky']);
+const mediaElements = 'img, picture, video, canvas, svg, iframe, object, embed';
+const formulas = 'math, .katex, mjx-container';
 const hitShares = [1 / 4, 1 / 2, 3 / 4];
 const sheetTags = 'style, link';
 // A page that writes around a fold on every frame keeps the fold waiting this long at most.
@@ -154,6 +157,22 @@ function pinned(el: Element): boolean {
 
 function readsAsProse(text: string, el: Element): boolean {
 	return (countWords(text, minLongWords) >= minLongWords || sentenceCount(text) >= minSentences) && !pinned(el);
+}
+
+const beside = (el: Element | null) => el !== null && (el.matches(mediaElements) || el.querySelector(mediaElements) !== null);
+
+function offFlow(el: Element): boolean {
+	for (let box: Element | null = el; box; box = box.parentElement) if (offFlowPositions.has(getComputedStyle(box).position)) return true;
+	return false;
+}
+
+// Text on a video, a map or a chart, a caption and a table cell are short too, and Ctrl and the wheel must stay with the
+// browser over them. A short line counts only where it reads as part of the text: in the flow, away from media, and as
+// wide as a long paragraph in its column. A page with no long paragraph has no text for it to be part of.
+function flowsWithProse(el: Element, long: readonly DOMRect[]): boolean {
+	if (el.querySelector(formulas) || beside(el.previousElementSibling) || beside(el.nextElementSibling) || offFlow(el)) return false;
+	const { left, right } = el.getBoundingClientRect();
+	return long.some((box) => Math.min(right, box.right) - Math.max(left, box.left) >= minColumnShare * box.width);
 }
 
 const always = () => true;
@@ -313,17 +332,29 @@ function detect(bound: Iterable<Element>): [Element, string][] {
 	};
 	for (const el of bound) choose(el);
 	const found: [Element, string][] = [];
+	const short: [Element, string][] = [];
 	for (const kind of kindsByPriority()) {
 		for (const el of scope().querySelectorAll(kind.selector)) {
 			if (chosen.has(el) || holders.has(el) || !kind.accepts(el) || (el.textContent?.length ?? 0) < kind.minWords) continue;
 			if (insideChosen(el) || el.closest(excludedAncestors) || (el instanceof HTMLElement && el.isContentEditable) || inReferences(el)) continue;
 			const text = blockText(el, kind.minWords);
 			if (text === undefined || !kind.reads(text, el)) continue;
+			if (isShortLine(text)) {
+				short.push([el, text]);
+				continue;
+			}
 			choose(el);
 			found.push([el, text]);
 		}
 	}
-	return found;
+	if (short.length === 0) return found;
+	const long = [...bound, ...found.map(([el]) => el)].filter((el) => !isShortLine(textOf(el))).map((el) => el.getBoundingClientRect());
+	for (const [el, text] of short) {
+		if (holders.has(el) || insideChosen(el) || !flowsWithProse(el, long)) continue;
+		choose(el);
+		found.push([el, text]);
+	}
+	return found.sort(([a], [b]) => (a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1));
 }
 
 export function scan(): void {

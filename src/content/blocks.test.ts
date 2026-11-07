@@ -98,12 +98,28 @@ test('Wikipedia: paragraphs are blocks, and references, short paragraphs, captio
 	await page.close();
 });
 
-test('a short line is a block, and one word, a link item and a short div are not', async () => {
+test('a short line beside a long paragraph is a block, and one word, a link item, a short div, text on a video, a caption and a cell are not', async () => {
 	const page = await openHtml(
-		'<main><p id="line">For this game:</p><p id="word">Note.</p><ul><li id="link"><a href="#a">The harbor rules page</a></li><li id="mixed"><a href="#b">Charts</a> of the tide at each harbor</li></ul>' +
-			'<div id="div">A short div here.</div></main>',
+		`<main style="width: 600px"><p id="prose">${twelveWords}</p><p id="line">For this game:</p><p id="word">Note.</p><ul><li id="link"><a href="#a">The harbor rules page</a></li><li id="mixed"><a href="#b">Charts</a> of the tide at each harbor</li></ul>` +
+			'<div id="div">A short div here.</div><div style="position: relative"><video></video><p id="subtitle" style="position: absolute">We tied up at the north end.</p></div>' +
+			'<img alt="" width="10" height="10" /><p id="caption">The boatbuilder and his yard.</p><div style="display: grid; grid-template-columns: 1fr 1fr 1fr"><p id="cell">A short cell.</p></div></main>',
 	);
-	expect(await levelsAt(page, { line: '#line', word: '#word', link: '#link', mixed: '#mixed', div: '#div' })).toEqual({ line: 0, word: null, link: null, mixed: 0, div: null });
+	expect(await levelsAt(page, { line: '#line', word: '#word', link: '#link', mixed: '#mixed', div: '#div', subtitle: '#subtitle', caption: '#caption', cell: '#cell' })).toEqual({
+		line: 0,
+		word: null,
+		link: null,
+		mixed: 0,
+		div: null,
+		subtitle: null,
+		caption: null,
+		cell: null,
+	});
+	await page.close();
+});
+
+test('a page of only short lines has no block', async () => {
+	const page = await openHtml('<main><p id="line">For this game:</p><p id="other">And here another short line.</p></main>');
+	expect(await levelsAt(page, { line: '#line', other: '#other' })).toEqual({ line: null, other: null });
 	await page.close();
 });
 
