@@ -334,15 +334,17 @@ async function foldTo(page: Page, cdp: CDPSession, at: { x: number; y: number },
 }
 
 async function levelStills(page: Page, cdp: CDPSession): Promise<void> {
-	const { name, lang, scheme, viewport, textPx, target } = { name: 'levels-ko', lang: 'ko', scheme: 'light', viewport: { width: 780, height: 900 }, textPx: 21, target: '#target' } as const;
-	await load(page, { lang, scheme, viewport, textPx });
-	const at = await prefetch(page, cdp, target);
-	let level: Level = 0;
-	for (const next of [0, 1, 2, 3] as const) {
-		await foldTo(page, cdp, at, level, next);
-		level = next;
-		await page.screenshot({ path: path.join(stillsDir, `${name}-${next}.png`), clip: await clipOf(page, target, next, 14) });
-		if (next !== 0) noteLine({ page: lang, paragraph: target, level: next, ...(await readLine(page, target)) });
+	const target = '#target';
+	for (const lang of ['ko', 'en'] as const) {
+		await load(page, { lang, scheme: 'light', viewport: { width: 780, height: 900 }, textPx: 21 });
+		const at = await prefetch(page, cdp, target);
+		let level: Level = 0;
+		for (const next of [0, 1, 2, 3] as const) {
+			await foldTo(page, cdp, at, level, next);
+			level = next;
+			await page.screenshot({ path: path.join(stillsDir, `levels-${lang}-${next}.png`), clip: await clipOf(page, target, next, 14) });
+			if (next !== 0) noteLine({ page: lang, paragraph: target, level: next, ...(await readLine(page, target)) });
+		}
 	}
 }
 
@@ -417,9 +419,9 @@ async function popups(extension: string): Promise<void> {
 		// hintSeen stays unset, so the popup shows every way to fold, as it does before a reader's first fold.
 		await worker.evaluate(() => chrome.storage.local.set({ account: { kind: 'free' }, providers: { chosen: 'opengateway', opengateway: { apiKey: 'unused' } } }));
 		await page.goto(`${demoOrigin}/en/`, { waitUntil: 'load' });
-		for (const [readerLanguage, scheme] of [['en', 'light'], ['ko', 'dark']] as const) {
+		for (const readerLanguage of ['en', 'ko'] as const) {
 			await worker.evaluate((readerLanguage) => chrome.storage.sync.set({ readerLanguage }), readerLanguage);
-			await shootPopup(context, page, extensionId, scheme, path.join(stillsDir, `popup-${readerLanguage}-${scheme}.png`));
+			for (const scheme of ['light', 'dark'] as const) await shootPopup(context, page, extensionId, scheme, path.join(stillsDir, `popup-${readerLanguage}-${scheme}.png`));
 		}
 	} finally {
 		await context.close();
@@ -464,8 +466,10 @@ async function folds(extension: string, live: boolean): Promise<void> {
 const stills: { file: string; page: string; viewport: Viewport; scale: number; fullPage: boolean }[] = [
 	{ file: 'tfold-social.png', page: 'social.html', viewport: { width: 1280, height: 640 }, scale: 1, fullPage: false },
 	{ file: 'tfold-levels.png', page: 'levels.html', viewport: { width: 900, height: 400 }, scale: 2, fullPage: true },
+	{ file: 'tfold-levels-ko.png', page: 'levels.html?lang=ko', viewport: { width: 900, height: 400 }, scale: 2, fullPage: true },
 	{ file: 'tfold-themes.png', page: 'themes.html', viewport: { width: 860, height: 400 }, scale: 2, fullPage: true },
 	{ file: 'tfold-popup.png', page: 'popup.html', viewport: { width: 760, height: 400 }, scale: 2, fullPage: true },
+	{ file: 'tfold-popup-ko.png', page: 'popup.html?lang=ko', viewport: { width: 760, height: 400 }, scale: 2, fullPage: true },
 ];
 
 async function composeStills(outDir: string): Promise<void> {

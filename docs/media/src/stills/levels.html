@@ -50,10 +50,14 @@
 	</head>
 	<body>
 		<main>
-			<div class="row"><div class="label">Full</div><img src="../assets/stills/levels-ko-0.png" alt="" /></div>
-			<div class="row"><div class="label">Brief</div><img src="../assets/stills/levels-ko-1.png" alt="" /></div>
-			<div class="row"><div class="label">Key</div><img src="../assets/stills/levels-ko-2.png" alt="" /></div>
-			<div class="row"><div class="label">Takeaway</div><img src="../assets/stills/levels-ko-3.png" alt="" /></div>
+			<div class="row"><div class="label">Full</div><img data-still="levels-LANG-0.png" alt="" /></div>
+			<div class="row"><div class="label">Brief</div><img data-still="levels-LANG-1.png" alt="" /></div>
+			<div class="row"><div class="label">Key</div><img data-still="levels-LANG-2.png" alt="" /></div>
+			<div class="row"><div class="label">Takeaway</div><img data-still="levels-LANG-3.png" alt="" /></div>
 		</main>
+		<script>
+			const lang = new URLSearchParams(location.search).get('lang') ?? 'en';
+			for (const image of document.images) image.src = `../assets/stills/${image.dataset.still.replace('LANG', lang)}`;
+		</script>
 	</body>
 </html>
