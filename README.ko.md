@@ -26,13 +26,15 @@
 
 tfold는 읽고 있는 페이지에서 포인터 아래의 문단을 그 자리에서 줄여 주는 크롬 확장 프로그램이에요. 문단은 Full, Brief, Key, Takeaway 순서로 짧아졌다가 다시 길어지고, 문단마다 자기 단계를 기억해요. 따로 설치할 앱은 없고, AI 요약은 내 API 키로 받아요.
 
-**tfold는 아직 출시 전이에요.** 크롬 웹 스토어에는 아직 없어요. 지금 써 보려면 [최신 빌드를 받거나](https://github.com/hoddukzoa12/tfold/releases/latest/download/tfold-open.zip) 소스에서 빌드한 뒤 직접 불러오세요. 이렇게 불러온 사본은 스스로 업데이트되지 않아요.
+**[크롬 웹 스토어](https://chromewebstore.google.com/detail/tfold/amgaeonnhclfjgogdhkopajnogmpdahn)에서 tfold를 설치하세요.** 무료이고 계정이 필요 없고, 스스로 업데이트돼요. [최신 빌드를 받거나](https://github.com/hoddukzoa12/tfold/releases/latest/download/tfold-open.zip) 소스에서 빌드한 뒤 직접 불러올 수도 있어요. 이렇게 불러온 사본은 스스로 업데이트되지 않아요.
 
 ## 빠른 시작
 
 크롬이나 크로미움이 필요해요. 계정과 키는 없어도 돼요.
 
-빌드를 건너뛰려면 [`tfold-open.zip`](https://github.com/hoddukzoa12/tfold/releases/latest/download/tfold-open.zip)을 받아 지우지 않을 폴더에 푸세요. 크롬이 그 폴더에서 확장 프로그램을 읽어요.
+스토어에서 설치하려면 [크롬 웹 스토어의 tfold](https://chromewebstore.google.com/detail/tfold/amgaeonnhclfjgogdhkopajnogmpdahn)를 열고 **Chrome에 추가**를 누른 뒤 3단계로 가요.
+
+직접 불러오면서 빌드를 건너뛰려면 [`tfold-open.zip`](https://github.com/hoddukzoa12/tfold/releases/latest/download/tfold-open.zip)을 받아 지우지 않을 폴더에 푸세요. 크롬이 그 폴더에서 확장 프로그램을 읽어요.
 
 직접 빌드하려면 Node 22 이상이 필요해요.
 
@@ -52,7 +54,7 @@ npm run build
 
 다시 빌드한 뒤에는 `chrome://extensions`의 tfold 카드에서 새로고침을 눌러요. 크롬을 다시 시작하기만 하면 이전 서비스 워커가 그대로 남아요.
 
-이 빌드는 오픈 에디션이에요. 스토어 에디션(`npm run build:store`)은 로그인 기능이 나올 때까지 기다리고, 에디션의 차이는 [CONTRIBUTING.md](CONTRIBUTING.md)에 있어요.
+이 빌드는 오픈 에디션이고, 크롬 웹 스토어에 올라간 사본도 오픈 에디션이에요. 스토어 에디션(`npm run build:store`)은 로그인 기능이 나올 때까지 기다리고, 에디션의 차이는 [CONTRIBUTING.md](CONTRIBUTING.md)에 있어요.
 
 ## 접는 방법
 
