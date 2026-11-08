@@ -14,6 +14,7 @@
   <a href="#접는-방법">접는 방법</a> |
   <a href="#문단이-접히는-방식">문단이 접히는 방식</a> |
   <a href="docs/media/tfold-product.mp4">제품 영상</a> |
+  <a href="CHANGELOG.md">변경 내역</a> |
   <a href="CONTRIBUTING.md">기여 안내</a> |
   <a href="SECURITY.md">보안</a> |
   <a href="LICENSE">AGPL-3.0</a>

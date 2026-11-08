@@ -63,6 +63,8 @@ Never commit a key, and never put one in a log, a screenshot or a video.
 
 A change to `README.md` also changes `README.ko.md` in the same pull request.
 
+A change a reader would notice adds a line under **Unreleased** in `CHANGELOG.md`. A release moves those lines under its version and date, and raises the version in `package.json`, `package-lock.json` and `src/manifest.json`.
+
 ## Scripts
 
 - `npm run build` runs `scripts/build.ts`. It bundles the content script, the service worker, the settings page and the toolbar popup with esbuild, and copies the manifest, the pages, the shared stylesheet, the store name and description in `src/_locales/` and the icons into `dist/`, as the open edition. Every other string the extension shows lives in `src/strings/`, in English and Korean, and the reader picks the language in settings.
