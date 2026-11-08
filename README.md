@@ -26,13 +26,15 @@
 
 tfold is a Chrome extension that shortens the paragraph under the pointer, in place, on the page you are reading. Each paragraph steps through Full, Brief, Key and Takeaway, and back, and keeps its own level. tfold needs no local app, and the model text comes from your own API key.
 
-**tfold is pre-release.** It is not on the Chrome Web Store yet. To try it today, [download the latest build](https://github.com/hoddukzoa12/tfold/releases/latest/download/tfold-open.zip) or build it from source, then load it unpacked. A copy loaded this way does not update itself.
+**Install tfold from the [Chrome Web Store](https://chromewebstore.google.com/detail/tfold/amgaeonnhclfjgogdhkopajnogmpdahn).** It is free, needs no account, and updates itself. You can also [download the latest build](https://github.com/hoddukzoa12/tfold/releases/latest/download/tfold-open.zip) or build it from source, then load it unpacked. A copy loaded this way does not update itself.
 
 ## Quick start
 
 You need Chrome or Chromium. You need no account and no key.
 
-To skip the build, download [`tfold-open.zip`](https://github.com/hoddukzoa12/tfold/releases/latest/download/tfold-open.zip) and unzip it into a folder you keep, because Chrome reads the extension from that folder.
+From the store, open [tfold on the Chrome Web Store](https://chromewebstore.google.com/detail/tfold/amgaeonnhclfjgogdhkopajnogmpdahn), click **Add to Chrome**, and go to step 3.
+
+To load a copy yourself and skip the build, download [`tfold-open.zip`](https://github.com/hoddukzoa12/tfold/releases/latest/download/tfold-open.zip) and unzip it into a folder you keep, because Chrome reads the extension from that folder.
 
 To build it instead, you need Node 22 or newer:
 
@@ -50,7 +52,7 @@ npm run build
 
 After you rebuild, click **Reload** on the tfold card in `chrome://extensions`. A Chrome restart alone keeps the old service worker.
 
-This build is the open edition. The store edition, `npm run build:store`, waits for sign-in, and [CONTRIBUTING.md](CONTRIBUTING.md) explains the editions.
+This build is the open edition, and so is the copy on the Chrome Web Store. The store edition, `npm run build:store`, waits for sign-in, and [CONTRIBUTING.md](CONTRIBUTING.md) explains the editions.
 
 ## Ways to fold
 

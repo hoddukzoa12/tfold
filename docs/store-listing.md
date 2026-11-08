@@ -1,6 +1,6 @@
 # Chrome Web Store listing
 
-This file holds what goes into the Chrome Web Store dashboard. The first upload is the open edition, because the store edition folds nothing until sign-in exists.
+This file holds what goes into the Chrome Web Store dashboard. The listing is live at https://chromewebstore.google.com/detail/tfold/amgaeonnhclfjgogdhkopajnogmpdahn. The first upload is the open edition, because the store edition folds nothing until sign-in exists.
 
 ## Upload
 

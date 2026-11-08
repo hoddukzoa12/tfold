@@ -4,11 +4,11 @@
 
 Email **admin@tfold.xyz**. Do not open a public issue or pull request for a security problem.
 
-Include the release or commit you tested, the steps to reproduce the problem, and what an attacker gains. You will get a first reply within a reasonable time. tfold is a small pre-release project, so it promises no fix deadline, and it pays no bounty.
+Include the release or commit you tested, the steps to reproduce the problem, and what an attacker gains. You will get a first reply within a reasonable time. tfold is a small project, so it promises no fix deadline, and it pays no bounty.
 
 ## Supported versions
 
-Only the latest release and the latest `main` are supported. tfold is not on the Chrome Web Store yet.
+Only the latest release, the current [Chrome Web Store](https://chromewebstore.google.com/detail/tfold/amgaeonnhclfjgogdhkopajnogmpdahn) version and the latest `main` are supported.
 
 ## What is in scope
 
