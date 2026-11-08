@@ -1,5 +1,5 @@
 import { sourceWords } from '../fold/align.ts';
-import { countWords, localFold, tokenize } from '../fold/local.ts';
+import { countWords, isShortLine, localFold, tokenize } from '../fold/local.ts';
 import type { Block, BlockId, FoldedLevel, Level } from '../fold/types.ts';
 import { connected } from './connection.ts';
 import { foldFor, noteFolded, requestFolds, stopAskingAhead } from './model-fold.ts';
@@ -9,7 +9,7 @@ import { keepInPlace, keepStill } from './scroll.ts';
 import { isReferenceSection, pageHeadings, sectionOf } from './sections.ts';
 import { textOf } from './text.ts';
 
-type Kind = { selector: string; accepts: (el: Element) => boolean; reads: (text: string, el: Element) => boolean };
+type Kind = { selector: string; minWords: number; accepts: (el: Element) => boolean; reads: (text: string, el: Element) => boolean };
 type PageEvent = [target: EventTarget, type: string, listener: EventListener, capture: boolean];
 
 const articleParagraphs = 'article p, main p';
@@ -54,10 +54,15 @@ const runsOn = /\p{L}\.\p{L}\.["'”’)\]]*$/u;
 const scrolls = new Set(['auto', 'scroll', 'overlay']);
 const minShellShare = 1 / 2;
 const minWords = 12;
+// A paragraph, list item, quote or definition counts from here, so a short line inside a run or a translated page folds with the rest.
+const minParagraphWords = 2;
 const minColumnShare = 0.6;
 const sameParagraphShare = 3 / 4;
 export const dialogs = 'dialog[open], [role="dialog"], [role="alertdialog"], [aria-modal="true"]';
 const layerPositions = new Set(['fixed', 'sticky']);
+const offFlowPositions = new Set(['absolute', 'fixed', 'sticky']);
+const mediaElements = 'img, picture, video, canvas, svg, iframe, object, embed';
+const formulas = 'math, .katex, mjx-container';
 const hitShares = [1 / 4, 1 / 2, 3 / 4];
 const sheetTags = 'style, link';
 // A page that writes around a fold on every frame keeps the fold waiting this long at most.
@@ -106,13 +111,16 @@ function letters(text: string): number {
 	return unspaced(text).length;
 }
 
+function mostlyReferences(el: Element, text: string): boolean {
+	let referenced = 0;
+	for (const reference of el.querySelectorAll(outermostReferences)) referenced += letters(reference.textContent ?? '');
+	return referenced > maxReferenceShare * letters(text);
+}
+
 function holdsProse(el: Element): boolean {
 	if (!holdsOnlyInline(el)) return false;
 	const text = el.textContent ?? '';
-	if (text.length < minWords || countWords(text, minWords) < minWords || el.closest(textDivAncestors)) return false;
-	let referenced = 0;
-	for (const reference of el.querySelectorAll(outermostReferences)) referenced += letters(reference.textContent ?? '');
-	if (referenced > maxReferenceShare * letters(text)) return false;
+	if (text.length < minWords || countWords(text, minWords) < minWords || el.closest(textDivAncestors) || mostlyReferences(el, text)) return false;
 	const words = text.split(/\s+/).filter(Boolean);
 	return 2 * words.filter((word) => /^[#@]./u.test(word)).length <= words.length;
 }
@@ -151,15 +159,31 @@ function readsAsProse(text: string, el: Element): boolean {
 	return (countWords(text, minLongWords) >= minLongWords || sentenceCount(text) >= minSentences) && !pinned(el);
 }
 
+const beside = (el: Element | null) => el !== null && (el.matches(mediaElements) || el.querySelector(mediaElements) !== null);
+
+function offFlow(el: Element): boolean {
+	for (let box: Element | null = el; box; box = box.parentElement) if (offFlowPositions.has(getComputedStyle(box).position)) return true;
+	return false;
+}
+
+// Text on a video, a map or a chart, a caption and a table cell are short too, and Ctrl and the wheel must stay with the
+// browser over them. A short line counts only where it reads as part of the text: in the flow, away from media, and as
+// wide as a long paragraph in its column. A page with no long paragraph has no text for it to be part of.
+function flowsWithProse(el: Element, long: readonly DOMRect[]): boolean {
+	if (el.querySelector(formulas) || beside(el.previousElementSibling) || beside(el.nextElementSibling) || offFlow(el)) return false;
+	const { left, right } = el.getBoundingClientRect();
+	return long.some((box) => Math.min(right, box.right) - Math.max(left, box.left) >= minColumnShare * box.width);
+}
+
 const always = () => true;
 
 function kindsByPriority(): Kind[] {
 	const paragraphsInArticle = scope().querySelector(articleParagraphs) !== null;
 	const paragraphs = `${paragraphsInArticle ? articleParagraphs : 'p'}, li, blockquote, dd`;
 	return [
-		{ selector: '[data-testid="tweetText"]', accepts: always, reads: always },
-		{ selector: paragraphs, accepts: (el) => !el.querySelector(paragraphs), reads: always },
-		...(paragraphsInArticle ? [] : [{ selector: 'div, section', accepts: holdsProse, reads: readsAsProse }]),
+		{ selector: '[data-testid="tweetText"]', minWords, accepts: always, reads: always },
+		{ selector: paragraphs, minWords: minParagraphWords, accepts: (el) => !el.querySelector(paragraphs), reads: (text, el) => !isShortLine(text) || !mostlyReferences(el, text) },
+		...(paragraphsInArticle ? [] : [{ selector: 'div, section', minWords, accepts: holdsProse, reads: readsAsProse }]),
 	];
 }
 
@@ -284,10 +308,10 @@ function swapIn(ids: BlockId[]): void {
 
 const isVisible = (el: Element): boolean => el.checkVisibility({ checkVisibilityCSS: true });
 
-function blockText(el: Element): string | undefined {
+function blockText(el: Element, atLeast: number): string | undefined {
 	if (!isVisible(el)) return undefined;
 	const text = textOf(el);
-	return countWords(text, minWords) < minWords ? undefined : text;
+	return countWords(text, atLeast) < atLeast ? undefined : text;
 }
 
 function detect(bound: Iterable<Element>): [Element, string][] {
@@ -308,17 +332,29 @@ function detect(bound: Iterable<Element>): [Element, string][] {
 	};
 	for (const el of bound) choose(el);
 	const found: [Element, string][] = [];
+	const short: [Element, string][] = [];
 	for (const kind of kindsByPriority()) {
 		for (const el of scope().querySelectorAll(kind.selector)) {
-			if (chosen.has(el) || holders.has(el) || !kind.accepts(el) || (el.textContent?.length ?? 0) < minWords) continue;
+			if (chosen.has(el) || holders.has(el) || !kind.accepts(el) || (el.textContent?.length ?? 0) < kind.minWords) continue;
 			if (insideChosen(el) || el.closest(excludedAncestors) || (el instanceof HTMLElement && el.isContentEditable) || inReferences(el)) continue;
-			const text = blockText(el);
+			const text = blockText(el, kind.minWords);
 			if (text === undefined || !kind.reads(text, el)) continue;
+			if (isShortLine(text)) {
+				short.push([el, text]);
+				continue;
+			}
 			choose(el);
 			found.push([el, text]);
 		}
 	}
-	return found;
+	if (short.length === 0) return found;
+	const long = [...bound, ...found.map(([el]) => el)].filter((el) => !isShortLine(textOf(el))).map((el) => el.getBoundingClientRect());
+	for (const [el, text] of short) {
+		if (holders.has(el) || insideChosen(el) || !flowsWithProse(el, long)) continue;
+		choose(el);
+		found.push([el, text]);
+	}
+	return found.sort(([a], [b]) => (a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1));
 }
 
 export function scan(): void {

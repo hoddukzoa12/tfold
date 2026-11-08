@@ -57,6 +57,11 @@ export function countWords(text: string, limit = Infinity): number {
 	return count;
 }
 
+const shortensFromWords = 12;
+
+// A line under this length has nothing to shorten, so its levels only differ when they are translated.
+export const isShortLine = (text: string): boolean => countWords(text, shortensFromWords) < shortensFromWords;
+
 function closesInitialism(tokens: Token[], stop: number): boolean {
 	const letterBefore = tokens[stop - 1];
 	const dotBefore = tokens[stop - 2];
