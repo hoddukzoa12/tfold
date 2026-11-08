@@ -96,11 +96,11 @@ The toolbar popup turns tfold on or off for the site you are on. It also shows w
   <img src="docs/media/tfold-popup.png" width="640" alt="The content of the toolbar popup on a light theme and on a dark theme, with a key saved.">
 </p>
 
-Settings also has a language setting for the interface, and a switch that folds paragraphs in another language into your reading language from Key on. The switch is off by default and needs a saved key.
+Settings also has a language setting for the interface, and a switch that folds paragraphs in another language into your reading language from Key on. The switch is on by default and needs a saved key. A paragraph already in your reading language folds with no translation.
 
 ## What tfold sends
 
-With no key saved, tfold sends no page text. With a key saved, when you fold a paragraph that has no model text yet, tfold sends that paragraph and some of its neighbors in the same section, the page title and the page's headings to the provider you chose, with your key. A run of paragraphs folded together goes in groups like this. Marking paragraphs sends nothing, and no page text goes out before your first fold on a page. With the translation switch on, a fold can also send the next paragraphs that need translating, before you fold them. When you save a key, tfold sends only that key to its provider, to check that it works. [SECURITY.md](SECURITY.md) has the details and says how to report a problem.
+With no key saved, tfold sends no page text. With a key saved, when you fold a paragraph that has no model text yet, tfold sends that paragraph and some of its neighbors in the same section, the page title and the page's headings to the provider you chose, with your key. A run of paragraphs folded together goes in groups like this. Marking paragraphs sends nothing, and no page text goes out before your first fold on a page. With the translation switch on, which is the default, a fold can also send the next paragraphs that need translating, before you fold them. When you save a key, tfold sends only that key to its provider, to check that it works. [SECURITY.md](SECURITY.md) has the details and says how to report a problem.
 
 ## Build and test
 

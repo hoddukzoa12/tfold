@@ -298,6 +298,7 @@ test.describe('lanes with a mock model', () => {
 		const png = await fresh('p5b-keyboard');
 		const mock = await mockProvider(h, [{ delayMs: 600 }]);
 		await hintSeen(h);
+		await h.worker.evaluate(() => chrome.storage.sync.set({ autoTranslate: false }));
 		await h.navigate(koWiki);
 		await ready(h);
 		await watchKeys(h.page);
