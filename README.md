@@ -14,6 +14,7 @@
   <a href="#ways-to-fold">Ways to fold</a> |
   <a href="#how-a-paragraph-folds">How a paragraph folds</a> |
   <a href="docs/media/tfold-product.mp4">Product video</a> |
+  <a href="CHANGELOG.md">Changelog</a> |
   <a href="CONTRIBUTING.md">Contributing</a> |
   <a href="SECURITY.md">Security</a> |
   <a href="LICENSE">AGPL-3.0</a>
